@@ -224,7 +224,7 @@
   /* Main Footer */
 
   footer {
-    background-color: #f42f63;
+    background-color: var(--color_primary_equidad);
   }
 
   footer p {
