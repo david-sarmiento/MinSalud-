@@ -341,6 +341,11 @@
       font-size: 16px;
       padding-top: 10px;
     }
+
+    .noticia-mobile{
+      padding-left: 0px;
+      padding-right: 10px;
+    }
   }
 
   /* Min Lista */
