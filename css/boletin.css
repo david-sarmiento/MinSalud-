@@ -4,12 +4,19 @@
 .boletin-title{
   font-size: 28px;
   font-weight: bolder;
+  line-height: 110%;
 }
 
-figcaption span{
-  font-size: 11px;
-  line-height: 90%;
-}
+  figcaption span{
+  font-size: 11px;  
+  }
+
+
+ .span-icon{
+    color: white;
+    padding-left: 9px;
+    padding-top:10px;
+  }
 
 
 
@@ -27,5 +34,9 @@ figcaption span{
   }
   .noticias-relacionadas{
     display: none;
+  }
+
+  .row{
+    padding-left: 0px !important;
   }
 }

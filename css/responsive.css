@@ -77,6 +77,36 @@
   }
 
   .card-header{
-    background: silver;
+    background:var(--color_blue_3);
+  
+    width: 300px;
+     
   }
+
+  .card-header button{
+    color:var(--white); 
+    font-size: 18px;
+    padding:10px; 
+     
+  }
+  .btn-link:hover {
+    color:white;
+    text-decoration: none;
+  }
+  .card-body ul{
+    text-align: left; 
+    
+  }
+
+  .card-body ul li a{
+    color: var(--color_primary_equidad);
+    font-weight: bold;
+    
+    
+  }
+
+  
+
+
+
 }
