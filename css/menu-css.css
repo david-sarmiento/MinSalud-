@@ -1,0 +1,84 @@
+
+
+.button-bar-menu{ 
+  position: absolute; 
+  float: right;
+  right: 0px;
+  top: 8px; 
+ 
+}
+.nav-bar-menu{
+
+  background:var(--color_secondary)!important;
+}
+
+.container-menu{ 
+
+    background: transparent !important; 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .nav-bar-menu{
+    position:absolute;
+    margin-top: -50px;
+   
+    float:right;
+    right: 0px;
+    clear: both;
+    width: 77.5%; 
+
+    z-index: 3000;
+  }
+
+  .carousel-menu{
+    margin-top: 5px;
+  }
+
+  .button-bar-menu{
+    position: absolute;
+
+  }
+
+  .nav-bar-menu{
+     background:transparent!important;
+  }
+
+  .container-menu{
+
+      position: absolute;
+      float:right;
+      right: 0px;
+      clear: both;  
+      top: 55px;
+
+      background:var(--color_secondary) !important; 
+      
+      padding-left: 15px !important; 
+      padding-right: 40px !important; 
+ 
+
+  }
+  
+  .covid-li{
+      margin-bottom: 15px;  
+  }
+
+   
+
+  .inicio-li{
+    padding-top: 20px;
+  }
+
+  .list-unstyled{
+    display: none;
+  }
+  .dropdown-menu { 
+    background-color: silver;
+    box-shadow: none; 
+  }
+
+
+}

@@ -1,0 +1,31 @@
+
+/* Estilos Titulo */
+
+.boletin-title{
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+figcaption span{
+  font-size: 11px;
+  line-height: 90%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .boletin-title{
+    font-size: 22px;
+    font-weight: bolder;
+  }
+
+  figcaption span{ 
+    line-height: 90%;
+  }
+  .share-title{
+    display: inline;
+  }
+  .noticias-relacionadas{
+    display: none;
+  }
+}

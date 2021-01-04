@@ -1,0 +1,82 @@
+/* Fixed Menu */
+
+.footer-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.grid2x {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid2x > div {
+  display: flex;
+  flex-basis: calc(50% - 0px);
+  justify-content: center;
+  flex-direction: column;
+ 
+  margin:0px !important; 
+  padding: 5px;
+}
+
+.bg-right{
+    background: var(--color_blue_2);
+  }
+
+.bg-left{
+    background: var(--color_blue_3);
+  }
+
+.box {
+  margin: 10px;
+}
+
+.box a {
+  color: var(--white);
+}
+
+/* Acordeon */ 
+/* Enlaces  Adicionales*/
+
+  #accordion {
+    display: none;
+  }
+
+/* Main footer */
+
+@media only screen and (max-width: 600px) {
+  .grid3x-footer {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .grid3x-footer > div {
+    display: flex;
+    flex-basis: calc(100%);
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Enlaces  Adicionales*/
+
+  #accordion {
+    display: inline;
+  }
+
+  #accordion .card-enlaces {
+    width: 100% !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-header{
+    background: silver;
+  }
+}
