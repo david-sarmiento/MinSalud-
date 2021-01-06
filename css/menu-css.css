@@ -1,21 +1,141 @@
 
 
-.button-bar-menu{ 
-  position: absolute; 
-  float: right;
-  right: 0px;
-  top: 8px; 
+  .button-bar-menu{ 
+    position: absolute; 
+    float: right;
+    right: 0px;
+    top: 8px; 
+  
+  }
+  .nav-bar-menu{
+
+    background:var(--color_secondary)!important;
+  }
+
+  .container-menu{ 
+
+      background: transparent !important; 
+  }
+  /* Diseño top menu */
+
+  .dropdown-menu{
+    margin-top: -1px;
+  }
+  .megamenu {
+    z-index: 3000;
+  }
+
+  .back_menu h6:before {
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background: url("https://css.mintic.gov.co/mt/mintic/img/arrow_purple_news.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 2px;
+
+  }
+  .megamenu .ver-mas-menu a{
+    position: relative;
+    font-weight: normal;
+    color: var(--color_parrafo) !important;  
+  }
+
+
+  .col-megamenu h6{
+    color: var(--color_primary_equidad) !important;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .col-megamenu .list-unstyled{
+    /*background: var(--color_secondary);*/
+    border-right: 2px solid var(--color_secondary);
+    border-left: 2px solid var(--color_secondary);
+    
+    text-align: left;
+   
+     
+  }
+  .col-megamenu .list-unstyled li{ 
+    padding-bottom: 10px;
+    padding-left: 10px; 
+     
+  }
+
+  .col-megamenu .list-unstyled li:hover{
+    background: var(--color_secondary);
+    
+  }
+  .col-megamenu .list-unstyled li:hover{
+    background: var(--color_secondary); 
+  }
+  .col-megamenu .list-unstyled li:hover a{ 
+    color: white !important; 
+    text-decoration: none; 
+    font-weight: 100;
+  }
+
+  .col-megamenu .list-unstyled li a{
+    color: black;
+    font-weight: 200; 
+  }
+
+  /* Submenu grid*/ 
  
-}
-.nav-bar-menu{
+  div#showgrid_submenu {
+    width: 100%;
+    height: 250px; 
+    
+    border-right: 2px solid var(--color_secondary);
+    border-left: 2px solid var(--color_secondary);
 
-  background:var(--color_secondary)!important;
-}
+  }
 
-.container-menu{ 
+  div#showgrid_submenu p{
+    font-size: 14px; 
+    padding-top: 0px;
+  }
 
-    background: transparent !important; 
+
+ div.column_submenu { 
+  font-size: 14px;
+
+  text-align: center;
+  line-height: 110%;
+
+ 
+
 }
+  .row_submenu {
+    width: 100%;
+    margin: auto;
+    background: white;
+
+  } 
+
+  .column_submenu {
+    width: 100%;
+    height: 91px;
+    margin: auto; 
+  }
+
+  .column_submenu_3tipo {
+    width: 50%;
+    height: 91px;
+    margin: auto; 
+  }
+  div.column_submenu_3tipo { 
+    font-size: 14px;
+
+    text-align: center;
+    line-height: 110%;
+ 
+
+  }
+
 
 
 
@@ -31,22 +151,23 @@
     width: 77.5%; 
 
     z-index: 3000;
-  }
+    }
 
-  .carousel-menu{
-    margin-top: 5px;
-  }
+    .carousel-menu{
+      margin-top: 5px;
+    }
 
-  .button-bar-menu{
-    position: absolute;
+    .button-bar-menu{
+      position: absolute;
 
-  }
+    }
 
-  .nav-bar-menu{
-     background:transparent!important;
-  }
+    .nav-bar-menu{
+      background:transparent!important;
+    }
+  
 
-  .container-menu{
+    .container-menu{
 
       position: absolute;
       float:right;
@@ -56,17 +177,46 @@
 
       background:var(--color_secondary) !important; 
       
-      padding-left: 15px !important; 
-      padding-right: 40px !important; 
+      /*padding-left: 15px !important; 
+      padding-right: 40px !important;*/
+      padding-left: 0px !important; 
+      padding-right: 0px !important; 
+
+
+    }
+    .container-menu .navbar-nav .nav-link {
+      padding-right: 0;
+      padding-left: 15px;
+    }
+
+    .navbar-nav .dropdown-menu {
+    
+        padding-left: 12px;
+    }
+
+    .dropdown-menu .title a{
+        color: black;
+    }
+  
+    .covid-li{
+        margin-bottom: 15px;  
+    }
+
+   .col-megamenu h6{ 
+     color: black !important; 
+    padding-top: 5px;
+    padding-bottom: 2px;
+    text-align: left;
+  } 
+
  
 
-  }
-  
-  .covid-li{
-      margin-bottom: 15px;  
-  }
+  .megamenu .ver-mas-menu{
+    display: none;
+  }  
 
-   
+
+    
 
   .inicio-li{
     padding-top: 20px;
@@ -76,9 +226,14 @@
     display: none;
   }
   .dropdown-menu { 
-    background-color: silver;
+    background-color: white;
     box-shadow: none; 
+
+    border: none;
+    border-radius: 0rem;
   }
+
+
 
 
 }

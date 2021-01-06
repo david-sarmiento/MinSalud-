@@ -61,11 +61,12 @@
     margin: 0;
     padding: 0;
     display: inline-block;
+    font-size: 14px;
   }
 
   .num-boletin {
     position: absolute;
-    right: 45px;
+    right: 15px;
   }
   .route-page {
     color: #757575;
@@ -192,6 +193,7 @@
     background-repeat: no-repeat;
     margin-right: 4px;
   }
+  
 
   .border-bottom-noticia{
     border-bottom: 1px dashed gray;

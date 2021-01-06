@@ -76,6 +76,12 @@
     text-align: center;
   }
 
+  #accordion .card{
+    margin-top: 10px !important;
+    border: none !important;
+  }
+  
+
   .card-header{
     background:var(--color_blue_3);
   
