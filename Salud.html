@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ 
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -55,6 +55,289 @@
               
               div.oculto2{display: block;}
             }
+			
+			/*contiene codigos css para:
+              definir  items de slider vertical version desktop transparencia
+            */ 
+			@-webkit-keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  /*Aca se define la posicion del texto de la derecha para ajustar su posicion ya que va aumentando a medida que le añaden items*/
+  100% {
+    opacity: 1;
+    top: 20px;
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+body {
+  background: #eee;
+  font-family: "Tahoma";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body #scene {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+          justify-content: left;
+  width: 1200px;
+  height: 400px;
+  position: absolute;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+/*Estilos que sirven para gestionar el tamaño del contenido de la izquierda en el carrusel vertical*/
+body #scene #left-zone {
+  background: #fff;
+  height: 75%;
+  -webkit-box-flex: 0;
+          flex-grow: 0;
+  display: -webkit-box;
+  display: flex;
+  width: 560px;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+          justify-content: left;
+}
+body #scene #left-zone .list {
+  display: -webkit-box;
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+body #scene #left-zone .list li.item input[type="radio"] {
+  display: none;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label {
+  display: block;
+  opacity: 0.5;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label:first-letter {
+  text-transform: uppercase;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label:hover {
+  opacity: 0.75;
+  
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label.label_strawberry:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label.label_banana:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label.label_apple:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label.label_orange:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+/*Estilos que sirven para acomodar el contenido de la derecha del carrusel*/
+body #scene #left-zone .list li.item input[type="radio"] ~ .content {
+  position: absolute;
+  left: 550px;
+  top: -400px;
+  width: 650px;
+  height: 400px;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slideout;
+          animation-name: slideout;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_strawberry .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_strawberry h1 {
+  color: #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana h1 {
+  color: #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_apple .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_apple h1 {
+  color: #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_orange .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_orange h1 {
+  color: #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content h1:first-letter {
+  text-transform: uppercase;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content p {
+  max-width: 50%;
+  text-align: center;
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ label {
+  opacity: 1;
+  -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_strawberry {
+  color: #007BFF;
+  border-right: solid 4px #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_banana {
+  color: #007BFF;
+  border-right: solid 4px #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_apple {
+  color: #007BFF;
+  border-right: solid 4px #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_orange {
+  color: #007BFF;
+  border-right: solid 4px #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ .content {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #middle-border {
+  background-color: #eee;
+  height: 75%;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  max-width: 2px;
+  z-index: 0;
+}
+body #scene #right-zone {
+  background: #fff;
+  height: 100%;
+  -webkit-box-flex: 3;
+          flex-grow: 3;
+}
       </style>
 
 
@@ -426,6 +709,7 @@
             </div>
 
         </nav>
+		
 
 
 
@@ -436,111 +720,149 @@
             </div>  
 
              
-            <div class="row"> 
+            
               
                   <div class="oculto2" style="padding-left: 20px;"><h1>Salud</h1>
                   
-                  <p style="padding-left: 0px;">Lorem ipsum dolor sit amet, <br> consectetuer adipiscing
-                    elit. Aenean <br>commodo  ligula eget dolor. <br>Aenean massa.  </p>
+                 <!-- <p style="padding-left: 0px;">Lorem ipsum dolor sit amet, <br> consectetuer adipiscing
+                    elit. Aenean <br>commodo  ligula eget dolor. <br>Aenean massa.  </p>-->
+					
                   <br>
                   
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left; margin-left:10px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  style="width:50px;" alt="Icono"/></center></div></a>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left; margin-left:20px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  alt="Icono"/></center></div></a>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left; margin-left:10px; "><center><a href="/salud/publica/Paginas/salud-publica.aspx" style="text-decoration:none;" >Salud pública</a></center><br> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left; margin-left:20px; "><center><a title="Página de inicio del Plan de Beneficios en Salud" href="/salud/POS/Paginas/plan-obligatorio-de-salud-pos.aspx" style="text-decoration:none;">Plan de Beneficios en&nbsp;Salud&nbsp;</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
                   <br><br><br><br><br><br>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left;  margin-left:10px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  style="width:50px;" alt="Icono"/></center></div></a>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left; margin-left:20px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  alt="Icono"/></center></div></a>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left;  margin-left:10px; "><center><a href="/salud/PServicios/Paginas/Prestacion-servicios-home.aspx" style="text-decoration:none;">Prestación de servicios</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left; margin-left:20px; "><center><a href="/salud/CAS/Paginas/calidad-atencion-en-salud-home.aspx" style="text-decoration:none;">Calidad de atención en salud</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
                   <br><br><br><br><br><br>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left;  margin-left:10px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  style="width:50px;" alt="Icono"/></center></div></a>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left; margin-left:20px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  alt="Icono"/></center></div></a>
-                  <br><br><br><br><br><br>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left;  margin-left:10px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  style="width:50px;" alt="Icono"/></center></div></a>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left; margin-left:20px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  alt="Icono"/></center></div></a>
-                  <br><br><br><br><br><br>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left; margin-left:10px;  "><center>Item</center> <br><br><center><img src="images/Icono.png"  style="width:50px;" alt="Icono"/></center></div></a>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left; margin-left:20px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  alt="Icono"/></center></div></a>
-                  <br><br><br><br><br><br>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left;  margin-left:10px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  style="width:50px;" alt="Icono"/></center></div></a>
-                  <a href="#" style='text-decoration:none; color:#000; '><div style="cursor: pointer; font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:120px; height:100px; float:left; margin-left:20px; "><center>Item</center> <br><br><center><img src="images/Icono.png"  alt="Icono"/></center></div></a>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left;  margin-left:10px; "><center><a href="/salud/MT/Paginas/medicamentos-y-tecnologias.aspx" style="text-decoration:none;">Medicamentos y tecnologías</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left; margin-left:20px; "><center><a href="/salud/PO/Paginas/talento-humano-salud.aspx" style="text-decoration:none;">Profesiones y ocupaciones</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
+                  
                   <!--separador-->
                   <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; width:280px; height:10px; float:left; margin-left:180px; "></div>
 
 <!--separador-->								
 									
 		        	</div>
+					
 									<!--fin seccion mobile-->
 
-            <div class="oculto1">
+            
                               <!--inicio carrusel vertical-->
-                              <div id="tabs">
-                              <ul id="accordion">
-                                  <li>
-                                  <a class="active" href="#tabs-1">   <div class="tag">
-                                      <div class="icon">
-                                          <div class="block">
-                                          <div class="circle"></div>
-                                          </div>
-                                      </div>
-                                      <span class="title">Feature One</span>
-                                      </div>
-                                  </a>
-                                      <div class="addon fadein">
-                                      <span>
-                                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                      </span>
-                                      <a class="para-a" href="#">Learn More</a>
-                                      </div>
-                                  </li>
-                                  <li>
-                                  <a href="#tabs-2">   <div class="tag">
-                                      <div class="icon">
-                                          <div class="block">
-                                          <div class="circle"></div>
-                                          </div>
-                                      </div>
-                                      <span class="title">Feature Two</span>
-                                      </div>
-                                  </a>
-                                      <div class="addon">
-                                      <span>
-                                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                      </span>
-                                      <a class="para-a" href="#">Learn More</a>
-                                      </div>
-                                  </li>
-                                  <li>
-                                  <a href="#tabs-3">   <div class="tag">
-                                      <div class="icon">
-                                          <div class="block">
-                                          <div class="circle"></div>
-                                          </div>
-                                      </div>
-                                      <span class="title">Feature Three</span>
-                                      </div>
-                                  </a>
-                                      <div class="addon">
-                                      <span>
-                                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                      </span>
-                                      <a class="para-a" href="#">Learn More</a>
-                                      </div>
-                                  </li>
-                              </ul>
-                              <div class="browser">
-                                  <div class="top-bar">
-                                  
-                                  </div>
-                                  <div id="tabs-1"></div>
-                                  <div id="tabs-2"></div>
-                                  <div id="tabs-3"></div>
-                              </div>
 
+		<div class="oculto1">
+		
+            <div id="scene">
+    <div id="left-zone">
+      <ul class="list">
+        <li class="item">
+          <input type="radio" id="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" name="basic_carousel" value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" checked="checked"/>
+          <label class="label_strawberry" for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)">Salud pública</label>
+          <div class="content content_strawberry"><!--<span class="picto"></span>-->
+            <h5>Salud pública</h5>
+            <ul>
+  <li><a title="Modos, condiciones y estilos de vida saludables" href="/salud/Paginas/habitos-saludables.aspx">Estilos&nbsp;saludables​ </a></li>
+  <li><a title="Niños,adolescentes, adultos y ancianos​" href="/salud/publica/poblaciones-vulnerables/Paginas/poblaciones-vulnerables.aspx">Poblaciones vulnerables​</a></li>
+  <li><a title="Prevención de enfermedades transmisibles" href="/salud/publica/PET/Paginas/Enfermedades-transmisibles.aspx">Enfermedades transmisibles​​​​ </a></li>
+  <li><a title="enfermedades no transmisibles" href="/salud/publica/PENT/Paginas/Enfermedades-no-transmisibles.aspx">Enfermedades no transmisibles​</a></li>
+  <li><a title="salud sexual" href="/salud/publica/SSR/Paginas/home-salud-sexual.aspx">Salud sexual y reproductiva​</a></li>
+  <li><a title="Orienta la Política Pública en Salud y gestión de Entidades Territoriales e Instituciones" href="/salud/publica/epidemiologia/Paginas/default.aspx">Epidemiología y demografía ​ </a></li>
+  <li><a title="salud ambiental" href="/salud/publica/ambiental/Paginas/Salud-ambiental.aspx">Salud ambie​ntal​</a></li>
+  <li><a title="Gestión integrada para la salud mental" href="/salud/publica/SMental/Paginas/salud-mental-y-convivencia-social.aspx">Salud m​​ental y sustancias psicoactivas​</a></li>
+  <li><a title="Programa Ampliado de Inmunización - Esquemas de vacunación" href="/salud/publica/Vacunacion/Paginas/pai.aspx">Vacunación​ </a></li>
+  <li><a title="ícono alimentación saludable" href="/salud/publica/HS/Paginas/salud-nutricional.aspx">Salud nutricional​</a></li>
+  <li><a title="plan decenal de salud pública" href="/plandecenal">Plan Decenal de Salud Pública​ </a></li>
+  <li><a title="Centro Nacional de Enlace" href="/salud/publica/CNE/Paginas/centro-nacional-enlace-home.aspx">CNE</a></li>
+</ul>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
+          <label class="label_banana" for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">Plan de Beneficios en Salud </label>
+          <div class="content content_banana"><!--<span class="picto"></span>-->
+            <h5>Plan de Beneficios en Salud </h5>
+            <ul>
+  <li><a title="Copagos y Cuotas Moderadoras" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/cuotas-moderadoras-copagos-2021.pdf" target="_blank">Copagos ​y​​ Cuotas Moderadoras</a></li>
+  <li><a title="Resolución 244 de 2019" href="/Normatividad_Nuevo/Resoluci%c3%b3n%20No.%20244%20de%202019.pdf" target="_blank">Exclusiones</a></li>
+  <li><a title="Conozca el proceso de actualización del POS" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/RBC/como-actualiza-pos-diez-pasos.pdf" target="_blank">¿Cómo se&nbsp;actualizan las Tecnologías en Salud financiadas con la UPC en Colombia?</a></li>
+  
+</ul>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." name="basic_carousel" value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."/>
+          <label class="label_apple" for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">Prestación de servicios</label>
+          <div class="content content_apple"><!--<span class="picto"></span>-->
+            <h5>Prestación de servicios</h5>
+            <ul>
+  <li><a href="/salud/PServicios/Paginas/sistema-obligatorio-garantia-calidad-SOGC.aspx" title="SOGC">Sistema Obligatorio de Garantía de Calidad​</a></li>
+  <li><a href="/salud/PServicios/Paginas/informacion-de-interes.aspx" title="Información para Instituciones Prestadoras de Salud (IPS)">Información para IPS​</a></li>
+  <li><a href="https://prestadores.minsalud.gov.co/planesbienales/" target="_blank" title="Planes bienales de inversión">Planes bienales de inversión</a></li>
+  <li><a href="/salud/PServicios/Paginas/infraestructura-en-salud.aspx" title="Políticas y normas técnicas de infraestructura física hospitalaria">Infraestructura en salud</a></li>
+  <li><a href="https://prestadores.minsalud.gov.co/siho/" target="_blank" title="SIHO - Sistema de Información">Gestión&nbsp;hospitales públicos </a></li>
+  <li><a href="https://prestadores.minsalud.gov.co/habilitacion/" target="_blank" title="Registro de prestadores">Registro&nbsp;de prestadores ​</a></li>
+  <li><a href="/salud/PServicios/Paginas/Emergencias-y-desastres.aspx" title="Emergencias y desastres">Emergencias y desastres </a></li>
+</ul>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
+          <label class="label_orange" for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Calidad de atención en salud</label>
+          <div class="content content_orange"><!--<span class="picto"></span>-->
+            <h5>Calidad de atención en salud</h5>
+            <ul>
+  <li><a title="Observatorio de calidad" href="http://oncalidadsalud.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio​</a></li>
+  <li><a title="Familia" href="/salud/CAS/Paginas/ranking-actores.aspx">Usuarios​</a></li>
+  <li><a title="Ordenamiento EPS" href="/salud/CAS/Paginas/seguridad-del-paciente.aspx">Seguridad del paciente</a></li>
+  <li><a title="Guías de práctica clínica" href="http://gpc.minsalud.gov.co/">Guías de práctica clínica GPC</a></li>
+  <li><a title="Protocolos" href="/salud/CAS/Paginas/protocolos-clinicos.aspx">Protocolos </a></li>
+  <li><a title="Ordenamiento EPS" href="/salud/CAS/Paginas/instituciones-prestadoras-de-salud-ips-acreditadas.aspx">Prestadores acreditados ​</a></li>
+  <li><a href="/salud/CAS/Paginas/Experiencias-Exitosas-en-Humanizaci%c3%b3n-y-Calidad.aspx">Humanización en Salud</a></li>
+</ul>
+          </div>
+        </li>
+		    <li class="item">
+          <input type="radio" id="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
+          <label class="label_orange" for="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Medicamentos y tecnologías</label>
+          <div class="content content_orange"><!--<span class="picto"></span>-->
+            <h5>Medicamentos y tecnologías</h5>
+            <ul>
+  <li><a href="/salud/MT/Paginas/medicamentos.aspx" title="Regulación de precios, biotecnológicos, desabastecimiento, comparadores administrativos, productos naturales">Medicamentos</a></li>
+  <li><a href="/salud/MT/Paginas/dispositivos-medicos-equipos-biomedicos.aspx" title="dispositivos médicos">Dispositivos médi​cos</a></li>
+  <li><a href="/salud/MT/Paginas/sangre-componentes-anatomicos.aspx" title="Información sobre donación de sangre, órganos y tejidos">Donació​n,&nbsp;transfusión &nbsp; y&nbsp;trasplante​s&nbsp;</a></li>
+  <li><a href="/salud/MT/Paginas/politica-farmaceutica-2012.aspx" title="Política farmaceútica y tecnologías en salud">Política farmacéutica y tecnologías en salud</a></li>
+  <li><a href="/salud/MT/Paginas/fondo-nacional-de-estupefacientes-fne.aspx" title="Unidad Administrativa Especial (UAE) del Minsalud">Fondo Nacional de Estupefacientes</a></li>
+</ul>
+          </div>
+        </li>
+		    <li class="item">
+          <input type="radio" id="radio_The orange2 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
+          <label class="label_orange" for="radio_The orange2 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Profesiones y ocupaciones</label>
+          <div class="content content_orange"><!--<span class="picto"></span>-->
+            <h5>Profesiones y ocupaciones</h5>
+            <ul>
+			<li><a href="#">De interés</a></li>
+  <li><a title="Observatorio de Talento Humano en Salud" href="http://ontalentohumano.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio de Talento Humano en Salud</a></li>
+  
+  <li><a href="#">Sistema Nacional de Residencias Médicas (SNRM)</a></li>
+  <li><a href="#">Servicio Social Obligatorio (SSO)</a></li>
+  <li><a href="#">Conceptos favorables de la Comisión Intersectorial para el Talento Humano en Salud (CITHS)</a></li>
+  <li><a title="​ ​​​​​​​​Incentivos en talento humano en salud​" href="/salud/PO/Paginas/incentivos-talento-humano-en-salud.aspx">​​​​​​​​Incentivos en talento humano en salud​</a></li>
+</ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="middle-border"></div>
+    <div id="right-zone"></div>
+  </div>
                               
-                              </div>
-                              <!--fin carrusel vertical--> 
+							  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
+			<!--fin carrusel vertical desktop--> 
                        
 
-            </div> 
+             
     </div>  
  
         <div class="container"> 

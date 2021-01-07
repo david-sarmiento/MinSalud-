@@ -87,7 +87,7 @@ color de fondo en el div y grosor del borde
    @media (max-width:680px){
  
         .menu{ 
-        width:340px; 
+        width:350px; 
         
               }    
 
@@ -97,80 +97,362 @@ color de fondo en el div y grosor del borde
 
 
 
- /*contiene codigos css para:
+  /*contiene codigos css para:
 mostrar el contenido, grosor de bordes entre divs, color de fondo, decoraciones al texto, color de texto, 
 sombra del texto y ubicacion del mismo.
  */
-.menu li a{
-    display: block;
-    border-bottom: 1px solid rgba(0,0,0, 0.2);
-    border-top: 1px solid rgba(255,255,255, 0.2);
-    background:#C3C8CC;
-    text-decoration:none;
-    font-family: Helvetica, Arial, sans-serif;
-    color:#000;
-    text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
-    filter: dropshadow(color=#000, offx=1, offy=0);
-    padding:10px;
-    padding-left:20px;
-	text-align: center;
-}
- /*contiene codigos css para:
-  color de letra en las columnas que se expanden,  
-sombra del texto y ubicacion del mismo.
- */
-.menu li ul li a{
-    font-size:14px;
-    font-family: Helvetica, Arial, sans-serif;
-    color:#47689d;
-    text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
-    
-}
- /*contiene codigos css para:
-  color de fondo en las columnas que se expanden (azul)y tiempo de transicion en la funcion.
- */
-.menu li a:hover{
-    background:#9da4a9;
-    -moz-transition: background 0.3s ease-in;
-    -webkit-transition: background 0.3s ease-in;
-    -o-transition: background 0.3s ease-in;
-}
- /*contiene codigos css para:
-  tiempo de transicion en la funcion para expandir y contraer las columnas.
- */
-.menu ul{
-    margin:0;
-    padding:0;
-    list-style:none;
-    height:0;
-    overflow: hidden;
-    transition:1s;
-    -moz-transition:1s;
-    -webkit-transition:1s;
-}
- /*contiene codigos css para:
-  permite mostrar las columnas cuando la funcion de expansion se ejecuta.
- */
-.menu li:hover ul{
-    height:250px;
-    overflow-y:auto;
-    overflow-x:hidden;
-}
+          .menu li a{
+              display: block;
+              border-bottom: 1px solid rgba(0,0,0, 0.2);
+              border-top: 1px solid rgba(255,255,255, 0.2);
+              background:#C3C8CC;
+              text-decoration:none;
+              font-family: Helvetica, Arial, sans-serif;
+              color:#000;
+              text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+              filter: dropshadow(color=#000, offx=1, offy=0);
+              padding:10px;
+              padding-left:20px;
+            text-align: center;
+          }
+            /*contiene codigos css para:
+              color de letra en las columnas que se expanden,  
+            sombra del texto y ubicacion del mismo.
+            */
+            .menu li ul li a{
+                font-size:14px;
+                font-family: Helvetica, Arial, sans-serif;
+                color:#47689d;
+                text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
+                
+            }
+            /*contiene codigos css para:
+              color de fondo en las columnas que se expanden (azul)y tiempo de transicion en la funcion.
+            */
+            .menu li a:hover{
+                background:#007BFF;
+                -moz-transition: background 0.3s ease-in;
+                -webkit-transition: background 0.3s ease-in;
+                -o-transition: background 0.3s ease-in;
+            }
+            /*contiene codigos css para:
+              tiempo de transicion en la funcion para expandir y contraer las columnas.
+            */
+            .menu ul{
+                margin:0;
+                padding:0;
+                list-style:none;
+                height:0;
+                overflow: hidden;
+                transition:1s;
+                -moz-transition:1s;
+                -webkit-transition:1s;
+            }
+            /*contiene codigos css para:
+              permite mostrar las columnas cuando la funcion de expansion se ejecuta.
+            */
+            .menu li:hover ul{
+                height:auto;
+                overflow-y:auto;
+                overflow-x:hidden;
+            }
 
 
+            /*contiene codigos css para:
+              color de fondo en las columnas que se expanden(blanco).
+            */ 
+            .menu ul li a{
+                background:#fafafa;
+            }
+            
+            .menu ul li a:hover {
+                background: none repeat scroll 0 0 #007BFF;
+                color: #fff;
+                -moz-transition: color 0.4s ease;
+                -webkit-transition: color 0.4s ease;
+                -o-transition: color 0.4s ease;
+            }
 /*contiene codigos css para:
-  color de fondo en las columnas que se expanden(blanco).
- */ 
-.menu ul li a{
-    background:#fafafa;
+              definir  items de slider vertical version desktop transparencia
+            */ 
+			@-webkit-keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
 }
- 
-.menu ul li a:hover {
-    background: none repeat scroll 0 0 #ccc;
-    color: #fff;
-    -moz-transition: color 0.4s ease;
-    -webkit-transition: color 0.4s ease;
-    -o-transition: color 0.4s ease;
+@keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  /*Aca se define la posicion del texto de la derecha para ajustar su posicion ya que va aumentando a medida que le añaden items*/
+  100% {
+    opacity: 1;
+    top: 20px;
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+body {
+  background: #eee;
+  font-family: "Tahoma";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body #scene {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+          justify-content: left;
+  width: 1110px;
+  height: 400px;
+  position: absolute;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+/*Estilos que sirven para gestionar el tamaño del contenido de la izquierda en el carrusel vertical*/
+body #scene #left-zone {
+  background: #fff;
+  height: 75%;
+  -webkit-box-flex: 0;
+          flex-grow: 0;
+  display: -webkit-box;
+  display: flex;
+  width: 280px;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+          justify-content: left;
+}
+body #scene #left-zone .list {
+  display: -webkit-box;
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+body #scene #left-zone .list li.item input[type="radio"] {
+  display: none;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label {
+  display: block;
+  opacity: 0.5;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label:first-letter {
+  text-transform: uppercase;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label:hover {
+  opacity: 0.75;
+  
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label.label_strawberry:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label.label_banana:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label.label_apple:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ label.label_orange:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+/*Estilos que sirven para acomodar el contenido de la derecha del carrusel*/
+body #scene #left-zone .list li.item input[type="radio"] ~ .content {
+  position: absolute;
+  left: 350px;
+  top: -400px;
+  width: 650px;
+  height: 400px;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slideout;
+          animation-name: slideout;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_strawberry .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_strawberry h1 {
+  color: #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana h1 {
+  color: #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_apple .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_apple h1 {
+  color: #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_orange .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_orange h1 {
+  color: #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content h1:first-letter {
+  text-transform: uppercase;
+}
+body #scene #left-zone .list li.item input[type="radio"] ~ .content p {
+  max-width: 50%;
+  text-align: center;
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ label {
+  opacity: 1;
+  -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_strawberry {
+  color: #007BFF;
+  border-right: solid 4px #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_banana {
+  color: #007BFF;
+  border-right: solid 4px #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_apple {
+  color: #007BFF;
+  border-right: solid 4px #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_orange {
+  color: #007BFF;
+  border-right: solid 4px #007BFF;
+}
+body #scene #left-zone .list li.item input[type="radio"]:checked ~ .content {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #middle-border {
+  background-color: #eee;
+  height: 75%;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  max-width: 2px;
+  z-index: 0;
+}
+body #scene #right-zone {
+  background: #fff;
+  height: 100%;
+  -webkit-box-flex: 3;
+          flex-grow: 3;
 }
 
 
@@ -552,15 +834,13 @@ sombra del texto y ubicacion del mismo.
               <div class="col-8">
 
 
-                        <h1 class="pt-1">Titulo</h1>
+                        <h1 class="pt-1">Plan de Beneficios en Salud</h1>
 						
 						
                 <!--Inicio video desktop-->
                       <div class="oculto1">
-
-                        <iframe height="100" src="https://www.youtube.com/embed/r-68gKVtTyY" 
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/r-68gKVtTyY" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                       </div>
 					  <!--fIn video desktop-->
@@ -575,13 +855,16 @@ sombra del texto y ubicacion del mismo.
 				  <div class="oculto2">
 				  <ul class='menu'>
 
-                        <li><a href='#'>Item</a>
+                        <li><a href='#'>Copagos y Cuotas Moderadoras</a>
                         <ul> 
                             <li>
                             
-                            <div style="width:500px; ">
-                    <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing<br> elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                                                        <br>Cum sociis natoque penatibus et magnis dis parturient<br> montes, nascetur ridiculus mus.</p>
+                            <div style="width:350px; ">
+							<ul>
+							<li>
+                   <a title="Copagos y Cuotas Moderadoras" href="https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/cuotas-moderadoras-copagos-2021.pdf" target="_blank">Copagos ​y​​ Cuotas Moderadoras</a>
+			   </li>
+			   </ul>
 
                     </div>
                             
@@ -592,81 +875,37 @@ sombra del texto y ubicacion del mismo.
                         
                         </ul>
                         </li> 
-                        <br>
+                        
                     
-                        <li><a href='#'>Item</a>
+                        <li><a href='#'>Exclusiones</a>
                         <ul> 
                             <li>
                             
-                            <div style="width:500px; ">
-                    <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing<br> elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                                                        <br>Cum sociis natoque penatibus et magnis dis parturient<br> montes, nascetur ridiculus mus.</p>
+                            <div style="width:350px; ">
+                    <a title="Resolución 244 de 2019" href="https://www.minsalud.gov.co/Normatividad_Nuevo/Resoluci%c3%b3n%20No.%20244%20de%202019.pdf" target="_blank">Exclusiones</a>
 
                     </div>
                         
                             
                         </ul>
                         </li> 
-                        <br>
+                        
                     
-                        <li><a href='#'>Item</a>
+                        <li><a href='#'>¿Cómo se actualizan las Tecnologías en Salud financiadas con la UPC en Colombia?</a>
                         <ul> 
                             <li>
                             
-                            <div style="width:500px; ">
-                    <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing<br> elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                                                        <br>Cum sociis natoque penatibus et magnis dis parturient<br> montes, nascetur ridiculus mus.</p>
+                            <div style="width:350px; ">
+                    <a title="Conozca el proceso de actualización del POS" href="https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VP/RBC/como-actualiza-pos-diez-pasos.pdf" target="_blank">¿Cómo se&nbsp;actualizan las Tecnologías en Salud financiadas con la UPC en Colombia?</a>
 
                     </div>
                         </ul>
                     </li> 
-                    <br>
                     
                     
                     
-                    <li><a href='#'>Item</a>
-                        <ul> 
-                            <li>
-                            
-                            <div style="width:500px; ">
-                    <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing<br> elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                                                        <br>Cum sociis natoque penatibus et magnis dis parturient<br> montes, nascetur ridiculus mus.</p>
-
-                    </div>
-                            
-                        </ul>
-                    </li> 
-                    <br>
                     
-                    
-                    <li><a href='#'>Item</a>
-                        <ul> 
-                            <li>
-                            
-                            <div style="width:500px; ">
-                    <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing<br> elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                                                        <br>Cum sociis natoque penatibus et magnis dis parturient<br> montes, nascetur ridiculus mus.</p>
-
-                    </div>
-                            
-                        </ul>
-                    </li> 
-                    <br>
-                    
-                    
-                    
-                    <li><a href='#'>Item</a>
-                        <ul> 
-                            <li>
-                            
-                            <div style="width:500px; ">
-                    <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing<br> elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                                                        <br>Cum sociis natoque penatibus et magnis dis parturient<br> montes, nascetur ridiculus mus.</p>
-
-                    </div>
-                            
-                        </ul>
-                    </li> 
+             
    
    
    
@@ -679,18 +918,21 @@ sombra del texto y ubicacion del mismo.
                         <div style="width: 350px;" >
                         <h3>Enlaces/Documentos</h3>
                         <br><br>
-                        <center>
-                        <a href="#" style="text-decoration:none; color:#000;">Enlace  de interes numero 1</a>
-                        <br><br>
-                        <a href="#" style="text-decoration:none; color:#000;">Enlace de interes numero 2</a>
-                        <br><br>
+                        
+                        <ul>Normatividad
+						<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/RBC/resolucion-2481-de-2020-anexos.zip" target="_blank" title="Consulte la Resolución 2481 de 2020 - Nuevo Plan de Beneficios en Salud">Tecnologías en salud financiadas con la UPC</a></li>
+						<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/DIJ/resolucion-2503-de-2020.pdf" target="_blank" title="Consulte la Resolución 2503 de 2020 - Nueva UPC 2021">Nueva UPC</a></li>
+						Conozca
+						<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/gpsm02-manual-metodologico-pciudadana.pdf" target="" title="Consulte el Manual metodológico de participación ciudadana">La estrategia de participación ciudadana </a></li>
+						<li><a href="http://mivoxpopuli.minsalud.gov.co/InscripcionParticipacionCiudadana/frm/logica/frmdefault.aspx" target="_blank" title="Ingrese al Portal de Participación Ciudadana del Ministerio de Salud y Protección Social">La herramienta de participación ciudadana, Mi Vox-Pópuli</a></li>
+						Boletines
+						<li><a href="/salud/POS/Paginas/boletines.aspx" target="_blank" title="Consulte las cifras de Aseguramiento del periodo 2014 a 2017 y documentos relacionados 2015 y 2016">Histórico boletines informativos</a></li>
+						Documentos de trabajo
+						<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/analisis-exploratorios-sobre-modelos-econometricos.pdf" target="_blank" title="Consulte los análisis exploratorios sobre modelos econométricos para el cálculo de la prima de aseguramiento en salud.">Modelos econométricos</a></li>
+						<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/ajuste-riesgo-rct.pdf" target="_blank" title="Consulte los modelos de ajuste de riesgo individual que buscan determinar los costos futuros de atención médica a partir de costos pasados, factores socio – demográficos  y condiciones de salud.">Ajustes de riesgo</a></li>
+						</ul>
 
-                        <a href="#" style="text-decoration:none; color:#000;">Documento informativo numero 1</a>
-                        <br><br>
-                        <a href="#" style="text-decoration:none; color:#000;">Documento informativo numero 2</a>
-                        <br><br>
-
-                        </center>
+                        
                         </div>
                         <h2>Multimedia</h2>
                         <br><br>
@@ -708,6 +950,7 @@ sombra del texto y ubicacion del mismo.
                         <br>Telefono: 2034567/3224567987
                         <br>Correo : contacto@contacto.gov.co</center>
                         </div>
+						</div>
 						<!--fin contacto mobile-->
 				<!--fin mobile-->
                        
@@ -720,7 +963,7 @@ sombra del texto y ubicacion del mismo.
                         <table align="center" width="100%" cellspacing="0"cellpadding="0" >
                           <tr>
                               <td valign="top">
-                                  <table width="100%" cellspacing="0" cellpadding="0"  bgcolor="#FFFFFF" style="background-color:#FFFFFF;">
+                                  <table width="100%" cellspacing="0" cellpadding="0"  bgcolor="#EEEEEE" style="background-color:#EEEEEE;">
                                       <tr>
                                           <td width="5" style="font-size: 1px; line-height: 1px;"> </td>
                                           <td style="font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 20px; color: #000;" >
@@ -732,71 +975,34 @@ sombra del texto y ubicacion del mismo.
                                                 <!--inicio elementos desktop-->
                         <div class="oculto1">
                             <!--inicio carrusel vertical-->
-                            <div id="tabs">
-                            <ul id="accordion">
-                                <li>
-                                <a class="active" href="#tabs-1">   <div class="tag">
-                                    <div class="icon">
-                                        <div class="block">
-                                        <div class="circle"></div>
-                                        </div>
-                                    </div>
-                                    <span class="title">¿Qué?</span>
-                                    </div>
-                                </a>
-                                    <div class="addon fadein">
-                                    <span>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                    </span>
-                                    <!--<a class="para-a" href="#">Learn More</a>-->
-                                    </div>
-                                </li>
-                                <li>
-                                <a href="#tabs-2">   <div class="tag">
-                                    <div class="icon">
-                                        <div class="block">
-                                        <div class="circle"></div>
-                                        </div>
-                                    </div>
-                                    <span class="title">¿Cómo?</span>
-                                    </div>
-                                </a>
-                                    <div class="addon">
-                                    <span>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                    </span>
-                                    <!--<a class="para-a" href="#">Learn More</a>-->
-                                    </div>
-                                </li>
-                                <li>
-                                <a href="#tabs-3">   <div class="tag">
-                                    <div class="icon">
-                                        <div class="block">
-                                        <div class="circle"></div>
-                                        </div>
-                                    </div>
-                                    <span class="title">¿Cuando?</span>
-                                    </div>
-                                </a>
-                                    <div class="addon">
-                                    <span>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                    </span>
-                                    <!--<a class="para-a" href="#">Learn More</a>-->
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="browser">
-                                <div class="top-bar">
-                                
-                                </div>
-                                <div id="tabs-1"></div>
-                                <div id="tabs-2"></div>
-                                <div id="tabs-3"></div>
-                            </div>
-
-                            
-                            </div>
+                  <div id="scene">
+    <div id="left-zone">
+      <ul class="list">
+        <li class="item">
+          <input type="radio" id="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" name="basic_carousel" value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" checked="checked"/>
+          <label class="label_strawberry" for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)">Copagos ​y​​ Cuotas Moderadoras</label>
+          <div class="content content_strawberry"><!--<span class="picto"></span>-->
+            <h5>Copagos ​y​​ Cuotas Moderadoras</h5>
+<iframe width="700" height="300" src="https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/cuotas-moderadoras-copagos-2021.pdf" frameborder="0"></iframe>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
+          <label class="label_banana" for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">Exclusiones</label>
+          <div class="content content_banana"><!--<span class="picto"></span>-->
+            <h5>Exclusiones </h5>
+<iframe width="700" height="300" src="https://www.minsalud.gov.co/Normatividad_Nuevo/Resoluci%c3%b3n%20No.%20244%20de%202019.pdf" frameborder="0"></iframe>
+          </div>
+        </li>
+   
+        
+      </ul>
+    </div>
+    <div id="middle-border"></div>
+    <div id="right-zone"></div>
+  </div>
+                              
+							  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                             <!--fin carrusel vertical--> 
                     </div>
                     <!--fin elementos desktop-->
@@ -811,7 +1017,7 @@ sombra del texto y ubicacion del mismo.
 
 <!--inicio contacto desktop-->
                       <div class="oculto1">
-                        <div style="float:left; margin-left:20px; background-color:#AAAAAA; width:95%;">
+                        <div style="float:left; margin-left:20px; background-color:#AAAAAA; width:900px;">
                         <center>
                         <h2>Contacto</h2>
                         <br>
@@ -838,23 +1044,26 @@ sombra del texto y ubicacion del mismo.
           <!--inicio elementos desktop-->
 <div class="oculto1">
               <div class="col-4">
-                  <h5 class="pt-3">Enlaces / Documentos </h5><br>
+                  <h5 style="width: 280px;">Enlaces / Documentos </h5><br>
 
-                  <div class="card" style="width: 15rem;">
+                  <div class="card" style="width: 280px;">
                       <div class="card-body">
-                        <ul>
-                          <li><a href="">Enlace 1</a></li>
-                          <li><a href="">Enlace 2</a></li>
-                          <li><a href="">Enlace 3</a></li>
-                          <li><a href="">Documento 1</a></li>
-                          <li><a href="">Documento 2</a></li>
-                          <li><a href="">Documento 3</a></li>
-
-                        </ul>
+                        <ul>Normatividad
+						<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/RBC/resolucion-2481-de-2020-anexos.zip" target="_blank" title="Consulte la Resolución 2481 de 2020 - Nuevo Plan de Beneficios en Salud">Tecnologías en salud financiadas con la UPC</a></li>
+						<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/DIJ/resolucion-2503-de-2020.pdf" target="_blank" title="Consulte la Resolución 2503 de 2020 - Nueva UPC 2021">Nueva UPC</a></li>
+						Conozca
+						<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/gpsm02-manual-metodologico-pciudadana.pdf" target="" title="Consulte el Manual metodológico de participación ciudadana">La estrategia de participación ciudadana </a></li>
+						<li><a href="http://mivoxpopuli.minsalud.gov.co/InscripcionParticipacionCiudadana/frm/logica/frmdefault.aspx" target="_blank" title="Ingrese al Portal de Participación Ciudadana del Ministerio de Salud y Protección Social">La herramienta de participación ciudadana, Mi Vox-Pópuli</a></li>
+						Boletines
+						<li><a href="/salud/POS/Paginas/boletines.aspx" target="_blank" title="Consulte las cifras de Aseguramiento del periodo 2014 a 2017 y documentos relacionados 2015 y 2016">Histórico boletines informativos</a></li>
+						Documentos de trabajo
+						<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/analisis-exploratorios-sobre-modelos-econometricos.pdf" target="_blank" title="Consulte los análisis exploratorios sobre modelos econométricos para el cálculo de la prima de aseguramiento en salud.">Modelos econométricos</a></li>
+						<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/ajuste-riesgo-rct.pdf" target="_blank" title="Consulte los modelos de ajuste de riesgo individual que buscan determinar los costos futuros de atención médica a partir de costos pasados, factores socio – demográficos  y condiciones de salud.">Ajustes de riesgo</a></li>
+						</ul>
                       </div>
                   </div>
                   <br>
-                  <div class="card" style="width: 15rem;">
+                  <div class="card" style="width: 280px;">
                       <h5>Multimedia</h5>
                       <iframe width="100%" height="150" src="https://www.youtube.com/embed/r-68gKVtTyY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -867,6 +1076,7 @@ sombra del texto y ubicacion del mismo.
 
           </div>  
  <!--inicio elementos desktop-->
+ <br><br>
         <div class="oculto1">
           <div class="row col-10" >
               
