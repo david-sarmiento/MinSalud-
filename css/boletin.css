@@ -19,6 +19,11 @@
   }
 
 
+  .noticias-relacionadas{
+    text-align: justify;
+    font-size: 22px;
+  }
+
 
 @media only screen and (max-width: 600px) {
   .boletin-title{

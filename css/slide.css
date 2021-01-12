@@ -21,7 +21,7 @@ html, body {
   }
   @media only screen and (max-width: 600px) {
    .slick-slide img {
-    width: 50px;
+    width: 80px;
   }
 }
 
@@ -34,11 +34,11 @@ html, body {
 
   .slick-slide {
     transition: all ease-in-out .3s;
-    opacity: .2;
+    opacity: 1;
   }
   
   .slick-active {
-    opacity: .5;
+    opacity: 1;
   }
 
   .slick-current {

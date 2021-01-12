@@ -102,7 +102,7 @@
   }
 
   .covid {
-    background: #f42f63;
+    background: var(--color_secondary_equidad);
     margin-left: 135px;
   }
   .servicio-li {
@@ -183,6 +183,7 @@
   }
 
   .noticias_secundarias p:before {
+
     content: "";
     display: inline-block;
     height: 15px;
@@ -226,7 +227,7 @@
   /* Main Footer */
 
   footer {
-    background-color: var(--color_primary_equidad);
+    background-color: var(--color_secondary_equidad);
   }
 
   footer p {
@@ -288,7 +289,7 @@
 
   /* Multimedia */
   .multimedia {
-    background: silver;
+    background: rgb(231, 231, 231);
   }
 
   /* Fixed Footer Responsive */

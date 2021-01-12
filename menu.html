@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+ 
+
+
+<!-- SmartMenus jQuery Bootstrap Addon CSS -->
+<link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/tabs-vertical.css">  
+ 
+
+<link rel="stylesheet" type="text/css" href="css/menu-css.css"> 
+
+<title>Menu</title>
+
+<style>
+  .navbar-mobile-no{
+    display: none;
+  }
+   @media (max-width:600px){ 
+    .navbar-mobile-no{
+      display: inline;
+    }
+        } 
+</style>
+
+</head>
+<body>
+<!-- Navbar -->
+
+
+<div class="navbar-default navbar navbar-expand-lg navbar-light  nav-bar-menu navbar-mobile-no" role="navigation">
+
+   <a href="index.html"> <img align="left" class="logo-min" 
+         src="https://www.minsalud.gov.co/LogosInstitucionales/logo-gobierno-Ministerio-de-Salud-y-Proteccion-Social-minsalud.png" 
+         alt="Ministerio de Salud"> </a>
+
+
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    
+  </div>
+
+
+
+  
+ <div class="container container-menu">   
+  <div class="navbar-collapse collapse" id="navbarSupportedContent_mega">
+
+    <!-- Left nav -->
+    <ul class="nav navbar-nav mr-auto">
+
+       <li class="nav-item inicio-li">
+                          <a class="nav-link" href="index.html">Inicio</a>
+                      </li> 
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Ministerio</a>
+        </li> 
+        
+
+       
+      <li><a href="#">Salud <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">  
+          <li><a href="#">One more separated link <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li> 
+              <li><a href="#">Another link</a></li>
+              <li><a href="#">One more link</a></li>
+            </ul>
+          </li>
+          <li><a href="#">One more separated link 2 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li> 
+              <li><a href="#">Another link</a></li>
+              <li><a href="#">One more link</a></li>
+            </ul>
+          </li> 
+        </ul>
+      </li>
+    </ul>
+  </div>  
+
+  </div><!--/.nav-collapse -->
+</div>
+  
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- SmartMenus jQuery plugin -->
+<script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+
+<!-- SmartMenus jQuery Bootstrap Addon -->
+<script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>
+
+</body>
+</html>
