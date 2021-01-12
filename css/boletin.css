@@ -44,4 +44,7 @@
   .row{
     padding-left: 0px !important;
   }
+.span-arrow{
+  padding-left: 15px;
+  }
 }
