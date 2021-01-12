@@ -98,6 +98,10 @@
     color:var(--color_secondary);
   }
 
+  .titulo-menu-mobile{
+    display: none;
+  }
+
 
 
 
@@ -163,5 +167,16 @@
       
       padding-top: 5px; 
    } 
+
+   .titulo-menu-desktop{
+     display: none;
+   }
+
+   .titulo-menu-mobile{
+    display: inline;
+  }
+   .titulo-menu-mobile a{
+     color: #333333 !important;
+  }
 
 }

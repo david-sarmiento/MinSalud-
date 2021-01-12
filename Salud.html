@@ -1,28 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+   <head> 
+
+    <!-- Required meta tags --> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Fonts Work Sans 300 400 500 CSS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    
+    <!-- Bootstrap CDN JS Links -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> 
+ 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <script type="" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/tabs-vertical.css">  
 
     <link rel="stylesheet" href="css/master.css"> 
     <link rel="stylesheet" href="css/responsive.css"> 
     <link rel="stylesheet" href="css/megamenu.css"> 
     <link rel="stylesheet" href="css/comunicaciones.css"> 
+
+     <link rel="stylesheet" type="text/css" href="css/menu-css.css"> 
+        
     <script src="js/megamenu.js"></script>
 
 
-
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slide.css">
+    
 
     <!-- Script Noticias Mobile ---> 
 
@@ -326,11 +339,8 @@ body #scene #right-zone {
  
     </style>
  
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="css/slide.css">
-
-    <link rel="stylesheet" type="text/css" href="css/menu-css.css">
+    
+ 
 
    
      
@@ -389,9 +399,9 @@ body #scene #right-zone {
 
       <nav class="navbar navbar-expand-lg navbar-light  nav-bar-menu ">
 
-         <img align="left" class="logo-min" 
+         <a href="index.html"> <img align="left" class="logo-min" 
          src="https://www.minsalud.gov.co/LogosInstitucionales/logo-gobierno-Ministerio-de-Salud-y-Proteccion-Social-minsalud.png" 
-         alt="Ministerio de Salud"> 
+         alt="Ministerio de Salud"> </a>
           
             <button class="navbar-toggler navbar-toggler-right button-bar-menu"  type="button" 
                   data-toggle="collapse" data-target="#navbarSupportedContent_mega" 
@@ -407,7 +417,7 @@ body #scene #right-zone {
                   <ul class="navbar-nav mr-auto">
 
                       <li class="nav-item inicio-li">
-                          <a class="nav-link" href="#">Inicio</a>
+                          <a class="nav-link" href="index.html">Inicio</a>
                       </li> 
 
                       <li class="nav-item">
@@ -415,265 +425,579 @@ body #scene #right-zone {
                       </li> 
 
                       <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Salud</a>
+                          <div class="dropdown-menu megamenu" role="menu"> 
+                              <section class="tabs-section text-white">
+                                <div class="container">
+                                    <div class="row">
 
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Salud  </a>
-                          <div class="dropdown-menu megamenu" role="menu">
+                                      <div class="col-sm-5 col-lg-3"> 
+                                          <ul class="nav nav-tabs flex-column mb-3">
+                                            <li class="nav-item">
+                                              
 
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="col-megamenu">
-                                                  <h6 class="title">Salud</h6>
-                                                  <ul class="list-unstyled">
-                                                      <li><a href="#">​Salud pública </a></li>
-                                                      <li><a title="Modos, condiciones y estilos de vida saludables" href="/salud/Paginas/habitos-saludables.aspx">Estilos&nbsp;saludables​ </a></li>
-                                                      <li><a title="Niños,adolescentes, adultos y ancianos​" href="/salud/publica/poblaciones-vulnerables/Paginas/poblaciones-vulnerables.aspx">Poblaciones vulnerables​</a></li>
-                                                      <li><a title="Prevención de enfermedades transmisibles" href="/salud/publica/PET/Paginas/Enfermedades-transmisibles.aspx">Enfermedades transmisibles​​​​ </a></li>
-                                                      <li><a title="enfermedades no transmisibles" href="/salud/publica/PENT/Paginas/Enfermedades-no-transmisibles.aspx">Enfermedades no transmisibles​</a></li>
-                                                      <li><a title="salud sexual" href="/salud/publica/SSR/Paginas/home-salud-sexual.aspx">Salud sexual y reproductiva​</a></li>
-													<li><a title="Orienta la Política Pública en Salud y gestión de Entidades Territoriales e Instituciones" href="/salud/publica/epidemiologia/Paginas/default.aspx">Epidemiología y demografía ​ </a></li>
-                                                        <li><a title="salud ambiental" href="/salud/publica/ambiental/Paginas/Salud-ambiental.aspx">Salud ambie​ntal​</a></li>
-                                                        <li><a title="Gestión integrada para la salud mental" href="/salud/publica/SMental/Paginas/salud-mental-y-convivencia-social.aspx">Salud m​​ental y sustancias psicoactivas​</a></li>                                                 
-												 </ul>
-                                                </div>  
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Plan de Beneficios en Salud </h6>
+                                              <a class="nav-link active show" data-toggle="tab" href="#tab-1"><span class="span-arrow"></span> Salud pública</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-2"><span class="span-arrow"></span> Plan de Beneficios en Salud</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-3"><span class="span-arrow"></span> Prestación de servicios</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-4"><span class="span-arrow"></span> Calidad de atención en salud</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-5"><span class="span-arrow"></span> Medicamentos y tecnologías</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-6"><span class="span-arrow"></span> Profesiones y ocupaciones</a>
+                                            </li>
+                                          </ul>
+                                      </div> 
+                                      
+                                      <div class="col-sm-7 col-lg-9">
+                                          <div class="tab-content"> 
+                                            <div class="tab-pane active show" id="tab-1">
+                                                <div class="row" >
+                                                 
+                                                  <div class="col-lg-4"> 
                                                     <ul class="list-unstyled">
-                                                        <li><a title="Copagos y Cuotas Moderadoras" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/cuotas-moderadoras-copagos-2021.pdf" target="_blank">Copagos ​y​​ Cuotas Moderadoras</a></li>
-                                                        <li><a title="Resolución 244 de 2019" href="/Normatividad_Nuevo/Resoluci%c3%b3n%20No.%20244%20de%202019.pdf" target="_blank">Exclusiones</a></li>
-                                                        <li><a title="Conozca el proceso de actualización del POS" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/RBC/como-actualiza-pos-diez-pasos.pdf" target="_blank">¿Cómo se&nbsp;actualizan las Tecnologías en Salud financiadas con la UPC en Colombia?</a></li>
-                                                        
+                                                        <li><a href="#">Estilos saludables​</a></li>
+                                                        <li><a href="#">Poblaciones vulnerables​</a></li>
+                                                        <li><a href="#">Enfermedades transmisibles​​​​</a></li>
+                                                        <li><a href="#">Enfermedades no transmisibles​</a></li>
+                                                        <li><a href="#">Salud sexual y reproductiva​</a></li> 
+                                                        <li><a href="#">Epidemiología y demografía</a></li>
                                                     </ul>
-                                                </div>  
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Prestación de servicios</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="/salud/PServicios/Paginas/sistema-obligatorio-garantia-calidad-SOGC.aspx" title="SOGC">Sistema Obligatorio de Garantía de Calidad​</a></li>
-                                                        <li><a href="/salud/PServicios/Paginas/informacion-de-interes.aspx" title="Información para Instituciones Prestadoras de Salud (IPS)">Información para IPS​</a></li>
-                                                        <li><a href="https://prestadores.minsalud.gov.co/planesbienales/" target="_blank" title="Planes bienales de inversión">Planes bienales de inversión</a></li>
-                                                        <li><a href="/salud/PServicios/Paginas/infraestructura-en-salud.aspx" title="Políticas y normas técnicas de infraestructura física hospitalaria">Infraestructura en salud</a></li>
-                                                        <li><a href="https://prestadores.minsalud.gov.co/siho/" target="_blank" title="SIHO - Sistema de Información">Gestión&nbsp;hospitales públicos </a></li>
-                                                        <li><a href="https://prestadores.minsalud.gov.co/habilitacion/" target="_blank" title="Registro de prestadores">Registro&nbsp;de prestadores ​</a></li>
-                                                    </ul>
-                                                </div>  
-                                            </div>    
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Calidad de atención en salud</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a title="Observatorio de calidad" href="http://oncalidadsalud.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio​</a></li>
-                                                        <li><a title="Familia" href="/salud/CAS/Paginas/ranking-actores.aspx">Usuarios​</a></li>
-                                                        <li><a title="Ordenamiento EPS" href="/salud/CAS/Paginas/seguridad-del-paciente.aspx">Seguridad del paciente</a></li>
-                                                        <li><a title="Guías de práctica clínica" href="http://gpc.minsalud.gov.co/">Guías de práctica clínica GPC</a></li>
-                                                        <li><a title="Protocolos" href="/salud/CAS/Paginas/protocolos-clinicos.aspx">Protocolos </a></li>
-                                                        <li><a title="Ordenamiento EPS" href="/salud/CAS/Paginas/instituciones-prestadoras-de-salud-ips-acreditadas.aspx">Prestadores acreditados ​</a></li>
-                                                    </ul>
-                                                </div> 
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Medicamentos y tecnologías</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="/salud/MT/Paginas/medicamentos.aspx" title="Regulación de precios, biotecnológicos, desabastecimiento, comparadores administrativos, productos naturales">Medicamentos</a></li>
-                                                        <li><a href="/salud/MT/Paginas/dispositivos-medicos-equipos-biomedicos.aspx" title="dispositivos médicos">Dispositivos médi​cos</a></li>
-                                                        <li><a href="/salud/MT/Paginas/sangre-componentes-anatomicos.aspx" title="Información sobre donación de sangre, órganos y tejidos">Donació​n,&nbsp;transfusión &nbsp; y&nbsp;trasplante​s&nbsp;</a></li>
-                                                        <li><a href="/salud/MT/Paginas/politica-farmaceutica-2012.aspx" title="Política farmaceútica y tecnologías en salud">Política farmacéutica y tecnologías en salud</a></li>
-                                                        <li><a href="/salud/MT/Paginas/fondo-nacional-de-estupefacientes-fne.aspx" title="Unidad Administrativa Especial (UAE) del Minsalud">Fondo Nacional de Estupefacientes</a></li>
-                                                        
-                                                    </ul>
-                                                </div> 
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Profesiones y ocupaciones</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">De interés</a></li>
-                                                        <li><a title="Observatorio de Talento Humano en Salud" href="http://ontalentohumano.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio de Talento Humano en Salud</a></li>
-                                                        <li><a href="#">Sistema Nacional de Residencias Médicas (SNRM)</a></li>
-                                                        <li><a href="#">Conceptos favorables de la Comisión Intersectorial para el Talento Humano en Salud (CITHS)</a></li>
-                                                        <li><a href="#">Servicio Social Obligatorio (SSO)</a></li>
-                                                        <li><a title="​ ​​​​​​​​Incentivos en talento humano en salud​" href="/salud/PO/Paginas/incentivos-talento-humano-en-salud.aspx">​​​​​​​​Incentivos en talento humano en salud​</a></li>
-                                                    </ul>
-                                                </div> 
-                                            </div>
-                                        </div> 
-                            </div> 
-                      </li>
+                                                  </div>
+                                                   <div class="dropdown-divider"></div>
+                                                  <div class="col-lg-4">
+                                                        <ul class="list-unstyled">  
+                                                          <li><a href="#">Salud ambie​ntal​​</a></li> 
+                                                          <li><a href="#">Salud m​​ental y sustancias</a></li>  
+                                                          <li><a href="#">Vacunación​​</a></li> 
+                                                          <li><a href="#">Salud nutricional​​</a></li> 
+                                                          <li><a href="#">Plan Decenal de Salud Pública​​​</a></li> 
+                                                          <li><a href="#">CNE​​</a></li> 
+                                                        </ul>
+                                                  </div>
 
-                      <li class="nav-item dropdown has-megamenu">
+                                                  <div class="col-lg-4 details list-unstyled"> 
+                                                      <p>De acuerdo con la Ley 112​2 de 2007 la salud pública está constituida por un conjunto de políti​cas que busca garantizar de manera integrada, la salud de la población por medio de acciones dirigidas tanto de manera individual como colecti​va ya que sus resultados se const​ituyen en indicadores de las condiciones de vida, bienestar y desarrollo.​</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane  pt-3" id="tab-2">
+                                                <div class="row">
+                                                  <div class="col-lg-5">
+                                                        <ul class=" list-unstyled">
+                                                          <li><a href="#">Resultados Plan de Beneficios en Salud</a></li>
+                                                          <li><a href="#">Participe y opine en la actualización</a></li>
+                                                          <li><a href="#">Unidad de pago por capitación (UPC)</a></li>
+                                                          <li><a href="#">Boletines</a></li>
+                                                          <li><a href="#">Monitoreo</a></li>  
+                                                        </ul>
+                                                  </div>
+                                                  <div class="col-lg-7 details list-unstyled"> 
+                                                      <p>Se presentan los resultados de la aplicación de metodologías técnicas para la actualización de los proyectos asociados al Plan de Beneficios en Salud con cargo a la UPC y Exclusiones ​</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane  pt-3" id="tab-3">
+                                                <div class="row">
+                                                  
+                                                  <div class="col-lg-4 details list-unstyled"> 
+                                                      <p>La Prestación de Servicios de Salud en Colombia se encuentra reglamentada por la Política Nacional de Prestación de Servicios de Salud, obedeciendo a la Ley 1122 de 2007 y sus decretos reglamentarios, cuyo principal objetivo es garantizar el acceso y la calidad de los servicios.  ​</p>
+                                                  </div>
+                                                  <div class="col-lg-4">
+                                                        <ul  class=" list-unstyled">
+                                                          <li><a href="#">Sistema Obligatorio de Garantía de Calidad</a></li>
+                                                          <li><a href="#">Información para IPS</a></li>
+                                                          <li><a href="#">Planes bienales de inversión</a></li>
+                                                          <li><a href="#">Infraestructura en salud</a></li> 
+                                                        </ul>
+                                                  </div>
+                                                   <div class="col-lg-4">
+                                                        <ul  class=" list-unstyled"> 
+                                                          <li><a href="#">Sistema de Información Hospitalaria</a></li>  
+                                                          <li><a href="#">Registro especial de prestadores</a></li>
+                                                          <li><a href="#">Emergencias y desastres</a></li>
+                                                          <li><a href="#">Interoperabilidad de Historia Clínica</a></li>  
+                                                        </ul>
+                                                  </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane  pt-3" id="tab-4">
+                                                <div class="row">
+                                                  <div class="col-lg-4">
+                                                        <ul  class=" list-unstyled">
+                                                          <li><a href="#">Observatorio​</a></li>
+                                                          <li><a href="#">Usuarios​</a></li>
+                                                          <li><a href="#">Seguridad del paciente</a></li>
+                                                          <li><a href="#">Guías de práctica clínica GPC</a></li>
+                                                          <li><a href="#">Protocolos</a></li> 
+                                                          <li><a href="#">Prestadores acreditados​</a></li>
+                                                          <li><a href="#">Humanización en Salud</a></li>  
+                                                        </ul>
+                                                  </div>
+                                                  <div class="col-lg-8 details list-unstyled"> 
+                                                      <p>De acuerdo con la Ley 112​2 de 2007 la salud pública está constituida por un conjunto de políti​cas que busca garantizar de manera integrada, la salud de la población por medio de acciones dirigidas tanto de manera individual como colecti​va ya que sus resultados se const​ituyen en indicadores de las condiciones de vida, bienestar y desarrollo. Di​chas acciones se realizarán bajo la rectoría del Estado y deberán promover la partici​pación responsable de todos los sectores de la comunidad. ​ ​</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane pt-3" id="tab-5">
+                                                <div class="row">
+                                                  <div class="col-lg-5">
+                                                        <ul  class=" list-unstyled">
+                                                          <li><a href="#">Medicamentos</a></li>
+                                                          <li><a href="#">Política farmacéutica</a></li>
+                                                          <li><a href="#">Dispositivos médicos y equipos biomédicos</a></li>
+                                                          <li><a href="#">Donación, transfusión y trasplantes</a></li>
+                                                          <li><a href="#">Fondo Nacional de Estupefacientes</a></li>  
+                                                        </ul>
+                                                  </div>
+                                                  <div class="col-lg-7 details list-unstyled"> 
+                                                      <p>M​ediante el Decreto Ley 4107 de 2011  fue creada la Dirección de Medicamentos y Tecnologías en Salud, la cual hace parte del Viceministerio de Salud Pública y Prestación de Servicios. Esta Dirección tiene como funciones.​</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane pt-3" id="tab-6">
+                                                <div class="row">
+                                                  <div class="col-lg-4">
+                                                        <ul  class=" list-unstyled">
+                                                          <li><a href="#">Formación talento humano en salud</a></li> 
+                                                        </ul>
+                                                  </div>
+                                                  <div class="col-lg-8 details list-unstyled"> 
+                                                      <p>El Ministerio de Salud y Protección Social a través de la Dirección de Desarrollo del Talento Humano en Salud, lidera la formulación e implementación de políticas para formar y mantener un Talento Humano armonizado con los requerimientos de ​las instituciones en los diferentes sectores generadores de empleo en el país. En este sentido y de acuerdo a lo emanado en el Decreto 4107 de 2011, el trabajo de la Dirección se enmarca, entre otras, en las siguientes funciones.</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+
+
+                                          </div>
+                                      </div>
+
+                                    </div>
+                                </div>
+                              </section>
+                          </div> 
+                      </li> 
+  
+                      <li class="nav-item dropdown has-megamenu"> 
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Protección Social  </a>
                           <div class="dropdown-menu megamenu" role="menu">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="col-megamenu">
-                                                  <h6 class="title">Aseguramiento</h6>
-                                                  <ul class="list-unstyled">
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                  </ul>
-                                                </div>  
+                              <section class="tabs-section text-white">
+                                <div class="container">
+                                    <div class="row">
+
+                                          <div class="col-sm-5 col-lg-3"> 
+                                            <ul class="nav nav-tabs flex-column mb-3">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active show" data-toggle="tab" href="#tab-11"><span class="span-arrow"></span>Aseguramiento</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#tab-21"><span class="span-arrow"></span>Financiamiento</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#tab-31"><span class="span-arrow"></span>Promoción social</a>
+                                                </li> 
+                                            </ul>
+                                          </div> 
+
+                                          <div class="col-sm-7 col-lg-9">
+                                            <div class="tab-content"> 
+
+                                              <div class="tab-pane active show" id="tab-11">
+                                                  <div class="row">
+                                                  
+                                                    <div class="col-lg-4"> 
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Afiliación en salud</a></li>
+                                                          <li><a href="#">Riesgos laborales​</a></li>
+                                                          <li><a href="#">Pensiones</a></li> 
+                                                      </ul>
+                                                    </div>
+                                                      
+
+                                                    <div class="col-lg-8 details list-unstyled"> 
+                                                        <p><b>¿Qué es el Sistema de Protección Social (SPS)?</b> <br>
+                                                          ​​​El SPS d​esarrolla acciones que contribuyan a que las personas, los hogares y las comunidades manejen el riesgo y a que las pobla​​cione​s más vulnerables accedan a bienes y servicios que mejoren sus condiciones de vida. Uno de sus componentes es el Sistema de Seguridad Social Integral (SSSI). ​</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="tab-pane  pt-3" id="tab-21">
+                                                  <div class="row">
+                                                    <div class="col-lg-5">
+                                                          <ul class=" list-unstyled">
+                                                            <li><a href="#">Financiación del aseguramiento</a></li>
+                                                            <li><a href="#">Oferta de prestación de servicios</a></li>
+                                                            <li><a href="#">Prestaciones excepcionales</a></li>
+                                                            <li><a href="#">BoleGarantías y fortalecimiento del sector</a></li> 
+                                                          </ul>
+                                                    </div>
+                                                    <div class="col-lg-7 details list-unstyled"> 
+                                                        <p>En esta página se encuentra toda la información​ relevante sobre el financiamiento del Sistema General de Seguridad Social en Salud, particularmente del aseguramiento a través de los regímenes subsidiado y contributivo y a nivel general del comportamiento del gasto en salud en el país.​</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="tab-pane  pt-3" id="tab-31">
+                                                  <div class="row">
+                                                    
+                                                    <div class="col-lg-4 details list-unstyled"> 
+                                                        <p>  
+                                                          ​​​La Promoción Social busca la construcción de un sistema de acciones públicas dirigidas a fomentar la movilidad social de personas y colectivos en condiciones de precario reconocimiento de derechos, extrema pobreza y exclusión social.  ​</p>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                          <ul  class=" list-unstyled">
+                                                            <li><a href="#">Víctimas</a></li>
+                                                            <li><a href="#">Discapacidad</a></li>
+                                                            <li><a href="#">Envejecimiento y vejez</a></li>
+                                                            <li><a href="#">Grupos étnicos</a></li> 
+                                                          </ul>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                          <ul  class=" list-unstyled"> 
+                                                            <li><a href="#">Población en Situación de calle</a></li>  
+                                                            <li><a href="#">Género</a></li>  
+                                                          </ul>
+                                                    </div>
+
+                                                  </div>
+                                              </div>  
                                             </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Financiación</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                    </ul>
-                                                </div> 
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Protección Social</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>   
-                                        </div> 
-                            </div>  
+                                          </div> 
+                                      </div>                                            
+                                  </div>
+                              </section>     
+                        </div>  
                       </li> 
 
                       <li class="nav-item dropdown has-megamenu">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Normativa  </a>
                           <div class="dropdown-menu megamenu" role="menu">
-                                        <div class="row">
+                               <section class="tabs-section text-white">
+                                <div class="container">
+                                    <div class="row">
+
+                                          <div class="col-sm-5 col-lg-3"> 
+                                            <ul class="nav nav-tabs flex-column mb-3">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active show" data-toggle="tab" href="#tab-12"><span class="span-arrow"></span> Titulo 1</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#tab-22"><span class="span-arrow"></span>Titulo 2</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#tab-32"><span class="span-arrow"></span> Titulo 3</a>
+                                                </li> 
+                                            </ul>
+                                          </div> 
+
+                                          <div class="col-sm-7 col-lg-9">
+                                            <div class="tab-content"> 
+
+                                              <div class="tab-pane active show" id="tab-12">
+                                                  <div class="row">
+                                                  
+                                                    <div class="col-lg-4"> 
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Enlace 1</a></li>
+                                                           <li><a href="#">Enlace 2</a></li>
+                                                            <li><a href="#">Enlace 3</a></li>
+                                                      </ul>
+                                                    </div>
+                                                      
+
+                                                    <div class="col-lg-8 details list-unstyled"> 
+                                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deserunt accusantium aliquam iste reprehenderit dolor placeat voluptatem eos ad. Repudiandae, obcaecati debitis dolores magni cumque numquam eum dolor fugit incidunt.</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+
+
+                                              <div class="tab-pane  " id="tab-22">
+                                                  <div class="row">
+                                                  
+                                                    <div class="col-lg-4"> 
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Enlace 11</a></li>
+                                                           <li><a href="#">Enlace 21</a></li>
+                                                            <li><a href="#">Enlace 31</a></li>
+                                                      </ul>
+                                                    </div>
+                                                      
+
+                                                    <div class="col-lg-8 details list-unstyled"> 
+                                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deserunt accusantium aliquam iste reprehenderit dolor placeat voluptatem eos ad. Repudiandae, obcaecati debitis dolores magni cumque numquam eum dolor fugit incidunt.</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                              <div class="tab-pane " id="tab-32">
+                                                  <div class="row">
+                                                  
+                                                    <div class="col-lg-4"> 
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Enlace 12</a></li>
+                                                           <li><a href="#">Enlace 22</a></li>
+                                                            <li><a href="#">Enlace 32</a></li>
+                                                            <li><a href="#">Enlace 32</a></li>
+                                                      </ul>
+                                                    </div>
+                                                      
+
+                                                    <div class="col-lg-8 details list-unstyled"> 
+                                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deserunt accusantium aliquam iste reprehenderit dolor placeat voluptatem eos ad. Repudiandae, obcaecati debitis dolores magni cumque numquam eum dolor fugit incidunt.</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                              
+                                            </div>
+                                          </div> 
+                                      </div>                                            
+                                  </div>
+                              </section>     
+
+
+                                     <!--    <div class="row">
                                             <div class="col-md-3">
-                                                <div class="col-megamenu">
+                                                <div class="col-megamenu back_menu">
                                                   <h6 class="title">Actos Administrativos</h6>
-                                                  <ul class="list-unstyled">
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                  </ul>
+                                                  <ul class="">
+                                                      <li><a href="#">Custom</a></li>
+                                                      <li><a href="#">Custom</a></li>
+                                                      <li><a href="#">Custom</a></li>
+                                                      <li><a href="#">Custom</a></li>
+                                                      <li><a href="#">Custom</a></li>
+                                                      <li><a href="#">Custom</a></li>
+                                                  </ul> 
                                                 </div>  
                                             </div> 
                                             <div class="col-md-3">
-                                              <div class="col-megamenu">
+                                              <div class="col-megamenu back_menu">
                                                 <h6 class="title">Agenda Regulatoria</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                    </ul>
+                                                    <ul class="">
+                                                        <li><a href="#">Custom</a></li>
+                                                        <li><a href="#">Custom</a></li>
+                                                        <li><a href="#">Custom</a></li>
+                                                        <li><a href="#">Custom</a></li>
+                                                        <li><a href="#">Custom</a></li>
+                                                        <li><a href="#">Custom</a></li>
+                                                    </ul> 
                                                 </div>   
                                             </div> 
                                             <div class="col-md-3">
-                                              <div class="col-megamenu">
+                                              <div class="col-megamenu back_menu">
                                                 <h6 class="title">Boletines jurídicos</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                    </ul>
+                                                    <ul class="">
+                                                        <li><a href="#">Custom </a></li>
+                                                        <li><a href="#">Custom </a></li>
+                                                        <li><a href="#">Custom </a></li>
+                                                        <li><a href="#">Custom </a></li>
+                                                        <li><a href="#">Custom </a></li>
+                                                        <li><a href="#">Custom </a></li>
+                                                    </ul> 
                                                 </div>  
                                             </div>    
                                             <div class="col-md-3">
-                                              <div class="col-megamenu">
+                                              <div class="col-megamenu back_menu">
                                                 <h6 class="title">Conceptos</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                    </ul>
+                                                    <ul class="">
+                                                        <li><a href="#">Custom </a></li>
+                                                        <li><a href="#">Custom </a></li>
+                                                        <li><a href="#">Custom </a></li>
+                                                        <li><a href="#">Custom </a></li>
+                                                        <li><a href="#">Custom </a></li>
+                                                        <li><a href="#">Custom </a></li>
+                                                    </ul> 
                                                 </div>   
                                             </div> 
-                                        </div> 
+                                        </div>  -->
+
                             </div> 
                       </li> 
  
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Transparencia</a>
+                          <a class="nav-link" href="Transparencia.html">Transparencia</a>
                       </li>  
 
                       <li class="nav-item dropdown has-megamenu no-mobile">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Centro de Comunicaciones  </a>
                           <div class="dropdown-menu megamenu" role="menu">
-                                        <div class="row">
+
+                            <section class="tabs-section text-white">
+                                <div class="container">
+                                    <div class="row">
+
+                                          <div class="col-sm-5 col-lg-3"> 
+                                            <ul class="nav nav-tabs flex-column mb-3">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active show" data-toggle="tab" href="#tab-13">Noticias</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#tab-23">Campañas</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#tab-33">Audios</a>
+                                                </li> 
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#tab-43">Podcast</a>
+                                                </li> 
+                                            </ul>
+                                          </div> 
+
+                                          <div class="col-sm-7 col-lg-9">
+                                            <div class="tab-content"> 
+
+                                              <div class="tab-pane active show" id="tab-13">
+                                                  <div class="row">
+                                                  
+                                                    <div class="col-lg-4"> 
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="Comunicaciones.html">Noticia 1</a></li>
+                                                           <li><a href="Comunicaciones.html">Noticia 2</a></li>
+                                                            <li><a href="Comunicaciones.html">Noticia 3</a></li>
+                                                      </ul>
+                                                    </div>
+                                                      
+
+                                                    <div class="col-lg-8 details list-unstyled"> 
+                                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deserunt accusantium aliquam iste reprehenderit dolor placeat voluptatem eos ad. Repudiandae, obcaecati debitis dolores magni cumque numquam eum dolor fugit incidunt.</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+
+
+                                              <div class="tab-pane  " id="tab-23">
+                                                  <div class="row">
+                                                  
+                                                    <div class="col-lg-4"> 
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="Comunicaciones.html">Campaña 1</a></li>
+                                                           <li><a href="Comunicaciones.html">Campaña 2</a></li>
+                                                            <li><a href="Comunicaciones.html">Campaña 3</a></li>
+                                                      </ul>
+                                                    </div>
+                                                      
+
+                                                    <div class="col-lg-8 details list-unstyled"> 
+                                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deserunt accusantium aliquam iste reprehenderit dolor placeat voluptatem eos ad. Repudiandae, obcaecati debitis dolores magni cumque numquam eum dolor fugit incidunt.</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                              <div class="tab-pane" id="tab-33">
+                                                  <div class="row">
+                                                  
+                                                    <div class="col-lg-4"> 
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="Comunicaciones.html">Audio 1</a></li>
+                                                           <li><a href="Comunicaciones.html">Audio 2</a></li>
+                                                            <li><a href="Comunicaciones.html">Audio 3</a></li>
+                                                      </ul>
+                                                    </div>
+                                                      
+
+                                                    <div class="col-lg-8 details list-unstyled"> 
+                                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deserunt accusantium aliquam iste reprehenderit dolor placeat voluptatem eos ad. Repudiandae, obcaecati debitis dolores magni cumque numquam eum dolor fugit incidunt.</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                              <div class="tab-pane " id="tab-43">
+                                                  <div class="row">
+                                                  
+                                                    <div class="col-lg-4"> 
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="Comunicaciones.html">Podcast 1</a></li>
+                                                           <li><a href="Comunicaciones.html">Podcast 2</a></li>
+                                                            <li><a href="Comunicaciones.html">Podcast 3</a></li>
+                                                      </ul>
+                                                    </div>
+                                                      
+
+                                                    <div class="col-lg-8 details list-unstyled"> 
+                                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deserunt accusantium aliquam iste reprehenderit dolor placeat voluptatem eos ad. Repudiandae, obcaecati debitis dolores magni cumque numquam eum dolor fugit incidunt.</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                              
+                                            </div>
+                                          </div> 
+                                      </div>                                            
+                                  </div>
+                              </section>  
+                                       <!--  <div class="row">
                                             <div class="col-md-3">
-                                                <div class="col-megamenu">
+                                                <div class="col-megamenu back_menu">
                                                   <h6 class="title">Audios</h6>
                                                   <ul class="list-unstyled">
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
+                                                      <li><a href="#">Audio 1</a></li>
+                                                      <li><a href="#">Audio 2</a></li>
+                                                      <li><a href="#">Audio 3</a></li>
+                                                      <li><a href="#">Audio 4</a></li>
+                                                      <li><a href="#">Audio 5</a></li> 
                                                   </ul>
+                                                  <div align="right" class="ver-mas-menu">
+                                                      <a href="Comunicaciones.html"  class=""> Ver más</a> 
+                                                  </div>
                                                 </div>  
                                             </div> 
                                             <div class="col-md-3">
-                                              <div class="col-megamenu">
+                                              <div class="col-megamenu back_menu">
                                                 <h6 class="title">Campañas</h6>
                                                     <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
+                                                        <li><a href="#">Campaña 1</a></li>
+                                                        <li><a href="#">Campaña 2</a></li>
+                                                        <li><a href="#">Campaña 3</a></li>
+                                                        <li><a href="#">Campaña 4</a></li>
+                                                        <li><a href="#">Campaña 5</a></li> 
                                                     </ul>
                                                 </div>  
+                                                  <div align="right" class="ver-mas-menu">
+                                                      <a href="Comunicaciones.html"  class=""> Ver más</a> 
+                                                  </div>
                                             </div> 
                                             <div class="col-md-3">
-                                              <div class="col-megamenu">
+                                              <div class="col-megamenu back_menu">
                                                 <h6 class="title">Podcast</h6>
                                                     <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
+                                                        <li><a href="#">Podcast 1</a></li>
+                                                        <li><a href="#">Podcast 2</a></li>
+                                                        <li><a href="#">Podcast 3</a></li>
+                                                        <li><a href="#">Podcast 4</a></li>
+                                                        <li><a href="#">Podcast 5</a></li> 
                                                     </ul>
                                                 </div>  
+                                                  <div align="right" class="ver-mas-menu">
+                                                      <a href="Comunicaciones.html"  class=""> Ver más</a> 
+                                                  </div>
                                             </div>    
                                             <div class="col-md-3">
-                                              <div class="col-megamenu">
+                                              <div class="col-megamenu back_menu">
                                                 <h6 class="title">Noticias</h6>
                                                     <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
+                                                        <li><a href="#">Noticia1</a></li>
+                                                        <li><a href="#">Noticia2</a></li>
+                                                        <li><a href="#">Noticia3</a></li>
+                                                        <li><a href="#">Noticia4</a></li>
+                                                        <li><a href="#">Noticia5</a></li> 
                                                     </ul>
+                                                  <div align="right" class="ver-mas-menu">
+                                                      <a href="Comunicaciones.html"  class=""> Ver más</a> 
+                                                  </div>
                                                 </div>   
                                             </div> 
-                                        </div> 
+                                        </div>  -->
                             </div> 
-                      </li> 
-                        
+                      </li>  
 
                       <li class="nav-item covid-li">
                           <a class="nav-link covid" href="#">Covid-19</a>
@@ -969,9 +1293,7 @@ body #scene #right-zone {
           </div>
 
         </div> 
- 
   
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
  
        
