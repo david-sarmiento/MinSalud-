@@ -43,7 +43,7 @@
     padding-left: 8px;
     padding-top: 6px;
 
-    z-index: 3000; 
+    z-index: 1; 
   }
 
    .arrow-comunicaciones::after{
@@ -71,7 +71,7 @@
     padding-left: 10px;
     padding-top: 7px;
 
-    z-index: 3000; 
+    z-index: 1; 
 
   }
   .vermas-row{
