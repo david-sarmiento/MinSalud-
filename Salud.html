@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Fonts Work Sans 300 400 500 CSS -->
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -15,29 +15,48 @@
     <script type="" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="css/master.css"> 
+    <link rel="stylesheet" href="css/boletin.css">
+    <link rel="stylesheet" href="css/style.css">
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+         <script src="js/index.js"></script>
+         
+          <link rel="stylesheet" href="css/master.css"> 
     <link rel="stylesheet" href="css/responsive.css"> 
     <link rel="stylesheet" href="css/megamenu.css"> 
-    <link rel="stylesheet" href="css/comunicaciones.css"> 
     <script src="js/megamenu.js"></script>
 
+    
+    <link rel="stylesheet" type="text/css" href="css/menu-css.css">
+   
 
+ 
+    <title>Salud</title>
 
+    
 
-    <!-- Script Noticias Mobile ---> 
-
-    <style type="text/css"> 
-
-    		  div.oculto1{display: block;}
-          div.oculto2{display: none;}
+      <style type="text/css">
+              @media all and (min-width: 992px) { 
                 
+              .navbar .has-megamenu{position:static!important;}
+              .navbar .megamenu{left:0; right:0; width:100%; padding:20px;  } 
+          
+              div.oculto1{display: block;}
+              div.oculto2{display: none;}
+           }
+                
+                @media (max-width:680px){
 
-        	@media (max-width:600px){ 
-            div.oculto1{display: none;}
-            div.oculto2{display: block;}
-          }
-
-/*contiene codigos css para:
+                  h1{
+                    font-size: 22px;
+                  }
+              div.oculto1{display: none;}
+              
+              div.oculto2{display: block;}
+            }
+			
+			/*contiene codigos css para:
               definir  items de slider vertical version desktop transparencia
             */ 
 			@-webkit-keyframes slidein {
@@ -319,28 +338,21 @@ body #scene #right-zone {
   -webkit-box-flex: 3;
           flex-grow: 3;
 }
+      </style>
 
 
+      <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+      <link rel="stylesheet" type="text/css" href="css/slide.css">
 
-
- 
-    </style>
- 
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="css/slide.css">
-
-    <link rel="stylesheet" type="text/css" href="css/menu-css.css">
-
-   
-     
-    
+      
+        
   </head>
-    <body> 
+    <body>
 
       <!-- Min RIP -->
-      <nav class="navbar navbar-expand-lg navbar-light  nav-gov">
-        <img align="left" class="icon-gov" src="https://cdn.www.gov.co/assets/images/logo.svg" 
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <img align="left" src="https://www.mintransporte.gov.co/info/mintransporte/media/bloque2385.png" 
           alt=""> 
 
         <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -363,17 +375,17 @@ body #scene #right-zone {
       </nav>
 
        <!-- Servicio al ciudadano -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light "> 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light  "> 
           
             <div class="container pt-3 pb-3">  
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto">
 
                         <li class="nav-item active">
-                            <img align="left" 
+                          <img align="left" 
                           src="https://www.minsalud.gov.co/LogosInstitucionales/logo-gobierno-Ministerio-de-Salud-y-Proteccion-Social-minsalud.png" 
                           style=" width:100%; " alt=""> 
-                        </li>  
+                        </li> 
 
                         <li class="nav-item servicio-li">
                             <a class="nav-link nav-link-servicio" href="#">Servicio al Ciudadano</a>
@@ -383,257 +395,132 @@ body #scene #right-zone {
                 </div>
             </div>
 
-      </nav>
+        </nav>
         
-        <!-- Main Menú -->
+        <!-- Menú Pincipal -->
 
-      <nav class="navbar navbar-expand-lg navbar-light  nav-bar-menu ">
+       <!-- Main Menú -->
 
-         <img align="left" class="logo-min" 
+          <nav class="navbar navbar-expand-lg navbar-light  nav-bar-menu ">
+
+            <img align="left" class="logo-min" 
          src="https://www.minsalud.gov.co/LogosInstitucionales/logo-gobierno-Ministerio-de-Salud-y-Proteccion-Social-minsalud.png" 
          alt="Ministerio de Salud"> 
-          
-            <button class="navbar-toggler navbar-toggler-right button-bar-menu"  type="button" 
-                  data-toggle="collapse" data-target="#navbarSupportedContent_mega" 
-                  aria-controls="navbarSupportedContent_mega" 
-                  aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>  
-
-
-
-          <div class="container container-menu">  
-              <div class="collapse navbar-collapse" id="navbarSupportedContent_mega">
-                  <ul class="navbar-nav mr-auto">
-
-                      <li class="nav-item inicio-li">
-                          <a class="nav-link" href="#">Inicio</a>
-                      </li> 
-
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Ministerio</a>
-                      </li> 
-
-                      <li class="nav-item dropdown has-megamenu">
-
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Salud  </a>
-                          <div class="dropdown-menu megamenu" role="menu">
-
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="col-megamenu">
-                                                  <h6 class="title">Salud</h6>
-                                                  <ul class="list-unstyled">
-                                                      <li><a href="#">​Salud pública </a></li>
-                                                      <li><a title="Modos, condiciones y estilos de vida saludables" href="/salud/Paginas/habitos-saludables.aspx">Estilos&nbsp;saludables​ </a></li>
-                                                      <li><a title="Niños,adolescentes, adultos y ancianos​" href="/salud/publica/poblaciones-vulnerables/Paginas/poblaciones-vulnerables.aspx">Poblaciones vulnerables​</a></li>
-                                                      <li><a title="Prevención de enfermedades transmisibles" href="/salud/publica/PET/Paginas/Enfermedades-transmisibles.aspx">Enfermedades transmisibles​​​​ </a></li>
-                                                      <li><a title="enfermedades no transmisibles" href="/salud/publica/PENT/Paginas/Enfermedades-no-transmisibles.aspx">Enfermedades no transmisibles​</a></li>
-                                                      <li><a title="salud sexual" href="/salud/publica/SSR/Paginas/home-salud-sexual.aspx">Salud sexual y reproductiva​</a></li>
-													<li><a title="Orienta la Política Pública en Salud y gestión de Entidades Territoriales e Instituciones" href="/salud/publica/epidemiologia/Paginas/default.aspx">Epidemiología y demografía ​ </a></li>
-                                                        <li><a title="salud ambiental" href="/salud/publica/ambiental/Paginas/Salud-ambiental.aspx">Salud ambie​ntal​</a></li>
-                                                        <li><a title="Gestión integrada para la salud mental" href="/salud/publica/SMental/Paginas/salud-mental-y-convivencia-social.aspx">Salud m​​ental y sustancias psicoactivas​</a></li>                                                 
-												 </ul>
-                                                </div>  
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Plan de Beneficios en Salud </h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a title="Copagos y Cuotas Moderadoras" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/cuotas-moderadoras-copagos-2021.pdf" target="_blank">Copagos ​y​​ Cuotas Moderadoras</a></li>
-                                                        <li><a title="Resolución 244 de 2019" href="/Normatividad_Nuevo/Resoluci%c3%b3n%20No.%20244%20de%202019.pdf" target="_blank">Exclusiones</a></li>
-                                                        <li><a title="Conozca el proceso de actualización del POS" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/RBC/como-actualiza-pos-diez-pasos.pdf" target="_blank">¿Cómo se&nbsp;actualizan las Tecnologías en Salud financiadas con la UPC en Colombia?</a></li>
-                                                        
-                                                    </ul>
-                                                </div>  
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Prestación de servicios</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="/salud/PServicios/Paginas/sistema-obligatorio-garantia-calidad-SOGC.aspx" title="SOGC">Sistema Obligatorio de Garantía de Calidad​</a></li>
-                                                        <li><a href="/salud/PServicios/Paginas/informacion-de-interes.aspx" title="Información para Instituciones Prestadoras de Salud (IPS)">Información para IPS​</a></li>
-                                                        <li><a href="https://prestadores.minsalud.gov.co/planesbienales/" target="_blank" title="Planes bienales de inversión">Planes bienales de inversión</a></li>
-                                                        <li><a href="/salud/PServicios/Paginas/infraestructura-en-salud.aspx" title="Políticas y normas técnicas de infraestructura física hospitalaria">Infraestructura en salud</a></li>
-                                                        <li><a href="https://prestadores.minsalud.gov.co/siho/" target="_blank" title="SIHO - Sistema de Información">Gestión&nbsp;hospitales públicos </a></li>
-                                                        <li><a href="https://prestadores.minsalud.gov.co/habilitacion/" target="_blank" title="Registro de prestadores">Registro&nbsp;de prestadores ​</a></li>
-                                                    </ul>
-                                                </div>  
-                                            </div>    
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Calidad de atención en salud</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a title="Observatorio de calidad" href="http://oncalidadsalud.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio​</a></li>
-                                                        <li><a title="Familia" href="/salud/CAS/Paginas/ranking-actores.aspx">Usuarios​</a></li>
-                                                        <li><a title="Ordenamiento EPS" href="/salud/CAS/Paginas/seguridad-del-paciente.aspx">Seguridad del paciente</a></li>
-                                                        <li><a title="Guías de práctica clínica" href="http://gpc.minsalud.gov.co/">Guías de práctica clínica GPC</a></li>
-                                                        <li><a title="Protocolos" href="/salud/CAS/Paginas/protocolos-clinicos.aspx">Protocolos </a></li>
-                                                        <li><a title="Ordenamiento EPS" href="/salud/CAS/Paginas/instituciones-prestadoras-de-salud-ips-acreditadas.aspx">Prestadores acreditados ​</a></li>
-                                                    </ul>
-                                                </div> 
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Medicamentos y tecnologías</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="/salud/MT/Paginas/medicamentos.aspx" title="Regulación de precios, biotecnológicos, desabastecimiento, comparadores administrativos, productos naturales">Medicamentos</a></li>
-                                                        <li><a href="/salud/MT/Paginas/dispositivos-medicos-equipos-biomedicos.aspx" title="dispositivos médicos">Dispositivos médi​cos</a></li>
-                                                        <li><a href="/salud/MT/Paginas/sangre-componentes-anatomicos.aspx" title="Información sobre donación de sangre, órganos y tejidos">Donació​n,&nbsp;transfusión &nbsp; y&nbsp;trasplante​s&nbsp;</a></li>
-                                                        <li><a href="/salud/MT/Paginas/politica-farmaceutica-2012.aspx" title="Política farmaceútica y tecnologías en salud">Política farmacéutica y tecnologías en salud</a></li>
-                                                        <li><a href="/salud/MT/Paginas/fondo-nacional-de-estupefacientes-fne.aspx" title="Unidad Administrativa Especial (UAE) del Minsalud">Fondo Nacional de Estupefacientes</a></li>
-                                                        
-                                                    </ul>
-                                                </div> 
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Profesiones y ocupaciones</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">De interés</a></li>
-                                                        <li><a title="Observatorio de Talento Humano en Salud" href="http://ontalentohumano.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio de Talento Humano en Salud</a></li>
-                                                        <li><a href="#">Sistema Nacional de Residencias Médicas (SNRM)</a></li>
-                                                        <li><a href="#">Conceptos favorables de la Comisión Intersectorial para el Talento Humano en Salud (CITHS)</a></li>
-                                                        <li><a href="#">Servicio Social Obligatorio (SSO)</a></li>
-                                                        <li><a title="​ ​​​​​​​​Incentivos en talento humano en salud​" href="/salud/PO/Paginas/incentivos-talento-humano-en-salud.aspx">​​​​​​​​Incentivos en talento humano en salud​</a></li>
-                                                    </ul>
-                                                </div> 
-                                            </div>
-                                        </div> 
-                            </div> 
-                      </li>
-
-                      <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Protección Social  </a>
-                          <div class="dropdown-menu megamenu" role="menu">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="col-megamenu">
-                                                  <h6 class="title">Aseguramiento</h6>
-                                                  <ul class="list-unstyled">
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                  </ul>
-                                                </div>  
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Financiación</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                    </ul>
-                                                </div> 
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Protección Social</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>   
-                                        </div> 
-                            </div>  
-                      </li> 
-
-                      <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Normativa  </a>
-                          <div class="dropdown-menu megamenu" role="menu">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="col-megamenu">
-                                                  <h6 class="title">Actos Administrativos</h6>
-                                                  <ul class="list-unstyled">
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                  </ul>
-                                                </div>  
-                                            </div> 
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Agenda Regulatoria</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                    </ul>
-                                                </div>   
-                                            </div> 
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Boletines jurídicos</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                    </ul>
-                                                </div>  
-                                            </div>    
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Conceptos</h6>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                        <li><a href="#">Custom Menu</a></li>
-                                                    </ul>
-                                                </div>   
-                                            </div> 
-                                        </div> 
-                            </div> 
-                      </li> 
+            
+             <button class="navbar-toggler navbar-toggler-right  button-bar-menu" type="button" 
+                    data-toggle="collapse" data-target="#navbarSupportedContent_mega" 
+                    aria-controls="navbarSupportedContent_mega" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>  
  
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Transparencia</a>
-                      </li>  
 
-                      <li class="nav-item dropdown has-megamenu no-mobile">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Centro de Comunicaciones  </a>
-                          <div class="dropdown-menu megamenu" role="menu">
-                                        <div class="row">
-                                            <div class="col-md-3">
+
+            <div class="container  container-menu">  
+                <div class="collapse navbar-collapse" id="navbarSupportedContent_mega">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item inicio-li">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li> 
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ministerio</a>
+                        </li> 
+
+                        <li class="nav-item dropdown has-megamenu">
+                          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Salud  </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                          <div class="row">
+                                              <div class="col-md-3">
+                                                  <div class="col-megamenu">
+                                                    <h6 class="title">Salud</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">​Salud pública </a></li>
+                                                        <li><a href="#">Custom Menu</a></li>
+                                                        <li><a href="#">Custom Menu</a></li>
+                                                        <li><a href="#">Custom Menu</a></li>
+                                                        <li><a href="#">Custom Menu</a></li>
+                                                        <li><a href="#">Custom Menu</a></li>
+                                                    </ul>
+                                                  </div>  
+                                              </div>
+                                              <div class="col-md-3">
                                                 <div class="col-megamenu">
-                                                  <h6 class="title">Audios</h6>
-                                                  <ul class="list-unstyled">
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                      <li><a href="#">Custom Menu</a></li>
-                                                  </ul>
-                                                </div>  
-                                            </div> 
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Campañas</h6>
+                                                  <h6 class="title">Plan de Beneficios en Salud </h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div>  
+                                              </div>
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Prestación de servicios</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div>  
+                                              </div>    
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Calidad de atención en salud</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div> 
+                                              </div>
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Medicamentos y tecnologías</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div> 
+                                              </div>
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Profesiones y ocupaciones</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div> 
+                                              </div>
+                                          </div> 
+                              </div> 
+                        </li>
+
+                        <li class="nav-item dropdown has-megamenu">
+                          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Protección Social  </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                          <div class="row">
+                                              <div class="col-md-3">
+                                                  <div class="col-megamenu">
+                                                    <h6 class="title">Protección Social</h6>
                                                     <ul class="list-unstyled">
                                                         <li><a href="#">Custom Menu</a></li>
                                                         <li><a href="#">Custom Menu</a></li>
@@ -642,11 +529,58 @@ body #scene #right-zone {
                                                         <li><a href="#">Custom Menu</a></li>
                                                         <li><a href="#">Custom Menu</a></li>
                                                     </ul>
-                                                </div>  
-                                            </div> 
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Podcast</h6>
+                                                  </div>  
+                                              </div>
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Protección Social</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div> 
+                                              </div>
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Protección Social</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>    
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Protección Social</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div> 
+                                              </div>
+                                          </div> 
+                              </div>  
+                        </li> 
+
+                        <li class="nav-item dropdown has-megamenu">
+                          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Normativa  </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                          <div class="row">
+                                              <div class="col-md-3">
+                                                  <div class="col-megamenu">
+                                                    <h6 class="title">Normativa</h6>
                                                     <ul class="list-unstyled">
                                                         <li><a href="#">Custom Menu</a></li>
                                                         <li><a href="#">Custom Menu</a></li>
@@ -655,11 +589,63 @@ body #scene #right-zone {
                                                         <li><a href="#">Custom Menu</a></li>
                                                         <li><a href="#">Custom Menu</a></li>
                                                     </ul>
-                                                </div>  
-                                            </div>    
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu">
-                                                <h6 class="title">Noticias</h6>
+                                                  </div>  
+                                              </div> 
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Normativa</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div>   
+                                              </div> 
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Normativa</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div>  
+                                              </div>    
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Normativa</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div>   
+                                              </div> 
+                                          </div> 
+                              </div> 
+                        </li> 
+ 
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Transparencia</a>
+                        </li>  
+
+                        <li class="nav-item dropdown has-megamenu">
+                          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Centro de Comunicaciones  </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                          <div class="row">
+                                              <div class="col-md-3">
+                                                  <div class="col-megamenu">
+                                                    <h6 class="title">Comunicaciones</h6>
                                                     <ul class="list-unstyled">
                                                         <li><a href="#">Custom Menu</a></li>
                                                         <li><a href="#">Custom Menu</a></li>
@@ -668,50 +654,89 @@ body #scene #right-zone {
                                                         <li><a href="#">Custom Menu</a></li>
                                                         <li><a href="#">Custom Menu</a></li>
                                                     </ul>
-                                                </div>   
-                                            </div> 
-                                        </div> 
-                            </div> 
-                      </li> 
-                        
+                                                  </div>  
+                                              </div> 
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Comunicaciones</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div>  
+                                              </div> 
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Comunicaciones</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div>  
+                                              </div>    
+                                              <div class="col-md-3">
+                                                <div class="col-megamenu">
+                                                  <h6 class="title">Title Menu Four</h6>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                          <li><a href="#">Custom Menu</a></li>
+                                                      </ul>
+                                                  </div>   
+                                              </div> 
+                                          </div> 
+                              </div> 
+                        </li> 
+                         
 
-                      <li class="nav-item covid-li">
-                          <a class="nav-link covid" href="#">Covid-19</a>
-                      </li> 
+                        <li class="nav-item covid-li ">
+                            <a class="nav-link covid" href="#"> Covid-19 </a>
+                        </li> 
+ 
+                     </ul> 
+                </div>
+            </div>
 
-                    </ul> 
-              </div>
-          </div>
-
-      </nav>
+        </nav>
+		
 
 
 
-<!--contenido-->
-<div class="container">
+        <div class="container">
 
             <div class="row">
-                <p class="route-page p-3"><a href="#">Salud </a> </p>
+                <p class="route-page p-3"><a href="#">Salud ></a> </p>
             </div>  
 
              
             
               
-                  <div class="oculto2" style="margin-left: 60px;"><h1>Salud</h1>
+                  <div class="oculto2" style="padding-left: 20px;"><h1>Salud</h1>
                   
                  <!-- <p style="padding-left: 0px;">Lorem ipsum dolor sit amet, <br> consectetuer adipiscing
                     elit. Aenean <br>commodo  ligula eget dolor. <br>Aenean massa.  </p>-->
 					
                   <br>
                   
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:145px; height:120px; float:left; margin-left:20px; "><center><a title="Modos, condiciones y estilos de vida saludables" href="/salud/Paginas/habitos-saludables.aspx">Estilos&nbsp;saludables​ </a></center><br> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:145px; height:120px; float:left; margin-left:30px; "><center><a title="Página de inicio del Plan de Beneficios en Salud" href="/salud/POS/Paginas/plan-obligatorio-de-salud-pos.aspx" style="text-decoration:none;">Plan de Beneficios en&nbsp;Salud&nbsp;</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left; margin-left:10px; "><center><a href="/salud/publica/Paginas/salud-publica.aspx" style="text-decoration:none;" >Salud pública</a></center><br> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left; margin-left:20px; "><center><a title="Página de inicio del Plan de Beneficios en Salud" href="/salud/POS/Paginas/plan-obligatorio-de-salud-pos.aspx" style="text-decoration:none;">Plan de Beneficios en&nbsp;Salud&nbsp;</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
                   <br><br><br><br><br><br>
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:145px; height:120px; float:left;  margin-left:20px; "><center><a title="Copagos y Cuotas Moderadoras" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/cuotas-moderadoras-copagos-2021.pdf" target="_blank">Copagos ​y​​ Cuotas Moderadoras</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:145px; height:120px; float:left; margin-left:30px; "><center><a title="Observatorio de calidad" href="http://oncalidadsalud.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio​</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left;  margin-left:10px; "><center><a href="/salud/PServicios/Paginas/Prestacion-servicios-home.aspx" style="text-decoration:none;">Prestación de servicios</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left; margin-left:20px; "><center><a href="/salud/CAS/Paginas/calidad-atencion-en-salud-home.aspx" style="text-decoration:none;">Calidad de atención en salud</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
                   <br><br><br><br><br><br>
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:145px; height:120px; float:left;  margin-left:20px; "><center><a href="/salud/MT/Paginas/medicamentos-y-tecnologias.aspx" style="text-decoration:none;">Medicamentos </a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:145px; height:120px; float:left; margin-left:30px; "><center><a href="#">De interés</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left;  margin-left:10px; "><center><a href="/salud/MT/Paginas/medicamentos-y-tecnologias.aspx" style="text-decoration:none;">Medicamentos y tecnologías</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
+                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:130px; height:120px; float:left; margin-left:20px; "><center><a href="/salud/PO/Paginas/talento-humano-salud.aspx" style="text-decoration:none;">Profesiones y ocupaciones</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
                   
                   <!--separador-->
                   <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; width:280px; height:10px; float:left; margin-left:180px; "></div>
@@ -732,9 +757,9 @@ body #scene #right-zone {
       <ul class="list">
         <li class="item">
           <input type="radio" id="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" name="basic_carousel" value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" checked="checked"/>
-          <label class="label_strawberry" for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)">Estilos&nbsp;saludables​</label>
+          <label class="label_strawberry" for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)">Salud pública</label>
           <div class="content content_strawberry"><!--<span class="picto"></span>-->
-            <h5>Estilos&nbsp;saludables​</h5>
+            <h5>Salud pública</h5>
             <ul>
   <li><a title="Modos, condiciones y estilos de vida saludables" href="/salud/Paginas/habitos-saludables.aspx">Estilos&nbsp;saludables​ </a></li>
   <li><a title="Niños,adolescentes, adultos y ancianos​" href="/salud/publica/poblaciones-vulnerables/Paginas/poblaciones-vulnerables.aspx">Poblaciones vulnerables​</a></li>
@@ -753,9 +778,9 @@ body #scene #right-zone {
         </li>
         <li class="item">
           <input type="radio" id="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
-          <label class="label_banana" for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">Copagos ​y​​ Cuotas Moderadoras </label>
+          <label class="label_banana" for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">Plan de Beneficios en Salud </label>
           <div class="content content_banana"><!--<span class="picto"></span>-->
-            <h5>Copagos ​y​​ Cuotas Moderadoras </h5>
+            <h5>Plan de Beneficios en Salud </h5>
             <ul>
   <li><a title="Copagos y Cuotas Moderadoras" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/cuotas-moderadoras-copagos-2021.pdf" target="_blank">Copagos ​y​​ Cuotas Moderadoras</a></li>
   <li><a title="Resolución 244 de 2019" href="/Normatividad_Nuevo/Resoluci%c3%b3n%20No.%20244%20de%202019.pdf" target="_blank">Exclusiones</a></li>
@@ -766,9 +791,9 @@ body #scene #right-zone {
         </li>
         <li class="item">
           <input type="radio" id="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." name="basic_carousel" value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."/>
-          <label class="label_apple" for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">Sistema Obligatorio de Garantía de Calidad​</label>
+          <label class="label_apple" for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">Prestación de servicios</label>
           <div class="content content_apple"><!--<span class="picto"></span>-->
-            <h5>Sistema Obligatorio de Garantía de Calidad​</h5>
+            <h5>Prestación de servicios</h5>
             <ul>
   <li><a href="/salud/PServicios/Paginas/sistema-obligatorio-garantia-calidad-SOGC.aspx" title="SOGC">Sistema Obligatorio de Garantía de Calidad​</a></li>
   <li><a href="/salud/PServicios/Paginas/informacion-de-interes.aspx" title="Información para Instituciones Prestadoras de Salud (IPS)">Información para IPS​</a></li>
@@ -782,9 +807,9 @@ body #scene #right-zone {
         </li>
         <li class="item">
           <input type="radio" id="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-          <label class="label_orange" for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Observatorio</label>
+          <label class="label_orange" for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Calidad de atención en salud</label>
           <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5>Observatorio</h5>
+            <h5>Calidad de atención en salud</h5>
             <ul>
   <li><a title="Observatorio de calidad" href="http://oncalidadsalud.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio​</a></li>
   <li><a title="Familia" href="/salud/CAS/Paginas/ranking-actores.aspx">Usuarios​</a></li>
@@ -798,9 +823,9 @@ body #scene #right-zone {
         </li>
 		    <li class="item">
           <input type="radio" id="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-          <label class="label_orange" for="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Medicamentos</label>
+          <label class="label_orange" for="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Medicamentos y tecnologías</label>
           <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5>Medicamentos</h5>
+            <h5>Medicamentos y tecnologías</h5>
             <ul>
   <li><a href="/salud/MT/Paginas/medicamentos.aspx" title="Regulación de precios, biotecnológicos, desabastecimiento, comparadores administrativos, productos naturales">Medicamentos</a></li>
   <li><a href="/salud/MT/Paginas/dispositivos-medicos-equipos-biomedicos.aspx" title="dispositivos médicos">Dispositivos médi​cos</a></li>
@@ -812,9 +837,9 @@ body #scene #right-zone {
         </li>
 		    <li class="item">
           <input type="radio" id="radio_The orange2 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-          <label class="label_orange" for="radio_The orange2 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">De interés</label>
+          <label class="label_orange" for="radio_The orange2 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Profesiones y ocupaciones</label>
           <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5>De interés</h5>
+            <h5>Profesiones y ocupaciones</h5>
             <ul>
 			<li><a href="#">De interés</a></li>
   <li><a title="Observatorio de Talento Humano en Salud" href="http://ontalentohumano.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio de Talento Humano en Salud</a></li>
@@ -839,10 +864,10 @@ body #scene #right-zone {
 
              
     </div>  
-
-<!--contenido-->    
-            
-        <!-- Footer Enlaces Min -->
+ 
+        <div class="container"> 
+          
+          <!-- Footer Enlaces Min -->
 
         <div class="container ministerio-zone mt-4">
             <div class="pb-4">
@@ -898,127 +923,81 @@ body #scene #right-zone {
             </div>  
           </div>
         </div>  
-   
-
-           
-
-        <!-- Main Footer  --> 
-        <footer class="container mt-4">
-          <div class="grid3x-footer">
-            <div class="box-footer">
-              <div>
-                <img align="left" src="..." style="border: 1px solid red; width:100%; height: 60px;" alt="">  
-                  
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                  molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-                  aliquam voluptatem veniam, est atque cumque eum delectus sint!
-                </p> 
-              </div>
-            </div>
-            <div class="box-footer">
-              <div>
-
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                  molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-                  aliquam voluptatem veniam, est atque cumque eum delectus sint!
-                </p>
-                <img align="left" src="..." style="border: 1px solid red; width:100px; height: 40px;" alt=""> 
-                
-              </div>
-            </div>
-            <div class="box-footer">
-              <div>
-                
-                  <div class="">
-                      <img align="left" src="..."
-                      style="border: 1px solid red; width:145px; height: 40px;" 
-                      alt="">  
-
-                  </div>
-                  <br> <br>
-                  
-          
-                  <p>Síganos</p>
-
-                  <div class="share pt-1"> 
-                      <p><span class="span-redes">&nbsp;</span></p> 
-                      <p><span class="span-redes">&nbsp;</span></p> 
-                      <p><span class="span-redes">&nbsp;</span></p> 
-                      <p><span class="span-redes">&nbsp;</span></p> 
-                      <p><span class="span-redes">&nbsp;</span></p> 
-                      <p><span class="span-redes">&nbsp;</span></p> 
-                  </div>  
-
-              </div>
-            </div> 
-          </div> 
-        </footer> 
  
+
+          <!-- Main Footer  --> 
+          <footer>
+            <div class="grid3x-footer">
+              <div class="box-footer">
+                <div>
+                  <img align="left" src="..." style="border: 1px solid red; width:100%; height: 60px;" alt="">  
+                    
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                    molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                    aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                  </p> 
+                </div>
+              </div>
+              <div class="box-footer">
+                <div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                    molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                    aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                  </p>
+                  <img align="left" src="..." style="border: 1px solid red; width:100px; height: 40px;" alt=""> 
+                  
+                </div>
+              </div>
+              <div class="box-footer">
+                <div>
+                  
+                    <div class="">
+                        <img align="left" src="..."
+                        style="border: 1px solid red; width:150px; height: 40px;" 
+                        alt="">  
+
+                    </div>
+                    <br> <br>
+                    
+            
+                    <p>Síganos</p>
+
+                    <div class="share pt-1"> 
+                        <p><span class="span-redes">&nbsp;</span></p> 
+                        <p><span class="span-redes">&nbsp;</span></p> 
+                        <p><span class="span-redes">&nbsp;</span></p> 
+                        <p><span class="span-redes">&nbsp;</span></p> 
+                        <p><span class="span-redes">&nbsp;</span></p> 
+                        <p><span class="span-redes">&nbsp;</span></p> 
+                    </div>  
+
+                </div>
+              </div> 
+            </div> 
+          </footer> 
+
+        </div>   
          
           <div>
             <p>&nbsp;</p>
           </div> 
         
+        </div>   
+          
         <!-- Footer Fixed Mobile -->
-        <div class="footer-fixed bg-primary "> 
-            
-          <div class="grid2x">
-            <div class="box bg-left"><div><a href="#">Servicio al Cliente</a></div></div>
-            <div class="box bg-right"><div><a href="#">Centro de Comunicaciones</a></div></div>
-          </div>
 
-        </div> 
+      <div class="footer-fixed bg-secondary"> 
+          
+        <div class="grid2x">
+          <div class="box"><div><a href="#">Servicio al Cliente</a></div></div>
+          <div class="box"><div><a href="#">Centro de Comunicaciones</a></div></div>
+        </div>
+
+      </div> 
+
  
-  
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-        <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
- 
-       
-        <script> 
-
-          function myFunction(x) {
-            if (x.matches) { // If media query matches 
-
-               $(document).on('ready', function() {
-
-
-            
-                  $(".center").slick({
-                    dots: true,
-                    infinite: true,
-                    centerMode: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 2,
-                    autoplay: true,
-                    autoplaySpeed: 1500,
-                  }); 
-                });
-
-
-            } else { 
-
-              $(document).on('ready', function() { 
-                  $(".center").slick({
-                    dots: true,
-                    infinite: true,
-                    centerMode: true,
-                    slidesToShow: 5,
-                    slidesToScroll: 3,
-                    autoplay: true,
-                    autoplaySpeed: 1500,
-                  }); 
-                });
-
-            }
-          }
-
-          var x = window.matchMedia("(max-width: 600px)")
-          myFunction(x) // Call listener function at run time
-          x.addListener(myFunction) // Attach listener function on state changes
-          </script>
-
-         
     </body>
 </html>
 
