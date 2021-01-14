@@ -9,6 +9,11 @@
     --color_blue_2: #5B8BFF;
     --color_blue_3: #4A7EFF;
 
+    --color_blue_5: #3563d3;
+
+
+    --color_4_blue: #194887; 
+
     /* Equidad Colors */
     --color_primary_equidad: #f42f63;
     --color_secondary_equidad: #f7678d;
@@ -75,7 +80,7 @@
 
   /* Top menu */
   .nav-gov{
-    background: var(--color_secondary);
+    background: var(--color_blue_5);
   }
   /* logo .gov top */
     .icon-gov{ 
@@ -102,14 +107,10 @@
   }
 
   .covid {
-    background: var(--color_secondary_equidad);
-    margin-left: 135px;
-  }
-  .servicio-li {
-    position: absolute;
-    right: 90px;
-    top: 20px;
-  }
+    background: var(--color_4_blue);
+    right: 0; 
+    margin-left: 40px;
+  } 
 
   .dropdown-menu {
     display: none;
@@ -122,7 +123,8 @@
   }
 
   .nav-link-servicio {
-    color: #f42f63 !important;
+    color: var(--color_4_blue) !important;
+    font-weight: bolder;
   }
 
   /* Carousel  */
@@ -155,7 +157,7 @@
   .mini-underline{
     position: absolute; 
     width: 40px;
-    height: 5px;  
+    height: 3px;  
     background: var(--color_primary_equidad);  
    
     display: block;
@@ -181,9 +183,13 @@
   .noticia p{ 
     margin-bottom: 0.2rem !important;
   }
-
+ .nt-segundaria p{
+    font-family: "Work Sans", sans-serif !important;
+    font-weight: 300!important; 
+  }
+  
   .noticias_secundarias p:before {
-
+ 
     content: "";
     display: inline-block;
     height: 15px;
@@ -227,11 +233,18 @@
   /* Main Footer */
 
   footer {
-    background-color: var(--color_secondary_equidad);
+    background-color: var(--color_blue_5);
   }
 
   footer p {
-    color: #fff;
+    font-size: 0.9rem !important;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    color: white !important;
+  }
+  footer b {
+    font-weight: 500;
+    color: white !important;
   }
 
   footer p {
@@ -239,11 +252,17 @@
     text-align: left;
   }
   footer .span-redes {
-    height: 50px;
-    width: 50px;
-    background-color: #bbb;
-    border-radius: 50%;
+    height: 45px;
+    width: 45px; 
+     background-color: var(--color_4_blue);
+     
     display: inline-block;
+  }  
+
+  footer .solicitud  a{
+    text-decoration: underline;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
   }
 
   /* Share Styles */
@@ -251,19 +270,29 @@
   .share {
     display: flex;
   } 
+  .share p{
+    text-align: center;
+   
+  }
   .share-title {
     font-size: 18px;
     font-weight: bolder;
     display: inline;
-  }
+  } 
   .span-redes { 
     height: 35px;
     width: 35px;
     background-color: var(--color_primary_equidad);
-    border-radius: 50%;
-    display: inline-block;
+    margin-left: 10px;
+ 
   }
 
+  .span-redes i{
+     padding-top: 13px;
+    font-size: 1.3rem;
+    color: white;
+  }
+ 
   /* Footer Grid */
   .grid3x-footer {
     min-height: 100%;
@@ -287,6 +316,10 @@
     color: var(--white);
   }
 
+  .redes-right{
+    margin-top: -90px;
+  }
+
   /* Multimedia */
   .multimedia {
     background: rgb(231, 231, 231);
@@ -297,6 +330,17 @@
   .footer-fixed {
     display: none;
   }
+
+  .ministerio-zone .enlacesGel ul li a {
+      
+ 
+      font-size: 14px !important;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      color: var(--color_blue_5) !important;
+ 
+    }
+
 
   @media only screen and (max-width: 600px) {
 
@@ -332,8 +376,9 @@
       font-weight: bolder;
     }
     .covid-li a{  
-      color: var(--color_secondary_equidad) !important;
+      color: var(--color_4_blue) !important;
     }
+
     /* Banner Rotativo */
       .carousel-inner{
         height: 160px;
@@ -349,6 +394,13 @@
       padding-left: 0px;
       padding-right: 10px;
     }
+
+    .oculto2 .card{
+      width: 10rem;
+      margin-left: 0px;
+      margin-right: 10px;
+    }
+
   }
 
   /* Min Lista */
@@ -464,6 +516,7 @@
   
       margin-left: -25px;
       
+      
     }
     .img-enlaces-mobile{
       display: none;
@@ -503,6 +556,10 @@
       width: 100%;
       display: inline;
     }
+
+     .redes-right{
+    margin-top: 0px;
+  }
 
 
   }

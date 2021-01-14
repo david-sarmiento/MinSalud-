@@ -21,9 +21,9 @@
 
   .tabs-section .nav-link:hover { 
 
-    color: var(--color_secondary);
+    color: white !important;
     border-bottom: 2px solid var(--color_secondary);
-    background: var(--color_tertiary);   
+    background: var(--color_blue_5);   
        
   }
   .tabs-section .nav-link:hover::after { 
@@ -47,7 +47,7 @@
   
   .tabs-section .nav-link.active {
     color: white !important;
-    background: var(--color_secondary); 
+    background: var(--color_blue_5);  
   } 
 
    .tabs-section .nav-link.active:after{ 

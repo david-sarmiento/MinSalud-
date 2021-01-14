@@ -9,7 +9,7 @@
   }
   .nav-bar-menu{
 
-    background:var(--color_secondary)!important;
+    background:var(--color_blue_5)!important;
   }
 
   .container-menu{ 
@@ -175,7 +175,7 @@
       clear: both;  
       top: 55px;
 
-      background:var(--color_secondary) !important; 
+      background:var(--color_blue_5) !important; 
       
       /*padding-left: 15px !important; 
       padding-right: 40px !important;*/

@@ -1,4 +1,4 @@
-  .card{
+  .arrow-comunicaciones .card{
      width: 15rem;
   }
   .noticias-card{
@@ -31,7 +31,7 @@
     color: white !important;
     background: black;
     
-    margin-left: -10px;
+    margin-left: -30px;
     margin-top: 100px ; 
 
     border-radius: 50%;
@@ -50,16 +50,14 @@
     content: ">";
     position: absolute;
     right: 0;
-    margin-right: 99px;
+    margin-right: 80px;
     width: 30px;
     height: 30px; 
 
     color: white !important;
     background: black;
 
-    cursor: pointer;
-     
- 
+    cursor: pointer; 
     margin-top: 100px ; 
 
     border-radius: 50%;
@@ -79,18 +77,19 @@
   }
 
 @media only screen and (max-width: 600px) {
-  .card{
-     width: 45%;
-     align-items: center;
-     text-align:center;
-     margin: 0px;
-     margin-right: 10px;
+  .arrow-comunicaciones .card{
+     width: 40%;
+      align-items: center;
+      text-align: center;
+      margin: 0px;
+      margin-right: 0px;
+      margin-left: 18px;
   }
   .card-mobile{
     display: none;
   }
 
-  .noticias-card .card-text{
+  .arrow-comunicaciones .noticias-card .card-text{
     padding-left: 5px;
   }
   .ml-podcast{
@@ -104,7 +103,9 @@
     text-align: center;
     height: 300px;
   }
-
+  .arrow-comunicaciones{
+    justify-content: inherit;
+  }
   .arrow-comunicaciones::before{
  
     width: 30px;
@@ -114,6 +115,8 @@
     margin-top: 90px; 
     padding-left: 6px;
     padding-top: 3px;
+
+    margin-left: -15px;
 
   }
 
