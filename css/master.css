@@ -38,7 +38,12 @@
   a:visited {
     color: var(--color_secondary_equidad);
   }
-   
+  
+   /* Funcionarios */
+  .funcionarios {
+    color: white!important;
+    font-size: 14px;
+  }
 
   .ver-mas{
     font-weight: bold;
@@ -147,6 +152,7 @@
     )!important;
   } 
 
+ 
   /* Banner Rotativo */
   .carousel-inner{
     height: 380px;
@@ -166,7 +172,7 @@
   .mini-underline-multimedia{
      position: absolute; 
     width: 40px;
-    height: 5px;  
+    height: 3px;  
     background: var(--color_tertiary);  
    
     display: block;
@@ -323,6 +329,7 @@
   /* Multimedia */
   .multimedia {
     background: rgb(231, 231, 231);
+    max-height: 305px;
   }
 
   /* Fixed Footer Responsive */
