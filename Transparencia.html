@@ -506,6 +506,12 @@ body #scene #right-zone {
         top:100px;
         left:0px;
 }
+.flotante1 {
+    display:scroll;
+        
+        top:100px;
+        right:0px;
+}
 /*estilos para boton flotante*/	
     </style>
    
@@ -518,35 +524,29 @@ body #scene #right-zone {
   </head>
     <body id="page"> 
 
-       <!-- Min RId -->
-    <nav class="navbar navbar-expand-lg navbar-light  nav-gov">
-      <img align="left" class="icon-gov" src="https://cdn.www.gov.co/assets/images/logo.svg" 
-        alt=""> 
+      <!-- Min RIP -->
+      <nav class="navbar navbar-expand-lg navbar-light  nav-gov">
+        <img align="left" class="icon-gov" src="https://cdn.www.gov.co/assets/images/logo.svg" 
+          alt=""> 
 
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
 
-          <li class="nav-item ">
-            <p></p>
-          </li>
-            
-        </ul>
-
-        <div>
-          <a href="funcionarios.html" class="funcionarios">Funcionarios</a>
+            <li class="nav-item ">
+             <p></p>
+            </li>
+             
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="MIN / RIP" aria-label="MIN / RIP">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
+          </form>
         </div>
-     
-        <form class="form-inline my-2 my-lg-0">
-          
-          <input class="form-control mr-sm-2" type="search" placeholder="MIN / RID" aria-label="MIN / RID">
-          <button class="btn btn-outline-succes " type="submit">
-            
-            <i class="fas fa-search buscar"></i>
-          </button>
-        </form>
-      </div>
-    </nav>
+      </nav>
 
        <!-- Servicio al ciudadano -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light "> 
@@ -582,7 +582,7 @@ body #scene #right-zone {
                     </ul> 
                 </div>
             </div>
-			<div class='flotante'>
+<div class="flotante1">			
 <div class="container-btn-mode" >
    <div id="id-sun" class="btn-mode sun active">
       <i class="fas fa-sun"></i>
@@ -592,6 +592,7 @@ body #scene #right-zone {
    </div>
 </div>
 </div>
+
 <!--modo oscuro-->
       </nav>
          
