@@ -47,6 +47,13 @@
     font-weight: 500;
    
   }
+  /* login usuario */
+  .usuario{
+    font-size: 15px;
+    margin-right: 20px;
+    color: white!important;
+    font-size: 15px;
+  }
   /* Buscar */
   .buscar{
     font-size: 15px;

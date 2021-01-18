@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="css/comunicaciones.css"> 
     <script src="js/megamenu.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/menu-css.css">
-
+    <link rel="stylesheet" type="text/css" href="css/menu-css.css"> 
     <link rel="stylesheet" type="text/css" href="css/funcionarios.css">
 
 
@@ -35,7 +34,11 @@
     <script src="js/vertical-tabs/easyResponsiveTabs.js"></script>
 
      <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css" /> -->
-  
+      <style>
+        #myDIV{
+          display: none;
+        }
+      </style>
 </head>
 <body> 
     
@@ -55,8 +58,12 @@
             </li>
              
           </ul>
+            <div>
+          <a href="funcionarios.html" class="funcionarios">Funcionarios</a>
+        </div>
+        
           <form class="form-inline my-2 my-lg-0">
-            <a href="funcionarios.html" class="funcionarios">Funcionarios</a>
+            
             <input class="form-control mr-sm-2" type="search" placeholder="MIN / RID" aria-label="MIN / RID">
             <button class="btn btn-outline-succes " type="submit">
              
@@ -604,74 +611,50 @@
 </header>   
 <main> 
 
-  <div class="container">
-    <div class="wrapper">
-      <div class="box a">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col">
         <h2>¡Bienvenidos funcionarios!</h2>
         <p>En el Ministerio de Salud y Protección Social se ha diseñado este espacio pensando en nuestros funcionarios y contratistas. Por eso se han seleccionando contenidos que le pueden interesar, para que encuentre de manera rápida y fácil información sobre acceso al correo institucional, sitios colaborativos, listado vigente de administradores de contenido del portal web, gestión de trámites y servicios, biblioteca de documentos, entre otros.</p>
       </div>
-      <div class="box b">
-           <ul class="lista-contenido">
+       <div class="col" >
+         <div id="formlogin">  
+              <form id="formlogi1"> 
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"><b>Email</b></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario1" value="Usuario1">
+                  <div id="emailHelp" class="form-text"> </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"><b>Contraseña</b></label>
+                  <input type="password" class="form-control" placeholder="123" id="exampleInputPassword1" value="123">
+                </div>
+                <!--  <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div> -->
+                  <div align="center">
+                  <button  align="" class="btn"></button> 
+                </div>  
+            </form>
+            <button class="btn btn-primary" onclick="form_login()">Iniciar Sesión</button>
+          </div>  
+          <div id="myDIV" class="box">
+            <ul class="lista-contenido">
                 <li><a href="https://correoweb.minsalud.gov.co/" target="_blank">Correo Institucional</a></li>
                 <li><a href="https://www.minsalud.gov.co/Paginas/AdministradoresdeContenido.aspx" target="_blank">Administradores de Contenido</a></li>
                 <li><a href="https://www.minsalud.gov.co/Paginas/sitios%20colaborativos.aspx" target="_blank">Sitios Colaborativos</a></li>
                 <li><a href="https://www.minsalud.gov.co/area-colaborativa" target="_blank">Acceder a trabajo colaborativo</a></li>
                 <li><a href="https://intranet.minsalud.gov.co/Paginas/SaludNet.aspx" target="_blank">Intranet</a></li>
             </ul>
+          </div>
+       
       </div>
     </div>
-  </div>
-
-  <!-- div id="container" class="container">
-  
-        <h2>¡Bienvenidos funcionarios!</h2>
-        <p>En el Ministerio de Salud y Protección Social se ha diseñado este espacio pensando en nuestros funcionarios y contratistas. Por eso se han seleccionando contenidos que le pueden interesar, para que encuentre de manera rápida y fácil información sobre acceso al correo institucional, sitios colaborativos, listado vigente de administradores de contenido del portal web, gestión de trámites y servicios, biblioteca de documentos, entre otros.</p>
-        <br/> 
-        < id="Funcionarios_">
-            <ul class="resp-tabs-list hor_1">
-                <li>Correo Institucional</li>
-                <li>Administradores de Contenido</li>
-                <li>Sitios Colaborativos</li>
-                <li>Acceder a trabajo colaborativo</li>
-                <li>Intranet</li>
-            </ul>
-
-            <div class="resp-tabs-container hor_1">
-                <div>
-                    Lorem ipsum dolor sit amet, lerisque commodo. Nam porta cursus lectusconsectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales sce. Proin nunc erat, gravida a facilisis quis, ornare id lectus.
-                    <br>
-                    <br>
-                    <p>Tab 1 Container</p>
-                </div>
-                <div>
-                    Lorem consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis.
-                    <br>
-                    <br>
-                    <p>Tab 2 Container</p>
-                </div>
-                <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
-                    <br>
-                    <br>
-                    <p>Tab 3 Container</p>
-                </div>
-                <div>
-                   fdfdf
-                </div>
-                <div>
-                   43545
-                </div>
-            </div>
-        </>
-        <div  >
-            Selected <span class="tabName"></span>
-        </div>
  
-        <br>
-        <br>
-        <br/>
-    </div> -->
 
+  </div>
+ 
   <!-- Footer Enlaces Min --> 
   <div class="container ministerio-zone mt-4">
       <div class="pb-4">
@@ -817,23 +800,14 @@
   </div>
 
 </div> 
-  
-<!--Plug-in Initialisation-->
-  <!--   <script type="text/javascript">
-    
 
-    $(document).ready(function() {
-      
-        //Vertical Tab
-        $('#Funcionarios_').easyResponsiveTabs({
-            type: 'vertical', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-            
-            tabidentify: 'hor_1', // The tab groups identifier 
-        });
-    });
-</script> -->
+<script>
+function form_login() {
+  document.getElementById("formlogin").style.display = "none";
+  document.getElementById("myDIV").style.display = "block"; 
+}
+</script>
+   
 
 </body>
 </html>
