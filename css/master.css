@@ -343,7 +343,7 @@
   /* Multimedia */
   .multimedia {
     background: rgb(231, 231, 231);
-    max-height: 305px;
+   
   }
 
   /* Fixed Footer Responsive */
@@ -432,6 +432,7 @@
     }
 
   }
+  
 
   /* Min Lista */
 
