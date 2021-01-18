@@ -24,6 +24,15 @@
     <link rel="stylesheet" href="css/responsive.css"> 
     <link rel="stylesheet" href="css/megamenu.css"> 
     <link rel="stylesheet" href="css/comunicaciones.css"> 
+	<!--fuentes pestaña accesibilidad-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/app.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    	
+	<!--fuentes para pestaña accesibilidad-->
     <script src="js/megamenu.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/menu-css.css">
@@ -435,16 +444,79 @@ body #scene #right-zone {
   height: 100%;
   -webkit-box-flex: 3;
           flex-grow: 3;
-}		
+}
+/*estilos para el boton de modo nocturno*/
+.container-btn-mode{
+  position: absolute;
+  top:20px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 2;
+  font-size:0;
+}
+.btn-mode{
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  border:2px solid black;
+  transition: background-color .5s;
+}
+.btn-mode i {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+}
+.btn-mode.sun{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid transparent;
+}
+.btn-mode.moon{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.active{
+  background-color:black;
+  color:#ffcd5c !important;
+}
+/*fin estilos boton modo nocutrno*/
+/*estilos web oscuro*/
+.dark-mode{
+  background-color: #0e0e0e;
+  transition:background-color .5s;
+}
+.dark-mode .card{
+  background-color: #1A1C1E;
+}
+.dark-mode h1, .dark-mode h2, .dark-mode .btn-contact{
+  color:white;
+}
+.dark-mode .btn-mode{
+  background-color:#1A1C1E;
+  border:1px solid white;
+  color:white;
+}
+/*fin estilos web oscuro*/	
+
+/*estilos para boton flotante*/
+.flotante {
+    display:scroll;
+        position:fixed;
+        top:100px;
+        left:0px;
+}
+/*estilos para boton flotante*/	
     </style>
    
 
   <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/slide.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
   </head>
-    <body> 
+    <body id="page"> 
 
       <!-- Min RIP -->
       <nav class="navbar navbar-expand-lg navbar-light  nav-gov">
@@ -492,11 +564,29 @@ body #scene #right-zone {
                             <a class="nav-link nav-link-servicio" href="#">Atención al Ciudadano <img src="img/click2.png" width="30px" alt=""></a>
                             
                         </li>  
-                        
+                        <!-- Botones -->
+				<div class='flotante'>		
+              <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Botones" style="float:left;">
+                  <button type="button" class="disminuir btn btn-dark mr-1" title="Disminuir texto">D</button>
+                  <button type="button" class="aumentar btn btn-dark mr-1" title="Aumentar texto">A</button>
+                  <button type="button" class="restablecer btn btn-danger" title="Reestablecer texto">R</button>
+				  </div>
+</div>
+              
                     </ul> 
                 </div>
             </div>
-
+			<div class='flotante'>
+<div class="container-btn-mode" >
+   <div id="id-sun" class="btn-mode sun active">
+      <i class="fas fa-sun"></i>
+   </div>
+   <div id="id-moon" class="btn-mode moon">
+      <i class="fas fa-moon"></i>
+   </div>
+</div>
+</div>
+<!--modo oscuro-->
       </nav>
          
         <!-- Main Menú -->
@@ -1359,9 +1449,9 @@ body #scene #right-zone {
                                                                                   
                    <!--inicio carrusel vertical desktop---->                           
                                               
-          <div class="oculto1">
+          <div class="oculto1" class="mitexto">
              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>                                 
-              <div id="scene">
+              <div id="scene" class="mitexto">
     <div id="left-zone">
       <ul class="list">
         <li class="item">
@@ -1563,7 +1653,7 @@ body #scene #right-zone {
       </ul>
     </div>
     <div id="middle-border"></div>
-    <div id="right-zone"></div>
+    <div id="right-zone" class="mitexto"></div>
   </div>
   <br><br>
   </div>
@@ -1794,7 +1884,24 @@ body #scene #right-zone {
           myFunction(x) // Call listener function at run time
           x.addListener(myFunction) // Attach listener function on state changes
         </script>
- 
+ <script type="text/javascript" src="js/app.js"></script>
+ <script src="index.js"></script>
+ <script>
+ /*Si clicamos en el botón del sol, borrarémos la clase css dark-mode del div 
+con id page y se aplicará el estilo active al sol*/
+document.getElementById('id-sun').onclick = function(){
+  document.getElementById('page').classList.remove('dark-mode')
+  document.getElementById('id-moon').classList.remove('active')
+  this.classList.add('active')
+}
+/*Si clicamos en el botón de la luna, añadiremos la clase css dark-mode del div 
+con id page y se aplicará el estilo active a la luna*/
+document.getElementById('id-moon').onclick = function(){
+  document.getElementById('page').classList.add('dark-mode')
+  document.getElementById('id-sun').classList.remove('active')
+  this.classList.add('active')
+}
+ </script>
     </body>
 </html>
 
