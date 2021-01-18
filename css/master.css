@@ -38,8 +38,27 @@
   a:visited {
     color: var(--color_secondary_equidad);
   }
+  
+   /* Funcionarios */
+  .funcionarios {
+    color: white!important;
+    font-size: 15px;
+    margin-right: 20px;
+    font-weight: 500;
    
-
+  }
+  /* login usuario */
+  .usuario{
+    font-size: 15px;
+    margin-right: 20px;
+    color: white!important;
+    font-size: 15px;
+  }
+  /* Buscar */
+  .buscar{
+    font-size: 15px;
+    color: white;
+  }
   .ver-mas{
     font-weight: bold;
     margin-top: -8px;
@@ -108,8 +127,8 @@
 
   .covid {
     background: var(--color_4_blue);
-    right: 0; 
-    margin-left: 40px;
+    position: relative;
+        margin-left: 50px;
   } 
 
   .dropdown-menu {
@@ -147,6 +166,7 @@
     )!important;
   } 
 
+ 
   /* Banner Rotativo */
   .carousel-inner{
     height: 380px;
@@ -166,7 +186,7 @@
   .mini-underline-multimedia{
      position: absolute; 
     width: 40px;
-    height: 5px;  
+    height: 3px;  
     background: var(--color_tertiary);  
    
     display: block;
@@ -323,6 +343,7 @@
   /* Multimedia */
   .multimedia {
     background: rgb(231, 231, 231);
+    max-height: 305px;
   }
 
   /* Fixed Footer Responsive */
@@ -389,6 +410,15 @@
       font-size: 16px;
       padding-top: 10px;
     }
+    /* Link funcionarios */
+
+    .funcionarios {
+    color: white!important;
+    font-size: 15px;
+    margin-right: 20px;
+    font-weight: 500;
+      
+   }
 
     .noticia-mobile{
       padding-left: 0px;

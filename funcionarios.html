@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/4345271b67.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script type="" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -26,20 +26,30 @@
     <link rel="stylesheet" href="css/comunicaciones.css"> 
     <script src="js/megamenu.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/menu-css.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-css.css"> 
+    <link rel="stylesheet" type="text/css" href="css/funcionarios.css">
 
-    <title>Centro de Comunicaciones</title>
-     
-        
-  </head>
-    <body> 
+
+    <!-- <script src="js/vertical-tabs/jquery-1.9.1.min.js"></script>
+    <script src="js/vertical-tabs/easyResponsiveTabs.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css" /> -->
+      <style>
+        #myDIV{
+          display: none;
+        }
+      </style>
+</head>
+<body> 
+    
+<header>  
 
       <!-- Min RIP -->
       <nav class="navbar navbar-expand-lg navbar-light  nav-gov">
         <img align="left" class="icon-gov" src="https://cdn.www.gov.co/assets/images/logo.svg" 
           alt=""> 
  
-        
+      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
 
@@ -48,21 +58,22 @@
             </li>
              
           </ul>
-           <div>
+            <div>
           <a href="funcionarios.html" class="funcionarios">Funcionarios</a>
         </div>
-  
+        
           <form class="form-inline my-2 my-lg-0">
-           
-            <input class="form-control mr-sm-2" type="search" placeholder="MIN / RIP" aria-label="MIN / RIP">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              
+            
+            <input class="form-control mr-sm-2" type="search" placeholder="MIN / RID" aria-label="MIN / RID">
+            <button class="btn btn-outline-succes " type="submit">
+             
+              <i class="fas fa-search buscar"></i>
             </button>
           </form>
         </div>
       </nav>
 
-       <!-- Servicio al ciudadano -->
+      <!-- Servicio al ciudadano -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light "> 
           
             <div class="container pt-3 pb-3">  
@@ -91,7 +102,7 @@
 
       </nav>
          
-        <!-- Main Menú --> 
+      <!-- Main Menú -->
       <nav class="navbar navbar-expand-lg navbar-light  nav-bar-menu " >
 
          <a href="index.html"> <img align="left" class="logo-min" 
@@ -575,63 +586,7 @@
                                       </div>                                            
                                   </div>
                               </section>     
-
-
-                                     <!--    <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="col-megamenu back_menu">
-                                                  <h6 class="title">Actos Administrativos</h6>
-                                                  <ul class="">
-                                                      <li><a href="#">Custom</a></li>
-                                                      <li><a href="#">Custom</a></li>
-                                                      <li><a href="#">Custom</a></li>
-                                                      <li><a href="#">Custom</a></li>
-                                                      <li><a href="#">Custom</a></li>
-                                                      <li><a href="#">Custom</a></li>
-                                                  </ul> 
-                                                </div>  
-                                            </div> 
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu back_menu">
-                                                <h6 class="title">Agenda Regulatoria</h6>
-                                                    <ul class="">
-                                                        <li><a href="#">Custom</a></li>
-                                                        <li><a href="#">Custom</a></li>
-                                                        <li><a href="#">Custom</a></li>
-                                                        <li><a href="#">Custom</a></li>
-                                                        <li><a href="#">Custom</a></li>
-                                                        <li><a href="#">Custom</a></li>
-                                                    </ul> 
-                                                </div>   
-                                            </div> 
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu back_menu">
-                                                <h6 class="title">Boletines jurídicos</h6>
-                                                    <ul class="">
-                                                        <li><a href="#">Custom </a></li>
-                                                        <li><a href="#">Custom </a></li>
-                                                        <li><a href="#">Custom </a></li>
-                                                        <li><a href="#">Custom </a></li>
-                                                        <li><a href="#">Custom </a></li>
-                                                        <li><a href="#">Custom </a></li>
-                                                    </ul> 
-                                                </div>  
-                                            </div>    
-                                            <div class="col-md-3">
-                                              <div class="col-megamenu back_menu">
-                                                <h6 class="title">Conceptos</h6>
-                                                    <ul class="">
-                                                        <li><a href="#">Custom </a></li>
-                                                        <li><a href="#">Custom </a></li>
-                                                        <li><a href="#">Custom </a></li>
-                                                        <li><a href="#">Custom </a></li>
-                                                        <li><a href="#">Custom </a></li>
-                                                        <li><a href="#">Custom </a></li>
-                                                    </ul> 
-                                                </div>   
-                                            </div> 
-                                        </div>  -->
-
+ 
                             </div> 
                       </li> 
  
@@ -652,409 +607,208 @@
           </div>
 
       </nav>
-      
-
-        <div class="container">
- 
-            <p class="route-page pt-3">
-              <a href="index.html">Ministerio de Salud y Protección Social</a> /  Centro de Comunicaciones
-            </p>
-
-            <div class="pb-3">
-              <h3>Noticias</h3>
-              <span class="mini-underline"></span>
-            </div>   
-
-            <form action="/action_page.php">
-              <label for="birthday">Buscar:</label>
-              <input type="date" id="birthday" name="birthday"> 
-            </form>
-            <br>
-
-            <div class="row arrow-comunicaciones"> 
-
-              <div class="card noticias-card">
-                
-                <img class="" width="100%" src="img/noticia1.jpg" alt=" "/> 
-                <p class="card-text"  align="left">Gobierno Nacional reconocerá a EPS pruebas covid-19.</p>
-                <div class="pr-2">
-                <p align="right "><a href="Noticia1.html"  class="ver-mas"> Ver más </a></p>
-                </div>
-              </div>
-
-              <div class="card noticias-card">
-                
-                <img class="" width="100%" src="img/noticia2.jpg" alt=" " />
-                <p class="card-text" align="left">UPC aumentó 5.18 % para 2021. Con el propósito de garantizar </p>
-                <div class="pr-2">
-                <p align="right "><a href="Noticia2.html"  class="ver-mas"> Ver más </a></p>
-                </div>
-              </div>
-
-              <div class="card card-mobile noticias-card">
-                
-                <img class="card-img-top"  width="100%" src="img/noticia3.jpg" alt="Card image cap">
-              
-                  <p class="card-text">Minsalud extiende el pago por disponibilidad de UCI.</p>
-                  <div class="pr-2 card-mobile">
-                  <p align="right "><a href="Noticia3.html"  class="ver-mas"> Ver más </a></p>
-                  </div>
-              </div>
-
-              <div class="card card-mobile noticias-card">
-
-                <img class="card-img-top"  width="100%" src="img/noticia4.jpg" alt="Card image cap">
-               
-                  <p class="card-text">Minsalud ajusta y fija presupuesto máximo a EPS</p>
-                  <div class="pr-2 card-mobile">
-                  <p align="right "><a href="Noticia4.html"  class="ver-mas"> Ver más </a></p>
-                  </div>
-              </div>
-
-              
-
-            </div>
-             
-            <br><br> 
-
-            <div class="pb-2">
-              <h3>Campañas</h3>
-              <span class="mini-underline"></span>
-            </div>   
-
-
-            <div class="row arrow-comunicaciones">  
-              <div class="card">
-                <img class="card-img-top" src="img/campana1.jpg" alt="Card image cap">
-                <div class="pr-2 pt-2">
-                      <p align="right"><a href="#"  class="ver-mas">Descargar </a></p>
-                </div>
-                 
-              </div>
-
-              <div class="card">
-                <img class="card-img-top" src="img/campana2.jpg" alt="Card image cap">
-                <div class="pr-2 pt-2">
-                      <p align="right"><a href="#"  class="ver-mas">Descargar </a></p>
-                </div> 
-              </div>
-
-              <div class="card">
-                <img class="card-img-top card-mobile" src="img/campana1.jpg" alt="Card image cap">
-                <div class="pr-2 pt-2 card-mobile">
-                      <p align="right"><a href="#"  class="ver-mas">Descargar </a></p>
-                </div> 
-              </div>
-
-              <div class="card">
-                <img class="card-img-top card-mobile" src="img/campana2.jpg" alt="Card image cap">
-                <div class="pr-2 pt-2 card-mobile">
-                      <p align="right"><a href="#"  class="ver-mas">Descargar </a></p>
-                </div> 
-              </div>
-
-
-              <div class="container pt-1"> 
-                        <p align="right"><a href="#"  class="ver-mas">Ver más </a></p>
-                  
-
-             </div>
- 
- 
-            </div>
- 
-             
-            
-            
-
-            <div class="row">
-
-                  <div class="col ml-audios ">
- 
-                    <div class="pb-3 ">
-                      <h3>Audios</h3>
-                      <span class="mini-underline"></span>
-                    </div>  
-
-                    <form action="/action_page.php">
-                      <label for="birthday">Buscar:</label>
-                      <input type="date" id="birthday" name="birthday"> 
-                    </form>
-                    <br>
-
-                    <div class="noticias_secundarias">
-                      <p>Menores de 5 años, prioridad en prevención de enfermedad diarreica</p>
-                    </div>
-                    
-                    <audio controls  class="embed-responsive-item"> 
-                      <source src="horse.ogg" type="audio/ogg">
-                      <source src="https://www.minsalud.gov.co/Lists/Video%20y%20Audio/Attachments/1792/20201228_A_Enfermedad_Diarreica.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                    </audio>
- 
-                    <div class="noticias_secundarias pt-2">
-                      <p>Comienza la primera etapa de asignación de plazas del servicio social obligatorio</p>
-                    </div> 
-
-
-                    <audio controls  class="embed-responsive-item pb-4">
-                      <source src="horse.ogg" type="audio/ogg">
-                      <source src="https://www.minsalud.gov.co/Lists/Video%20y%20Audio/Attachments/1791/20201227_A_SSO.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                    </audio>
-
-                    
-                  </div>
-
-                  <div class="col ml-podcast">
- 
-                    <div class="pb-3">
-                      <h3>Podcast</h3>
-                      <span class="mini-underline"></span>
-                    </div>  
-                    <form action="/action_page.php">
-                      <label for="birthday">Buscar:</label>
-                      <input type="date" id="birthday" name="birthday"> 
-                    </form>
-                    <br>
-
-                    <div class="noticias_secundarias">
-                      <p>Gob Nacional confirmó adquisición de 9 millones de dosis de la vacuna del laboratorio Janssen</p>
-                    </div> 
-
-                    <audio controls class="embed-responsive-item">
-                      <source src="horse.ogg" type="audio/ogg">
-                      <source src="https://www.minsalud.gov.co/Lists/Video%20y%20Audio/Attachments/1797/31-12-2020-aldia-man%CC%83ana-podcast.mp3" type="audio/mpeg">
-                    Your brow
-                    ser does not support the audio element.
-                    </audio>
-
-                    <div class="noticias_secundarias pt-2">
-                      <p>Asi se desarrollarán las primeras fases de vacunación de COVID-19</p>
-                    </div> 
-                    <audio controls  class="embed-responsive-item">
-                      <source src="horse.ogg" type="audio/ogg">
-                      <source src="https://www.minsalud.gov.co/Lists/Video%20y%20Audio/Attachments/1796/28-12-2020-aldia-tarde-podcast.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                    </audio>
- 
-
-                  </div> 
-            </div> 
-          
-            <!-- Videos y Galeria -->
-        
-            <div class="row pb-2" style="padding-top: 25px">
-
-                  <div class="col ml-audios pt-2">
-  
-                      <div class="pb-4 ">
-                        <h3>Videos</h3>
-                        <span class="mini-underline"></span>
-                      </div>
-
-                      <iframe height="315" class="iframe-video" src="https://www.youtube.com/embed/opgXdab7YbA" 
-                      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                      <div class="pt-4 vermas-pt">
-                        <p align="right"><a href="#" class="ver-mas">Ver más</a></p>
-                      </div> 
-
-                  </div>
-
-                  <div class="col ml-podcast pt-2">
- 
-                       <div class="pb-4">
-                        <h3>Galería</h3>
-                        <span class="mini-underline"></span>
-                      </div>  
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://i.ibb.co/mRyqFhN/slide.png" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                            <img class="d-block w-100" src="https://i.ibb.co/mRyqFhN/slide.png" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                            <img class="d-block w-100" src="https://i.ibb.co/mRyqFhN/slide.png" alt="Third slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                        </div>
-
-                        <div>
-                          <p align="right"><a href="#"  class="ver-mas">Ver más</a></p>
-                        </div>
-
-
-                  </div> 
-            </div>  
-        </div>    
-
-        <!-- Footer Enlaces Min -->
-
-         <div class="container ministerio-zone mt-4">
-            <div class="pb-4">
-              <img class="img-enlaces-mobile" src="https://www.mintransporte.gov.co/info/mintransporte/media/galeria8781.png" alt="">   
-            </div>
-            <div class="grid1 enlacesGel">
-
-              <div  class="enlaces-div img-enlaces-div"> 
-                <img class="img-enlaces" src="https://www.mintransporte.gov.co/info/mintransporte/media/galeria8781.png" alt="">   
-              </div> 
-
-              <div class="enlaces-div"> 
-                <ul>
-                  <li><a class="flex-item vinnetaPresidencia" href="https://id.presidencia.gov.co/Paginas/presidencia.aspx" target="_blank">Presidencia</a></li>
-                  <li><a class="flex-item vinnetaVicepresidencia" href="http://www.vicepresidencia.gov.co" target="_blank">Vicepresidencia</a></li>
-                  <li><a class="flex-item vinnetaMinjusticia" href="http://www.minjusticia.gov.co" target="_blank">MinJusticia</a></li>
-                </ul>   
-              </div>  
-              <div class="enlaces-div">
-                <ul>
-                  <li><a class="flex-item vinnetaMindefensa" href="http://www.mindefensa.gov.co" target="_blank">MinDefensa</a></li>
-                  <li><a class="flex-item vinnetaMinrelaciones" href="http://www.cancilleria.gov.co" target="_blank">Cancillería</a></li>
-                  <li><a class="flex-item vinnetaMininterior" href="http://www.mininterior.gov.co/" target="_blank">MinInterior</a></li>
-                </ul>     
-              </div>
-              <div class="enlaces-div">
-                <ul> 
-                  <li><a class="flex-item vinnetaMinminas" href="https://www.minenergia.gov.co/" target="_blank">MinMinas</a></li>
-                  <li><a class="flex-item vinnetaMinhacienda" href="http://www.minhacienda.gov.co" target="_blank">MinHacienda</a></li>
-                  <li><a class="flex-item vinnetaMincomercio" href="http://www.mincit.gov.co/" target="_blank">MinComercio</a></li>
-                </ul>      
-              </div>
-              <div class="enlaces-div">
-                <ul>
-                 <li><a class="flex-item vinnetaMintransporte" href="https://www.mintransporte.gov.co" target="_blank">MinTransporte</a></li>
-                 <li><a class="flex-item vinnetaMintrabajo" href="http://www.mintrabajo.gov.co" target="_blank">MinTrabajo</a></li>
-                 <li><a class="flex-item vinnetaMinagricultura" href="http://www.minagricultura.gov.co" target="_blank">MinAgricultura</a></li>
-                </ul>        
-              </div>
-              <div class="enlaces-div">
-                <ul>
-                 <li><a class="flex-item vinnetaMinambiente" href="http://www.minambiente.gov.co" target="_blank">MinAmbiente</a></li>     
-                 <li><a class="flex-item vinnetaMintic" href="http://www.mintic.gov.co" target="_blank">MinTIC</a></li>
-                 <li><a class="flex-item vinnetaMincultura" href="http://www.mincultura.gov.co/Paginas/default.aspx" target="_blank">MinCultura</a></li>
-                </ul>
-              </div>
-              <div class="enlaces-div">
-                <ul> 
-                  <li><a class="flex-item vinnetaMineducacion" href="http://www.mineducacion.gov.co" target="_blank">MinEducación</a></li>
-                  <li><a class="flex-item vinnetaMinvivienda" href="http://www.minvivienda.gov.co" target="_blank">MinVivienda</a></li>
-                  <li><a class="flex-item vinnetaMinsalud" href="http://www.minsalud.gov.co" target="_blank">MinSalud</a></li> 
-                </ul>
-            </div>  
-          </div>
-        </div>  
     
-           
+</header>   
+<main> 
 
-      
-      <!-- Main Footer  --> 
-      <footer class="container mt-4">
-        <div class="grid3x-footer">
-
-          <div class="box-footer">
-            <div>
-              <img align="left" src="" alt="">  
-                
-              <p><b>Horario de atención:</b><br>
-              Lunes a Viernes <br>
-              
-              <b>de 7:00 a.m. - 9:00 p.m. <br>Sábados de 8:00 a.m. - 1:00 p.m.</b>  <br>Jornada continua.</p>
-              <p>Línea de orientación sobre  <br>CORONAVIRUS - COVID-19: <br>
-                Desde fijo o celular marque: <b>192</b></p>
-           
-              <p> Conmutador:<br>
-              <b> +57(1) 330 5000 <br> Central de fax: +57(1) 330 5050</b></br><br><br></p> <br>
-            </div>
-          </div>
-
-          <div class="box-footer">
-            <div>
-              <p>
-             
-
-              Punto de atención presencial: <br>
-              <b>Carrera 13 No. 32-76 piso 1, Bogotá, <br>Código postal 110311<br>
-              Lunes - viernes de 8:00 a.m. a 4:00 p.m.</b><br> jornada continua<br><br>
-
-              Línea de atención de desastres:<br>
-              <b> +57(1) 330 5071 - 24 horas</b><br><br>
-
-              Atención telefónica a través del Centro de Contacto:<br>
-              <b>En Bogotá: +57(1) 330 5043 <br>Resto del país: 018000960020</b></p>
-
-              <p>Última actualización: <br> miércoles, 13 de enero de 2021</p>
-              
-            </div>
-          </div>
-
-          <div class="box-footer">
-            <div class="redes-right">
-                
-                <div class="solicitud">
-                    <p><a href="https://www.minsalud.gov.co/atencion/Paginas/Solicitudes-sugerencias-quejas-o-reclamos.aspx">Solicitudes, sugerencias y reclamos  PQRSD
-                    Términos y condiciones de uso. Notificaciones judiciales</a></p>
-
-                </div> 
-
-                <div class="share pt-1"> 
-                    <p><a target="_blank" href="https://www.facebook.com/MinSaludCol"><span class="span-redes"><i class="fab fa-facebook-f"></i></span></a></p> 
-                    <p><a target="_blank"  href="https://instagram.com/minsaludcol/"><span class="span-redes"><i class="fab fa-instagram"></i></span></a></p> 
-                    <p><a target="_blank"  href="https://twitter.com/MinSaludCol"><span class="span-redes"><i class="fab fa-twitter"></i></span></a></p>  
-                </div>  
-                <div class="share pt-1"> 
-                    <p><a target="_blank"  href="https://www.youtube.com/user/MinSaludColPrensa"><span class="span-redes"><i class="fab fa-youtube"></i></span></a></p> 
-                    <p><a target="_blank"  href="https://www.linkedin.com/company/minsaludcol/"><span class="span-redes"><i class="fab fa-linkedin"></i></span></a></p> 
-                    <p><a target="_blank"  href="https://www.minsalud.gov.co/atencion/Paginas/rss-msps2.aspx"><span class="span-redes"><i class="fas fa-rss"></i></span></a></p>  
-                </div>  
-
-                <div>
-                  <p align="left">
-                    <a target="_blank" href="https://www.minsalud.gov.co/Paginas/Certificacion-ISO-27001-MinSalud.aspx"><img src="https://www.minsalud.gov.co/imgLayout/iso27001-icon.png" alt=""></a></p>
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col">
+        <h2>¡Bienvenidos funcionarios!</h2>
+        <p>En el Ministerio de Salud y Protección Social se ha diseñado este espacio pensando en nuestros funcionarios y contratistas. Por eso se han seleccionando contenidos que le pueden interesar, para que encuentre de manera rápida y fácil información sobre acceso al correo institucional, sitios colaborativos, listado vigente de administradores de contenido del portal web, gestión de trámites y servicios, biblioteca de documentos, entre otros.</p>
+      </div>
+       <div class="col" >
+         <div id="formlogin">  
+              <form id="formlogi1"> 
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"><b>Email</b></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario1" value="Usuario1">
+                  <div id="emailHelp" class="form-text"> </div>
                 </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"><b>Contraseña</b></label>
+                  <input type="password" class="form-control" placeholder="123" id="exampleInputPassword1" value="123">
+                </div>
+                <!--  <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div> -->
+                  <div align="center">
+                  <button  align="" class="btn"></button> 
+                </div>  
+            </form>
+            <button class="btn btn-primary" onclick="form_login()">Iniciar Sesión</button>
+          </div>  
+          <div id="myDIV" class="box">
+            <ul class="lista-contenido">
+                <li><a href="https://correoweb.minsalud.gov.co/" target="_blank">Correo Institucional</a></li>
+                <li><a href="https://www.minsalud.gov.co/Paginas/AdministradoresdeContenido.aspx" target="_blank">Administradores de Contenido</a></li>
+                <li><a href="https://www.minsalud.gov.co/Paginas/sitios%20colaborativos.aspx" target="_blank">Sitios Colaborativos</a></li>
+                <li><a href="https://www.minsalud.gov.co/area-colaborativa" target="_blank">Acceder a trabajo colaborativo</a></li>
+                <li><a href="https://intranet.minsalud.gov.co/Paginas/SaludNet.aspx" target="_blank">Intranet</a></li>
+            </ul>
+          </div>
+       
+      </div>
+    </div>
+ 
 
-            </div>
-          </div> 
+  </div>
+ 
+  <!-- Footer Enlaces Min --> 
+  <div class="container ministerio-zone mt-4">
+      <div class="pb-4">
+        <img class="img-enlaces-mobile" src="https://www.mintransporte.gov.co/info/mintransporte/media/galeria8781.png" alt="">   
+      </div>
+      <div class="grid1 enlacesGel">
+
+        <div  class="enlaces-div img-enlaces-div"> 
+          <img class="img-enlaces" src="https://www.mintransporte.gov.co/info/mintransporte/media/galeria8781.png" alt="">   
         </div> 
-      </footer>  
 
-      <div>
-        <p>&nbsp;</p>
-      </div> 
-        
-      <!-- Footer Fixed Mobile -->
-      <div class="footer-fixed bg-primary "> 
-          
-        <div class="grid2x">
-          <div class="box bg-left">
-            <div>
-                <a href="Comunicaciones.html">Centro de Comunicaciones</a></div></div>
-          <div class="box bg-right">
-            <div>
-                                  <a href="#">Atención al Ciudadano</a></div></div>
+        <div class="enlaces-div"> 
+          <ul>
+            <li><a class="flex-item vinnetaPresidencia" href="https://id.presidencia.gov.co/Paginas/presidencia.aspx" target="_blank">Presidencia</a></li>
+            <li><a class="flex-item vinnetaVicepresidencia" href="http://www.vicepresidencia.gov.co" target="_blank">Vicepresidencia</a></li>
+            <li><a class="flex-item vinnetaMinjusticia" href="http://www.minjusticia.gov.co" target="_blank">MinJusticia</a></li>
+          </ul>   
+        </div>  
+        <div class="enlaces-div">
+          <ul>
+            <li><a class="flex-item vinnetaMindefensa" href="http://www.mindefensa.gov.co" target="_blank">MinDefensa</a></li>
+            <li><a class="flex-item vinnetaMinrelaciones" href="http://www.cancilleria.gov.co" target="_blank">Cancillería</a></li>
+            <li><a class="flex-item vinnetaMininterior" href="http://www.mininterior.gov.co/" target="_blank">MinInterior</a></li>
+          </ul>     
         </div>
+        <div class="enlaces-div">
+          <ul> 
+            <li><a class="flex-item vinnetaMinminas" href="https://www.minenergia.gov.co/" target="_blank">MinEnergía</a></li>
+            <li><a class="flex-item vinnetaMinhacienda" href="http://www.minhacienda.gov.co" target="_blank">MinHacienda</a></li>
+            <li><a class="flex-item vinnetaMincomercio" href="http://www.mincit.gov.co/" target="_blank">MinComercio</a></li>
+          </ul>      
+        </div>
+        <div class="enlaces-div">
+          <ul>
+            <li><a class="flex-item vinnetaMintransporte" href="https://www.mintransporte.gov.co" target="_blank">MinTransporte</a></li>
+            <li><a class="flex-item vinnetaMintrabajo" href="http://www.mintrabajo.gov.co" target="_blank">MinTrabajo</a></li>
+            <li><a class="flex-item vinnetaMinagricultura" href="http://www.minagricultura.gov.co" target="_blank">MinAgricultura</a></li>
+          </ul>        
+        </div>
+        <div class="enlaces-div">
+          <ul>
+            <li><a class="flex-item vinnetaMinambiente" href="http://www.minambiente.gov.co" target="_blank">MinAmbiente</a></li>     
+            <li><a class="flex-item vinnetaMintic" href="http://www.mintic.gov.co" target="_blank">MinTIC</a></li>
+            <li><a class="flex-item vinnetaMincultura" href="http://www.mincultura.gov.co/Paginas/default.aspx" target="_blank">MinCultura</a></li>
+          </ul>
+        </div>
+        <div class="enlaces-div">
+          <ul> 
+            <li><a class="flex-item vinnetaMineducacion" href="http://www.mineducacion.gov.co" target="_blank">MinEducación</a></li>
+            <li><a class="flex-item vinnetaMinvivienda" href="http://www.minvivienda.gov.co" target="_blank">MinVivienda</a></li>
+            <li><a class="flex-item vinnetaMinsalud" href="http://www.minsalud.gov.co" target="_blank">MinSalud</a></li> 
+          </ul>
+      </div>  
+    </div>
+  </div>   
 
-      </div> 
+</main>
  
- 
- 
-    </body>
+ <!-- Main Footer  --> 
+<footer class="container mt-4">
+  <div class="grid3x-footer">
+
+    <div class="box-footer">
+      <div>
+        <img align="left" src="" alt="">  
+          
+        <p><b>Horario de atención:</b><br>
+        Lunes a Viernes <br>
+        
+        <b>de 7:00 a.m. - 9:00 p.m. <br>Sábados de 8:00 a.m. - 1:00 p.m.</b>  <br>Jornada continua.</p>
+        <p>Línea de orientación sobre  <br>CORONAVIRUS - COVID-19: <br>
+          Desde fijo o celular marque: <b>192</b></p>
+      
+        <p> Conmutador:<br>
+        <b> +57(1) 330 5000 <br> Central de fax: +57(1) 330 5050</b></br><br><br></p> <br>
+      </div>
+    </div>
+
+    <div class="box-footer">
+      <div>
+        <p>
+        
+
+        Punto de atención presencial: <br>
+        <b>Carrera 13 No. 32-76 piso 1, Bogotá, <br>Código postal 110311<br>
+        Lunes - viernes de 8:00 a.m. a 4:00 p.m.</b><br> jornada continua<br><br>
+
+        Línea de atención de desastres:<br>
+        <b> +57(1) 330 5071 - 24 horas</b><br><br>
+
+        Atención telefónica a través del Centro de Contacto:<br>
+        <b>En Bogotá: +57(1) 330 5043 <br>Resto del país: 018000960020</b></p>
+
+        <p>Última actualización: <br> miércoles, 13 de enero de 2021</p>
+        
+      </div>
+    </div>
+
+    <div class="box-footer">
+      <div class="redes-right">
+          
+          <div class="solicitud">
+              <p><a href="https://www.minsalud.gov.co/atencion/Paginas/Solicitudes-sugerencias-quejas-o-reclamos.aspx">Solicitudes, sugerencias y reclamos  PQRSD
+              Términos y condiciones de uso. Notificaciones judiciales</a></p>
+
+          </div> 
+
+          <div class="share pt-1"> 
+              <p><a target="_blank" href="https://www.facebook.com/MinSaludCol"><span class="span-redes"><i class="fab fa-facebook-f"></i></span></a></p> 
+              <p><a target="_blank"  href="https://instagram.com/minsaludcol/"><span class="span-redes"><i class="fab fa-instagram"></i></span></a></p> 
+              <p><a target="_blank"  href="https://twitter.com/MinSaludCol"><span class="span-redes"><i class="fab fa-twitter"></i></span></a></p>  
+          </div>  
+          <div class="share pt-1"> 
+              <p><a target="_blank"  href="https://www.youtube.com/user/MinSaludColPrensa"><span class="span-redes"><i class="fab fa-youtube"></i></span></a></p> 
+              <p><a target="_blank"  href="https://www.linkedin.com/company/minsaludcol/"><span class="span-redes"><i class="fab fa-linkedin"></i></span></a></p> 
+              <p><a target="_blank"  href="https://www.minsalud.gov.co/atencion/Paginas/rss-msps2.aspx"><span class="span-redes"><i class="fas fa-rss"></i></span></a></p>  
+          </div>  
+
+          <div>
+            <p align="left">
+              <a target="_blank" href="https://www.minsalud.gov.co/Paginas/Certificacion-ISO-27001-MinSalud.aspx"><img src="https://www.minsalud.gov.co/imgLayout/iso27001-icon.png" alt=""></a></p>
+          </div>
+
+      </div>
+    </div> 
+  </div> 
+</footer>  
+
+<div>
+  <p>&nbsp;</p>
+</div> 
+  
+<!-- Footer Fixed Mobile -->
+<div class="footer-fixed bg-primary "> 
+    
+  <div class="grid2x">
+    <div class="box bg-left">
+      <div>
+          <a href="Comunicaciones.html">Centro de Comunicaciones</a></div></div>
+    <div class="box bg-right">
+      <div>
+                            <a href="#">Atención al Ciudadano</a></div></div>
+  </div>
+
+</div> 
+
+<script>
+function form_login() {
+  document.getElementById("formlogin").style.display = "none";
+  document.getElementById("myDIV").style.display = "block"; 
+}
+</script>
+   
+
+</body>
 </html>
-
- 
+       
