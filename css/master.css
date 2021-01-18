@@ -412,9 +412,13 @@
     }
     /* Link funcionarios */
 
-    .funcionarios{
-      border: 1px solid pink;
-    }
+    .funcionarios {
+    color: white!important;
+    font-size: 15px;
+    margin-right: 20px;
+    font-weight: 500;
+      
+   }
 
     .noticia-mobile{
       padding-left: 0px;
