@@ -498,21 +498,42 @@ body #scene #right-zone {
   color:white;
 }
 /*fin estilos web oscuro*/	
+/*pestaña social*/
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+ 
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-googleplus {background: #d95232;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+ 
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+	/*pestaña accesibilidad*/
 
-/*estilos para boton flotante*/
-.flotante {
-    display:scroll;
-        position:fixed;
-        top:100px;
-        left:0px;
-}
-.flotante1 {
-    display:scroll;
-        
-        top:100px;
-        right:0px;
-}
-/*estilos para boton flotante*/	
+
     </style>
    
 
@@ -570,31 +591,36 @@ body #scene #right-zone {
                             <a class="nav-link nav-link-servicio" href="#">Atención al Ciudadano <img src="img/click2.png" width="30px" alt=""></a>
                             
                         </li>  
-                        <!-- Botones -->
-				<div class='flotante'>		
-              <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Botones" style="float:left;">
-                  <button type="button" class="disminuir btn btn-dark mr-1" title="Disminuir texto">D</button>
-                  <button type="button" class="aumentar btn btn-dark mr-1" title="Aumentar texto">A</button>
-                  <button type="button" class="restablecer btn btn-danger" title="Reestablecer texto">R</button>
-				  </div>
-</div>
-              
-                    </ul> 
-                </div>
-            </div>
-<div class="flotante1">			
-<div class="container-btn-mode" >
-   <div id="id-sun" class="btn-mode sun active">
-      <i class="fas fa-sun"></i>
-   </div>
-   <div id="id-moon" class="btn-mode moon">
-      <i class="fas fa-moon"></i>
-   </div>
-</div>
-</div>
+                       
 
-<!--modo oscuro-->
+
+
       </nav>
+	   <!-- Botones accesibilidad y modo oscuro -->
+	   <div class="oculto1">
+	  <div class="social" style="top:250px;">
+	<div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Botones">
+	
+    
+    
+        <ul>
+               <li><button type="button" class="disminuir btn btn-dark mr-1" title="Disminuir texto" style="width:40px;">D</button></li>
+			   <br>
+             <li><button type="button" class="aumentar btn btn-dark mr-1" title="Aumentar texto" style="width:40px;">A</button></li>
+			 <br>
+              <li><button type="button" class="restablecer btn btn-danger" title="Reestablecer texto"style="width:40px;" >R</button></li>
+			  <br>
+			  <li><button type="button" class="btn btn-dark mr-1" id="id-sun" title="Modo claro"><i class="fas fa-sun" style="color: #fff;"></i></button></li>
+			  <br>
+			  <li><button type="button" class="btn btn-dark mr-1"  id="id-moon" title="Modo oscuro"><i class="fas fa-moon" style="color: #fff;"></i></button></li>
+			  
+        </ul>
+    
+	</div>
+
+	</div>
+	</div>
+	<!--Botones accesibilidad y modo oscuro-->
          
         <!-- Main Menú -->
 
@@ -1892,7 +1918,7 @@ body #scene #right-zone {
           x.addListener(myFunction) // Attach listener function on state changes
         </script>
  <script type="text/javascript" src="js/app.js"></script>
- <script src="index.js"></script>
+ 
  <script>
  /*Si clicamos en el botón del sol, borrarémos la clase css dark-mode del div 
 con id page y se aplicará el estilo active al sol*/
