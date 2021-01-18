@@ -37,8 +37,124 @@
           div.oculto2{display: block;
             margin-left: -5px;
           }
-        } 
-/*contiene codigos css para:
+        }
+/*css que contiene el tama&ntildeo del div, espaciadores, tama&ntildeo de la fuante, fuente a utilizar
+color de fondo en el div y grosor del borde
+*/
+        .menu{
+            padding:0;
+            list-style:none;
+            width:500px;
+            font-size:18px;
+            font-family: Helvetica, Arial, sans-serif;
+            background:#FFF;
+            
+        }
+
+
+      @media all and (min-width: 992px) { 
+          .navbar .has-megamenu{position:static!important;}
+          .navbar .megamenu{left:0; right:0; width:100%; padding:20px;  } 
+          div.oculto1{display: block;}
+          div.oculto2{display: none;}
+                }
+
+
+
+          @media (max-width:680px)
+          { 
+
+           h1{
+             font-size: 22px;
+           } 
+
+          div.oculto1{display: none;} 
+          div.oculto2{display: block;}
+
+          .menu{ 
+            width:340px; 
+            
+          }
+          
+           }
+
+ /*contiene codigos css para:
+mostrar el contenido, grosor de bordes entre divs, color de fondo, decoraciones al texto, color de texto, 
+sombra del texto y ubicacion del mismo.
+ */
+          .menu li a{
+              display: block;
+              border-bottom: 1px solid rgba(0,0,0, 0.2);
+              border-top: 1px solid rgba(255,255,255, 0.2);
+              background:#C3C8CC;
+              text-decoration:none;
+              font-family: Helvetica, Arial, sans-serif;
+              color:#000;
+              text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+              filter: dropshadow(color=#000, offx=1, offy=0);
+              padding:10px;
+              padding-left:20px;
+            text-align: justify;
+          }
+            /*contiene codigos css para:
+              color de letra en las columnas que se expanden,  
+            sombra del texto y ubicacion del mismo.
+            */
+            .menu li ul li a{
+                font-size:14px;
+                font-family: Helvetica, Arial, sans-serif;
+                color:#47689d;
+                text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
+                
+            }
+            /*contiene codigos css para:
+              color de fondo en las columnas que se expanden (azul)y tiempo de transicion en la funcion.
+            */
+            .menu li a:hover{
+                background:#007BFF;
+                -moz-transition: background 0.3s ease-in;
+                -webkit-transition: background 0.3s ease-in;
+                -o-transition: background 0.3s ease-in;
+            }
+            /*contiene codigos css para:
+              tiempo de transicion en la funcion para expandir y contraer las columnas.
+            */
+            .menu ul{
+                margin:0;
+                padding:0;
+                list-style:none;
+                height:0;
+                overflow: hidden;
+                transition:1s;
+                -moz-transition:1s;
+                -webkit-transition:1s;
+            }
+            /*contiene codigos css para:
+              permite mostrar las columnas cuando la funcion de expansion se ejecuta.
+            */
+            .menu li:hover ul{
+                height:auto;
+                overflow-y:auto;
+                overflow-x:hidden;
+            }
+
+
+            /*contiene codigos css para:
+              color de fondo en las columnas que se expanden(blanco).
+            */ 
+            .menu ul li a{
+                background:#fafafa;
+            }
+            
+            .menu ul li a:hover {
+                background: none repeat scroll 0 0 #007BFF;
+                color: #fff;
+                -moz-transition: color 0.4s ease;
+                -webkit-transition: color 0.4s ease;
+                -o-transition: color 0.4s ease;
+            }
+			
+			/*contiene codigos css para:
               definir  items de slider vertical version desktop transparencia
             */ 
 			@-webkit-keyframes slidein {
@@ -56,10 +172,10 @@
     top: -400px;
     opacity: 0;
   }
-  /*Aca se define la posicion del texto de la derecha para ajustar su posicion ya que va aumentando a medida que le añaden items*/
+  /*Aca se define la posicion del texto d ela derecha para ajustar su posicion ya que va aumentando a medida que le añaden items*/
   100% {
     opacity: 1;
-    top: 20px;
+    top: 200px;
   }
 }
 @-webkit-keyframes slideout {
@@ -98,9 +214,9 @@ body #scene {
   -webkit-box-pack: left;
           justify-content: left;
   width: 1200px;
-  height: 400px;
+  height: 800px;
   position: absolute;
-  
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -151,7 +267,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ label:first-letter {
 }
 body #scene #left-zone .list li.item input[type="radio"] ~ label:hover {
   opacity: 0.75;
-  
+  cursor: pointer;
 }
 body #scene #left-zone .list li.item input[type="radio"] ~ label.label_strawberry:before {
   content: " ";
@@ -319,7 +435,7 @@ body #scene #right-zone {
   height: 100%;
   -webkit-box-flex: 3;
           flex-grow: 3;
-}				
+}		
     </style>
    
 
@@ -945,146 +1061,254 @@ body #scene #right-zone {
           </div>
 
       </nav>
-	  
-	  
-	  <!--contenido-->
-	  <div class="container">
-	  
-	  <p class="route-page pt-3">
-              <a href="index.html">Ministerio de Salud y Protección Social</a> /  Salud
-            </p>
+        
 
-            
-			
+        <div class="container">
 
-             
-            
-              
-                  <div class="oculto2" style="margin-left: 60px;"><h1>Salud</h1>
-                  
-                 <!-- <p style="padding-left: 0px;">Lorem ipsum dolor sit amet, <br> consectetuer adipiscing
-                    elit. Aenean <br>commodo  ligula eget dolor. <br>Aenean massa.  </p>-->
-					
-                  <br>
-                  
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:115px; height:120px; float:left; margin-left:5px; "><center><a title="Modos, condiciones y estilos de vida saludables" href="/salud/Paginas/habitos-saludables.aspx">Estilos&nbsp; <br>saludables​ </a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:115px; height:120px; float:left; margin-left:10px; "><center><a title="Página de inicio del Plan de Beneficios en Salud" href="/salud/POS/Paginas/plan-obligatorio-de-salud-pos.aspx" style="text-decoration:none;">Plan de Beneficios en&nbsp;Salud&nbsp;</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
-                  <br><br><br><br><br><br>
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:115px; height:120px; float:left;  margin-left:5px; "><center><a title="Copagos y Cuotas Moderadoras" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/cuotas-moderadoras-copagos-2021.pdf" target="_blank">Copagos ​y​​ Cuotas Moderadoras</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:115px; height:120px; float:left; margin-left:10px; "><center><a title="Observatorio de calidad" href="http://oncalidadsalud.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio​</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
-                  <br><br><br><br><br><br>
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:115px; height:120px; float:left;  margin-left:5px; "><center><a href="/salud/MT/Paginas/medicamentos-y-tecnologias.aspx" style="text-decoration:none;">Medicamentos </a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  style="width:50px;" alt="Icono" style="width:50px;" /></center></div>
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; background-color: #c3c8cc; width:115px; height:120px; float:left; margin-left:10px; "><center><a href="#">De interés</a></center> <center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png"  alt="Icono" style="width:50px;" /></center></div>
-                  
-                  <!--separador-->
-                  <div style=" font-family:Arial, Helvetica, Verdana; font-weight: bold; width:280px; height:10px; float:left; margin-left:180px; "></div>
+          <p class="route-page pt-3">
+              <a href="index.html">Ministerio de Salud y Protección Social</a> / Funcionarios
+            </p>  
+          
+          <div class="row">
+              <div class="col-8">
 
-<!--separador-->								
+
+                      <div>
+                        <h1 class="pt-1">Funcionarios</h1>
+
+                        
+                      </div>
+					  <!--inicio texto mobile-->
+					  <div class="oculto2">
+					  <p style="text-align:justify; width:340px;">​​​​​​​​​​En el Ministerio de Salud y Protección Social se ha diseñado este espacio pensando en nuestros funcionarios y contratistas. 
+					  Por eso se han seleccionando contenidos que le pueden interesar, para que encuentre de manera rápida y fácil información sobre acceso al correo institucional, 
+					  sitios colaborativos, listado vigente de administradores de contenido del portal web, gestión de trámites y servicios, biblioteca de documentos, entre otros. 
+					  </p>
 									
-		        	</div>
-					
-									<!--fin seccion mobile-->
+									<br><br>
+									<ul class='menu'>
+    <li><a href='#'>Correo institucional</a>
+      <ul> 
+        <li>
+        
+		 <div>
+<ul>
+  <li><a title="Acceder a su correo institucional" href="https://correoweb.minsalud.gov.co/">Correo institucional</a></li>
+  
+</ul>
 
-            
-                              <!--inicio carrusel vertical-->
-							  
-		
+</div>
+        
+        </li>
+      </ul>
+    </li>
+	    <li><a href='#'>Administradores de contenido</a>
+      <ul> 
+        <li>
+        
+		 <div>
+<ul>
+  <li><a title="Administradores de contenido" href="/Paginas/AdministradoresdeContenido.aspx" target="_blank">Administradores de contenido</a></li>
 
-		<div class="oculto1" >
-		
-            <div id="scene" style="margin-top:200px;">
+</ul>
+
+</div>
+        
+        </li>
+      </ul>
+    </li>
+	    <li><a href='#'>Sitios colaborativos</a>
+      <ul> 
+        <li>
+        
+		 <div>
+<ul>
+			<li><a title="Acceder a sitios colaborativos" href="/Paginas/sitios%20colaborativos.aspx" target="_blank">Sitios colaborativos</a></li>
+			
+			</ul>
+
+</div>
+        
+        </li>
+      </ul>
+    </li>
+	    <li><a href='#'>Acceder a trabajo colaborativo</a>
+      <ul> 
+        <li>
+        
+		 <div>
+<ul>
+			<li><a title="Acceder a trabajo colaborativo" href="/area-colaborativa" target="_blank">Acceder a trabajo colaborativo</a></li>
+			
+			</ul>
+</div>
+        
+        </li>
+      </ul>
+    </li>
+	    <li><a href='#'>Intranet</a>
+      <ul> 
+        <li>
+        
+		 <div>
+<ul>
+			<li><a title="Ingresar a la Intranet" href="https://intranet.minsalud.gov.co/Paginas/SaludNet.aspx" target="_blank">Intranet</a></li>
+			
+			</ul>
+</div>
+        
+        </li>
+      </ul>
+    </li>
+	   
+   
+   
+   
+   
+   
+   
+   
+   
+ </ul>
+					  </div>
+					  
+					 <!--fin texto mobile-->
+                       
+                      
+                      
+ 
+
+                      <div class="row">
+
+                        <table align="center" width="100%" cellspacing="0"cellpadding="0" >
+                          <tr>
+                              <td valign="top">
+                                  <table width="100%" cellspacing="0" cellpadding="0"  bgcolor="#FFFFFF" style="background-color:#FFFFFF;">
+                                      <tr>
+                                          
+                                                                                  
+                   <!--inicio carrusel vertical desktop---->                           
+                                              
+          <div class="oculto1">
+             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>                                 
+              <div id="scene">
     <div id="left-zone">
       <ul class="list">
         <li class="item">
           <input type="radio" id="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" name="basic_carousel" value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" checked="checked"/>
-          <label class="label_strawberry" for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"><p style="margin-left:60px;">Estilos&nbsp;saludables​</p></label>
+          <label class="label_strawberry" for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"><p style="margin-left:60px;">Correo institucional</p></label>
           <div class="content content_strawberry"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Estilos&nbsp;saludables​</h5>
-            <ul>
-  <li><a title="actividad física" href="/salud/publica/HS/Paginas/actividad-fisica.aspx">Actividad física​</a></li>
-  <li><a title="salud nutricional" href="/salud/publica/HS/Paginas/salud-nutricional.aspx">Nutrición&nbsp; y alimentación saludable​</a></li>
-  <li><a title="El consumo de tabaco causa decenas de enfermedades" href="/salud/publica/HS/Paginas/somos-mas-sin-tabaco.aspx">Prevención consum​o de tabaco</a></li>
-  <li><a title="peso saludable" href="/salud/publica/HS/Paginas/peso-saludable.aspx">Peso saludable</a></li>
-  <li><a title="lavado de manos" href="/salud/publica/HS/Paginas/lavado-de-manos.aspx">Lavado de manos​</a></li>
-  <li><a title="salud bucal, visual y auditiva" href="/salud/publica/HS/Paginas/salud-bucal-visual-auditiva.aspx">Salud bucal, visual y auditiva​ </a></li>
-  <li><a title="Información para jóvenes" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VS/PP/ENT/entorno-laboral-saludable-2018.pdf">Entorno laboral formal saludable</a></li>
+            <h5 style="margin-left:20px;">Correo institucional</h5>
+			<ul>
+  <li><a title="Correo institucional" href="/atencion/Paginas/Atencion_al_Ciudadano.aspx" target="_blank">Correo institucional</a></li>
   
 </ul>
+            
           </div>
         </li>
         <li class="item">
           <input type="radio" id="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
-          <label class="label_banana" for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."><p style="margin-left:60px;">Poblaciones vulnerables​</p> </label>
+          <label class="label_banana" for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."><p style="margin-left:60px;">Administradores de contenido</p></label>
           <div class="content content_banana"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Poblaciones vulnerables​ </h5>
-            <ul>
-  <li><a title="Familia, Modelo de atención" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VS/PP/ABCenfoqueCV.pdf">​​  Enfoque curso de vida</a></li>
-  <li><a title="Primera Infancia, lactancia, vacunación" href="/salud/publica/PI/Paginas/primera-infancia-home.aspx">  Primera infancia</a></li>
-  <li><a title="Conozca el proceso de actualización del POS" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/RBC/como-actualiza-pos-diez-pasos.pdf" target="_blank">Momentos del curso de vida</a></li>
-  
+            <h5 style="margin-left:20px;">Administradores de contenido</h5>
+  <ul>
+  <li><a title="Administradores de contenido" href="/Paginas/datos-abiertos.aspx" target="_blank">Administradores de contenido</a></li>
+
 </ul>
+
           </div>
         </li>
         <li class="item">
           <input type="radio" id="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." name="basic_carousel" value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."/>
-          <label class="label_apple" for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."><p style="margin-left:60px;">Sistema Obligatorio de Garantía de Calidad​</p></label>
+          <label class="label_apple" for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."><p style="margin-left:60px;">3. Estructura orgánica y talento humano</p></label>
           <div class="content content_apple"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Sistema Obligatorio de Garantía de Calidad​</h5>
+            <h5 style="margin-left:20px;">Estructura orgánica y talento humano</h5>
             <ul>
-  <li><a href="/salud/PServicios/Paginas/sistema-obligatorio-garantia-calidad-SOGC.aspx" title="SOGC">Sistema Obligatorio de Garantía de Calidad​</a></li>
-  <li><a href="/salud/PServicios/Paginas/informacion-de-interes.aspx" title="Información para Instituciones Prestadoras de Salud (IPS)">Información para IPS​</a></li>
-  <li><a href="https://prestadores.minsalud.gov.co/planesbienales/" target="_blank" title="Planes bienales de inversión">Planes bienales de inversión</a></li>
-  <li><a href="/salud/PServicios/Paginas/infraestructura-en-salud.aspx" title="Políticas y normas técnicas de infraestructura física hospitalaria">Infraestructura en salud</a></li>
-  <li><a href="https://prestadores.minsalud.gov.co/siho/" target="_blank" title="SIHO - Sistema de Información">Gestión&nbsp;hospitales públicos </a></li>
-  <li><a href="https://prestadores.minsalud.gov.co/habilitacion/" target="_blank" title="Registro de prestadores">Registro&nbsp;de prestadores ​</a></li>
-  <li><a href="/salud/PServicios/Paginas/Emergencias-y-desastres.aspx" title="Emergencias y desastres">Emergencias y desastres </a></li>
-</ul>
+			<li><a title="Mision y vision" href="/Ministerio/Institucional/Paginas/mision-vision-principios.aspx" target="_blank">3.1. Misión y visión</a></li>
+			<li><a title="Funciones y deberes" href="/Ministerio/Paginas/objetivosFunciones.aspx" target="_blank">3.2. Funciones y deberes</a></li>
+			<li><a title="Procesos y procedimientos" href="/Ministerio/Institucional/Paginas/procesos-procedimientos-sigi.aspx" target="_blank">3.3. Procesos y procedimientos Minsalud, Fondo Nacional de Estupefacientes</a></li>
+			<li><a title="Organigrama" href="/sites/rid/Lists/BibliotecaDigital/RIDE/SG/GT/organigrama-minsalud.pdf" target="_blank">3.4. Organigrama</a></li>
+			<li><a title="Directorio " href="https://www.funcionpublica.gov.co/web/sigep/hojas-de-vida" target="_blank">3.5. Directorio de información de servidores públicos, empleados y contratistas</a></li>
+			<li><a title="Directorio de entidades" href="/Ministerio/Lists/Entidades%20Adscritas%20y%20Vinculadas/AllItems.aspx" target="_blank">3.6. Directorio de entidades</a></li>
+			<li><a title="Afiliaciones Colectivas" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/OAS/Listado-autorizadas-para-afiliacion-colectiva.zip" target="_blank">3.7. Directorio de Agremiaciones, Asociaciones y otros grupos de interés - Listado de afiliaciones colectivas</a></li>
+			<li><a title="Ofertas de empleo" href="/Ministerio/Institucional/Paginas/gestionhumana.aspx" target="_blank">3.8. Ofertas de empleo</a></li>
+			
+			</ul>
           </div>
         </li>
         <li class="item">
-          <input type="radio" id="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-          <label class="label_orange" for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">Observatorio</p></label>
+          <input type="radio"  id="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
+          <label class="label_orange" for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">Sitios colaborativos</p></label>
           <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Observatorio</h5>
+            <h5 style="margin-left:20px;"> Sitios colaborativos</h5>
             <ul>
-  <li><a title="Observatorio de calidad" href="http://oncalidadsalud.minsalud.gov.co/Paginas/Inicio.aspx">Observatorio​</a></li>
-  <li><a title="Familia" href="/salud/CAS/Paginas/ranking-actores.aspx">Usuarios​</a></li>
-  <li><a title="Ordenamiento EPS" href="/salud/CAS/Paginas/seguridad-del-paciente.aspx">Seguridad del paciente</a></li>
-  <li><a title="Guías de práctica clínica" href="http://gpc.minsalud.gov.co/">Guías de práctica clínica GPC</a></li>
-  <li><a title="Protocolos" href="/salud/CAS/Paginas/protocolos-clinicos.aspx">Protocolos </a></li>
-  <li><a title="Ordenamiento EPS" href="/salud/CAS/Paginas/instituciones-prestadoras-de-salud-ips-acreditadas.aspx">Prestadores acreditados ​</a></li>
-  <li><a href="/salud/CAS/Paginas/Experiencias-Exitosas-en-Humanizaci%c3%b3n-y-Calidad.aspx">Humanización en Salud</a></li>
-</ul>
+			<li><a title="Sitios colaborativos" href="/Normativa/Paginas/normativa.aspx" target="_blank">Sitios colaborativos</a></li>
+			
+			</ul>
           </div>
         </li>
-		    <li class="item">
-          <input type="radio" id="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-          <label class="label_orange" for="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">Medicamentos</p></label>
+		<li class="item">
+          <input type="radio" id="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
+          <label class="label_orange" for="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">Acceder a trabajo colaborativo</p></label>
           <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Medicamentos</h5>
+            <h5 style="margin-left:20px;">Acceder a trabajo colaborativo</h5>
             <ul>
-  <li><a href="/salud/MT/Paginas/medicamentos.aspx" title="Regulación de precios, biotecnológicos, desabastecimiento, comparadores administrativos, productos naturales">Medicamentos</a></li>
-  <li><a href="/salud/MT/Paginas/dispositivos-medicos-equipos-biomedicos.aspx" title="dispositivos médicos">Dispositivos médi​cos</a></li>
-  <li><a href="/salud/MT/Paginas/sangre-componentes-anatomicos.aspx" title="Información sobre donación de sangre, órganos y tejidos">Donació​n,&nbsp;transfusión &nbsp; y&nbsp;trasplante​s&nbsp;</a></li>
-  <li><a href="/salud/MT/Paginas/politica-farmaceutica-2012.aspx" title="Política farmaceútica y tecnologías en salud">Política farmacéutica y tecnologías en salud</a></li>
-  <li><a href="/salud/MT/Paginas/fondo-nacional-de-estupefacientes-fne.aspx" title="Unidad Administrativa Especial (UAE) del Minsalud">Fondo Nacional de Estupefacientes</a></li>
-</ul>
+			<li><a href="#">Acceder a trabajo colaborativo</a></li>
+			
+			</ul>
           </div>
         </li>
-
+			<li class="item">
+          <input type="radio" id="radio_The orange2 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
+          <label class="label_orange" for="radio_The orange2 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">Intranet</p></label>
+          <div class="content content_orange"><!--<span class="picto"></span>-->
+            <h5 style="margin-left:20px;">Intranet</h5>
+            <ul>
+			<li><a href="#">Intranet</a></li>
+			
+			
+			</ul>
+          </div>
+        </li>
+			
+		
       </ul>
     </div>
     <div id="middle-border"></div>
     <div id="right-zone"></div>
   </div>
-                              
-							  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            </div>
-			<!--fin carrusel vertical desktop-->
-	  <!--contenido-->
-      
-       </div>    
+  <br><br>
+  </div>
+									 
+                                              <!--fin carrusel vertical desktop--> 
+                                     
+          
+                                          
+                                          <td width="5" style="font-size: 1px; line-height: 1px;"> </td>
+                                      </tr>
+                                  </table>
+                              </td>
+                          </tr>
+                      </table>
 
+
+                      
+                        
+ 
+                 
+ 
+
+
+              
+
+              </div>
+
+          </div>  
+
+
+ 
+        </div> 
+ 
          <!-- Footer Enlaces Min -->
 
       <div class="container ministerio-zone mt-4">
@@ -1141,7 +1365,6 @@ body #scene #right-zone {
           </div>  
         </div>
       </div>  
-
       <!-- Main Footer  --> 
       <footer class="container mt-4">
         <div class="grid3x-footer">
