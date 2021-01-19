@@ -111,25 +111,34 @@
   .logo-min{
       display: none;
       background: url("https://www.minsalud.gov.co/LogosInstitucionales/logo-gobierno-Ministerio-de-Salud-y-Proteccion-Social-minsalud.png");
-  }
-
+  } 
 
   /* Menu */
-
   .navbar-light .navbar-nav .nav-link {
     color: var(--white);
   }
+  
+
 
   .navbar-light .navbar-nav .nav-link .active {
     color: var(--white);
     font-weight: bolder;
   }
 
-  .covid {
-    background: var(--color_4_blue);
+
+  .navbar-nav .covid {
+    
+    background: white;
     position: relative;
-        margin-left: 50px;
+    margin-left: 132px;
+    border: 2px solid var(--color_blue_5) !important;
+    background: var(--color_blue_5) !important;
+    color: white !important;
   } 
+  .covid-menu{
+    color: white;
+  }
+
 
   .dropdown-menu {
     display: none;
@@ -365,8 +374,11 @@
 
   @media only screen and (max-width: 600px) {
 
+  
+
     .footer-fixed {
       display: inline;
+      z-index: 3000;
     }
 
     .no-mobile{
@@ -399,6 +411,13 @@
     .covid-li a{  
       color: var(--color_4_blue) !important;
     }
+     .navbar-nav .covid {
+      
+      margin-left: 0px;
+      border: 0;
+      background: var(--color_blue_5) !important;
+      color: white !important;
+    } 
 
     /* Banner Rotativo */
       .carousel-inner{
@@ -555,6 +574,7 @@
 
     
 
+    
   @media only screen and (max-width: 600px) {
 
     .enlaces-ul{

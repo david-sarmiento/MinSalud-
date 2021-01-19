@@ -23,7 +23,7 @@
 
     color: white !important;
     border-bottom: 2px solid var(--color_secondary);
-    background: var(--color_blue_5);   
+    background: var(--color_blue_5);  
        
   }
   .tabs-section .nav-link:hover::after { 
@@ -63,17 +63,18 @@
     right: 23px;
     padding-top: 5px; 
    } 
+
   .tabs-section .tab-pane.active {
-      -webkit-animation: fadeIn 0.5s ease-out;
-      animation: fadeIn 0.5s ease-out;
+    -webkit-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
   } 
+
   .tabs-section .details p {
-      color: var(--color_parrafo);
-      font-size: 15px;
+    color: var(--color_parrafo);
+    font-size: 15px;
   } 
 
   /* Estilos Lista Submenu Mega menu*/
-
   .tab-content ul{
 
     list-style:disc; 
@@ -85,7 +86,7 @@
     
     height: 37px; 
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
 
     vertical-align: middle;
     margin-top: 5px;
@@ -95,7 +96,7 @@
       
 
   .tab-content ul li a{
-    color:var(--color_secondary);
+    color:var(--color_blue_5);
   }
 
   .titulo-menu-mobile{

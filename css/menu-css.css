@@ -8,13 +8,29 @@
   
   }
   .nav-bar-menu{
+    background: white!important;
+  }
 
-    background:var(--color_blue_5)!important;
+  /* Color menu */
+  .navbar-light .navbar-nav .nav-link {
+    color: var(--color_blue_5);
+    font-weight: 400;
+    
+  }
+
+  .span-menu-title:hover {
+    color: var(--color_blue_5); 
+    border-bottom: 3px solid var(--color_secondary_equidad);
+  }
+  .span-menu-title {
+    color: var(--color_blue_5) !important; 
   }
 
   .container-menu{ 
 
-      background: transparent !important; 
+    background: transparent !important;  
+    border-right: 8px solid var(--color_blue_5);
+    border-left: 8px solid var(--color_blue_5);
   }
   /* Diseño top menu */
 
@@ -22,8 +38,18 @@
     margin-top: -1px;
   }
   .megamenu {
+
     z-index: 3000;
+    padding: 0px !important;
+    margin-top: -1px;
+    background: transparent;
   }
+  .container-background{
+    background: white;
+    padding-top: 20px;
+    margin-top: -1px;;
+  }
+
 
   .back_menu h6:before {
     content: "";
@@ -100,15 +126,12 @@
   }
 
 
- div.column_submenu { 
-  font-size: 14px;
+  div.column_submenu { 
+    font-size: 14px;
 
-  text-align: center;
-  line-height: 110%;
-
- 
-
-}
+    text-align: center;
+    line-height: 110%; 
+  }
   .row_submenu {
     width: 100%;
     margin: auto;
@@ -131,13 +154,9 @@
     font-size: 14px;
 
     text-align: center;
-    line-height: 110%;
- 
-
+    line-height: 110%; 
   }
-
-
-
+ 
 
 @media only screen and (max-width: 600px) {
 
@@ -165,6 +184,17 @@
     .nav-bar-menu{
       background:transparent!important;
     }
+
+    /* Color menu */
+    .navbar-light .navbar-nav .nav-link {
+      color: white !important;
+    }
+
+
+    .span-menu-title {
+    color: white !important; 
+  }
+
   
 
     .container-menu{
@@ -176,7 +206,7 @@
       top: 55px;
 
       background:var(--color_blue_5) !important; 
-      
+     
       /*padding-left: 15px !important; 
       padding-right: 40px !important;*/
       padding-left: 0px !important; 
@@ -199,7 +229,8 @@
     }
   
     .covid-li{
-        margin-bottom: 15px;  
+        margin-bottom: 15px; 
+        color: white; 
     }
 
    .col-megamenu h6{ 
