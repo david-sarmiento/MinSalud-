@@ -131,8 +131,8 @@
     background: white;
     position: relative;
     margin-left: 132px;
-    border: 2px solid var(--color_blue_5) !important;
-    background: var(--color_blue_5) !important;
+    /* border: 2px solid var(--color_blue_5) !important; */
+    background: var(--color_4_blue) !important;
     color: white !important;
   } 
   .covid-menu{

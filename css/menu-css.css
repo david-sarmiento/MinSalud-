@@ -29,8 +29,8 @@
   .container-menu{ 
 
     background: transparent !important;  
-    border-right: 8px solid var(--color_blue_5);
-    border-left: 8px solid var(--color_blue_5);
+   /*  border-right: 8px solid var(--color_blue_5);
+    border-left: 8px solid var(--color_blue_5); */
   }
   /* Diseño top menu */
 
