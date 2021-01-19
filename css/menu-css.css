@@ -9,6 +9,7 @@
   }
   .nav-bar-menu{
     background: white!important;
+    box-shadow: 0px 2px 4px 0px #dbdbdb;
   }
 
   /* Color menu */
@@ -43,6 +44,8 @@
     padding: 0px !important;
     margin-top: -1px;
     background: transparent;
+    box-shadow: none;
+    border: none;
   }
   .container-background{
     background: white;
