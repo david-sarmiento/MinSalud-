@@ -9,6 +9,7 @@
   background-color: var(--color_blue_5);
   overflow-x: hidden;
   padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .sidenav a {
@@ -33,6 +34,7 @@
       position: relative;
       display: inline;
       margin-top: -60px;
+      padding-bottom: 0px;
       background-color: transparent;
     }
     .sidenav a {
