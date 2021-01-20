@@ -171,6 +171,7 @@
     right: 0px;
     clear: both;
     width: 77.5%; 
+    box-shadow: none;
 
     z-index: 3000;
     }
