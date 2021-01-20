@@ -1,24 +1,24 @@
 .sidenav {
   margin-top: 20%;
-  height: 28%;
-  width: 60px;
+  height: 220px;
+  width: 50px;
   position: fixed;
   z-index: 3000;
   top: 0;
   left: 0;
   background-color: var(--color_blue_5);
   overflow-x: hidden;
-  padding-top: 10px;
+  padding-top: 10px; 
 }
 
 .sidenav a {
   text-align: left;
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px 6px 9px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
-  pointer: hand;
+  cursor: pointer;
 }
 .sidenav a i{  
   font-weight: 200; 
@@ -30,7 +30,14 @@
 
  @media only screen and (max-width: 600px) {
    .sidenav{
-    display: none;
-   }
+      position: relative;
+      display: inline;
+      margin-top: -60px; 
+      background-color: transparent;
+    }
+    .sidenav a {
+      display: flex;
+      display: inline;
+    }
   
 }
