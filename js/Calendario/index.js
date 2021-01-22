@@ -13,5 +13,5 @@ $(document).ready(function () {
             {title: 'Titulo Evento', description: 'Descripción Evento', datetime: new Date(2021, 0, 27, 16)}, 
             {title: 'Titulo Evento ', description: 'Descripción Evento', datetime: new Date(2021, 1, 13, 16)}
            
-        ]});
+        ]}); 
 });
