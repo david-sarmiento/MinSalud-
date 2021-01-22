@@ -1,48 +1,47 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Fonts Work Sans 300 400 500 CSS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Fonts Work Sans 300 400 500 CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/4345271b67.js" crossorigin="anonymous"></script>
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/4345271b67.js" crossorigin="anonymous"></script>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script type="" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script> 
 
-    <link rel="stylesheet" href="css/tabs-vertical.css">  
-    
-    <link rel="stylesheet" href="css/master.css"> 
-    <link rel="stylesheet" href="css/responsive.css"> 
-    <link rel="stylesheet" href="css/megamenu.css"> 
-    <link rel="stylesheet" href="css/comunicaciones.css"> 
+  <link rel="stylesheet" href="css/tabs-vertical.css">  
+  
+  <link rel="stylesheet" href="css/master.css"> 
+  <link rel="stylesheet" href="css/responsive.css"> 
+  <link rel="stylesheet" href="css/megamenu.css"> 
+  <link rel="stylesheet" href="css/comunicaciones.css"> 
 
-    <link rel="stylesheet" href="css/accesibilidad.css"> 
+  <link rel="stylesheet" href="css/accesibilidad.css"> 
+ 
+  <script src="js/megamenu.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/menu-css.css">
 
 
-    <script src="js/megamenu.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/menu-css.css">
-
-
-    <style type="text/css">  
-        div.oculto1{display: block;}
-        div.oculto2{display: none;} 
-        @media (max-width:600px){ 
-          div.oculto1{display: none;}
-          div.oculto2{display: block;
-            margin-left: -5px;
-          }
-        }  
-    </style>
+  <style type="text/css">  
+      div.oculto1{display: block;}
+      div.oculto2{display: none;} 
+      @media (max-width:600px){ 
+        div.oculto1{display: none;}
+        div.oculto2{display: block;
+          margin-left: -5px;
+        }
+      }  
+  </style>
    
 
   <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
@@ -51,16 +50,30 @@
 
 
   <link rel="stylesheet" type="text/css" href="css/dark-mode.css">
- 
- 
+
+  <!-- Calendario -->
+  <script type="text/javascript" src="js/Calendario/jquery.e-calendar.js"></script>
+  <script type="text/javascript" src="js/Calendario/index.js"></script>
+  
+  <link rel="stylesheet" href="css/Calendario/jq-calendar.css"/>
+ <!-- Fin Calendario -->
+    
 
 </head>
-<body id="body"> 
+<body id="body">
+   
   <header> 
     <!-- Min RIP -->
-    <nav class="navbar navbar-expand-lg navbar-light  nav-gov">
-      <img align="left" class="icon-gov" src="https://cdn.www.gov.co/assets/images/logo.svg" 
-        alt=""> 
+    <nav class="navbar navbar-expand-lg navbar-light nav-gov">
+
+      <img align="left" class="icon-gov" src="https://cdn.www.gov.co/assets/images/logo.svg" alt=""> 
+
+      <!-- <div class="sidenav">  
+        <a id="boton"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_contrast.png" alt=""></a>
+        <a href="#services"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+        <a href="#clients"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+        <a href="#contact"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
+      </div>     -->
 
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -75,6 +88,8 @@
         <div>
           <a href="funcionarios.html" class="funcionarios">Funcionarios</a>
         </div>
+
+        
      
         <form class="form-inline my-2 my-lg-0">
           
@@ -169,7 +184,7 @@
 
                                               <div class="titulo-menu-mobile">
                                                 <span class="span-arrow"></span> 
-                                                <a href="Salud.html" class="">Plan de Beneficios en Salud</a>
+                                                <a href="Interna Salud.html" class="">Plan de Beneficios en Salud</a>
                                               </div>   
 
                                           </li>
@@ -624,7 +639,26 @@
     </nav>
   </header>  
 
-  <main > 
+  <main> 
+
+    <!--Side bar-->
+    <div class="sidenav">  
+        <a id="boton"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_contrast.png" alt=""></a>  
+         <a onclick="btn_access()" class="btn_mobile_a"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+
+        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
+    </div>    
+
+    
+     
+      <div id="access_fonts_">
+        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
+      </div>
+
   
 
     <!-- Banner principal -->
@@ -783,49 +817,87 @@
           
       </section> 
 
-    </section>
+    </section> 
 
-      
-    <!-- Redes Sociales --> 
-    <div class="container">
+     <!-- Eventos --> 
+    <section class="container">
+
       <div class="pt-4 pb-2">
-        <h3>Redes Sociales</h3>
+        <h3>Eventos</h3>
         <span class="mini-underline"></span>
       </div> 
 
       <!-- Content Redes -->
-      <div class="multimedia mt-2 pb-5"> 
+      <div class="mt-2" id="eventos"> 
 
         <div class="row">
-          <div class="col-sm">
-            <div class="p-3">
-                <h4>Instagram</h4>
-                <span class="mini-underline-multimedia"></span>
-            </div> 
-            <iframe style="    height: 210px;" class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/B-iDlphhqQm/embed/captioned/?cr=1&amp;v=13&amp;wp=391&amp;rd=http%3A%2F%2F127.0.0.1%3A5500&amp;rp=%2Findex.html#%7B%22ci%22%3A0%2C%22os%22%3A1067.0399999944493%2C%22ls%22%3A976.8949999997858%2C%22le%22%3A1037.6150000083726%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="732" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white;max-width: 476px;width: calc(100% - 2px);border-radius: 3px;border: 1px solid rgb(219, 219, 219);box-shadow: none;display: block;margin: 0px 0px 12px;min-width: 326px;padding: 0px;"></iframe>
-          </div>
-          <div class="col-sm">
-            <div class="p-3">
-                <h4>Videos</h4>
-                <span class="mini-underline-multimedia"></span>
-            </div>
-            <iframe align="center" width="95%" height="210" src="https://www.youtube.com/embed/opgXdab7YbA" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              
-            
-          </div>
-          <div class="col-sm">
-            <div class="p-3">
-                <h4>Twitter</h4>
-                <span class="mini-underline-multimedia"></span>
-            </div> 
-              <a class="twitter-timeline" data-lang="es" data-width="95%" data-height="210" data-theme="light" href="https://twitter.com/MinSaludCol?ref_src=twsrc%5Etfw">Tweets by MinSaludCol</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div class="col-sm-4 multimedia-facebooklive" >
 
+            <div class="pt-2">
+             <h4><span class="envivo_streaming"> En Vivo </span></h4>
+              <!--<span class="mini-underline-multimedia"></span> -->
+            </div> 
+            
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/EM8BzpWn9Qg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+              <p class="titulo"><b>Juan Manuel Anaya</b> - ¿Cómo funcionan y qué efectos tienen las vacunas de COVID-19 que ha adquirido Colombia para su población?</p>
+            </div>
           </div>
+
+          <div class="col-sm-8 multimedia-eventos"> 
+             <div class="pt-3" id="calendar"></div>
+          </div> 
+
         </div>
         
       </div>
-    </div>     
+    </section>  
+
+    <!-- Redes Sociales --> 
+    <div class="container">
+      <div class="pt-4 pb-2">
+        <h3>Redes Sociales</h3>
+        <span class="mini-underline"></span>  
+      </div> 
+
+      <!-- Content Redes -->
+      <div class="multimedia mt-2 pb-1"> 
+
+        <div class="row ">
+          <div class="col-sm" >
+            <div class="p-1 title-redes">
+                 <a href="#"><img width="30" src="https://css.mintic.gov.co/mt/mintic/img/insta_tab.png" alt=""><span>Minsaludcol</span></a>
+            </div> 
+
+          <iframe style="height: 320px; width: 90%;" class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/CKT3QMssfx8/embed/captioned/?cr=1&amp;v=13&amp;wp=882&amp;rd=http%3A%2F%2F127.0.0.1%3A5500&amp;rp=%2Findex.html#%7B%22ci%22%3A0%2C%22os%22%3A1581.1099999991711%2C%22ls%22%3A952.9049999837298%2C%22le%22%3A954.4699999969453%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="805" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white;   width: 300px; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
+          </div>
+
+
+          <div class="col-sm" >
+            <div class="p-1 title-redes">
+                <a href="#"><img width="30" src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/youtube-512.png" alt="">
+                  <span>MinSaludCol</span></a> 
+            </div> 
+            <iframe width="90%" height="320" src="https://www.youtube.com/embed/5GWMMC2dwl4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
+          </div>
+
+
+          <div class="col-sm" >
+            <div class="p-1 title-redes">
+                 <a href="#"><img width="30" src="https://css.mintic.gov.co/mt/mintic/img/twitter_tab.png" alt="">
+                 <span>MinSaludCol</span></a> 
+            </div> 
+              <a class="twitter-timeline" style="    border-radius: 0px !important;" data-lang="es" data-width="90%" data-height="320px" data-theme="light" href="https://twitter.com/MinSaludCol?ref_src=twsrc%5Etfw">Tweets by MinSaludCol</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ 
+          </div>
+
+
+        </div>
+        
+      </div>
+    </div>   
+     
           
     <!-- Footer Enlaces Min --> 
     <div class="container ministerio-zone mt-4">
@@ -885,8 +957,7 @@
   
     <!-- Enlaces adicionales --> 
     <div class="container mt-4 otros-enlaces">
-        <div id="accordion">
-
+        <div id="accordion"> 
           <div class="card card-enlaces">
             <div class="card-header" id="headingOne">
               <h5 class="mb-0">
@@ -896,7 +967,7 @@
               </h5>
             </div>
 
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
                 <ul>
                   <li>
@@ -922,9 +993,7 @@
               </div>
             </div>
           </div>
-
-
-
+ 
           <div class="card card-enlaces">
             <div class="card-header" id="headingTwo">
               <h5 class="mb-0">
@@ -964,15 +1033,13 @@
                 </ul>
               </div>
             </div>
-          </div>
-
-
+          </div> 
 
           <div class="card card-enlaces">
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
                 <button class="btn btn-link btn-padding-top collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                  Observatorios
+                  SISPRO
                 </button>
               </h5>
             </div>
@@ -983,12 +1050,14 @@
                      <img class="no-img" width="60"  alt="">
                      
                      <a target="_blank" href="https://www.sispro.gov.co/observatorios/Pages/Observatorios-Minsalud.aspx">Observatorios</a></li> 
+                     <li>
+                     <img class="no-img" width="60"  alt="">
+                     
+                     <a target="_blank" href="https://www.sispro.gov.co/observatorios/Pages/Observatorios-Minsalud.aspx">Observatorio SISPRO</a></li> 
                 </ul>
               </div>
             </div>
-          </div>
-
-
+          </div> 
 
           <div class="card card-enlaces">
             <div class="card-header" id="headingThree">
@@ -1075,9 +1144,7 @@
                 </ul>
               </div>
             </div>
-          </div>
-
-
+          </div> 
         </div>
     </div> 
  
@@ -1116,15 +1183,7 @@
             Atención telefónica a través del Centro de Contacto:<br>
             <b>En Bogotá: +57(1) 330 5043 <br>Resto del país: 018000960020</b></p>
 
-            <p>Última actualización: <br> miércoles, 13 de enero de 2021</p>
-
-            <div class="sidenav">  
-              <a id="boton"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_contrast.png" alt=""></a>
-              <a href="#services"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
-              <a href="#clients"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
-              <a href="#contact"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
-            </div>  
-            
+            <p>Última actualización: <br> miércoles, 13 de enero de 2021</p> 
           </div>
           
         </div>
@@ -1160,7 +1219,7 @@
     </footer>  
       
     <!-- Footer Fixed Mobile -->
-    <div class="footer-fixed bg-primary "> 
+    <footer class="footer-fixed bg-primary "> 
         
       <div class="grid2x">
         <div class="box bg-left">
@@ -1175,11 +1234,14 @@
         </div>
       </div>
 
-    </div>  
+    </footer>  
+
+
 
     <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script> 
 
     <script>  
+
       function myFunction(x) {
         if (x.matches) { // If media query matches 
 
@@ -1221,12 +1283,10 @@
       myFunction(x) // Call listener function at run time
       x.addListener(myFunction) // Attach listener function on state changes
     </script>
-
-
+ 
 
     <script>
-     
-
+      /* Modo Oscuro */
         const boton = document.querySelector('#boton');
         const configUser = window.matchMedia('(prefers-color-scheme: dark)');
         const localConfig = localStorage.getItem('tema');
@@ -1250,6 +1310,18 @@
             }
             localStorage.setItem('tema', colorTema)
         })
+      </script>
+
+     <!--  Dark Mode Mobile Button A -->
+      <script>
+        function btn_access() {
+          var x = document.getElementById("access_fonts_");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
       </script>
 
 </main>
