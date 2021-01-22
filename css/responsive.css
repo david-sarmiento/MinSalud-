@@ -1,6 +1,6 @@
 /* Fixed Menu */
 
-.footer-fixed {
+body .footer-fixed {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -9,13 +9,13 @@
   text-align: center;
 }
 
-.grid2x {
+.footer-fixed .grid2x {
   min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.grid2x > div {
+.footer-fixed .grid2x > div {
   display: flex;
   flex-basis: calc(50% - 0px);
   justify-content: center;
@@ -33,11 +33,11 @@
     background: var(--color_blue_3);
   }
 
-.box {
+.footer-fixed .box {
   margin: 10px;
 }
 
-.box a {
+.footer-fixed .box a {
   color: var(--white);
 }
 
@@ -147,6 +147,7 @@
 /* Main footer */
 
 @media only screen and (max-width: 600px) {
+
   .grid3x-footer {
     min-height: 100%;
     display: flex;
