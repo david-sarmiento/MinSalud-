@@ -33,6 +33,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/funcionarios.css">
 
+    <link rel="stylesheet" type="text/css" href="css/dark-mode.css">
+
 
     <!-- <script src="js/vertical-tabs/jquery-1.9.1.min.js"></script>
     <script src="js/vertical-tabs/easyResponsiveTabs.js"></script>
@@ -614,8 +616,23 @@
     </nav>
   </header>  
 
-<main>   
-<main> 
+   <!--Side bar-->
+  <div class="sidenav">  
+      <a id="boton"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_contrast.png" alt=""></a>  
+          <a onclick="btn_access()" class="btn_mobile_a"><img src="img/mas-menos.png" alt=""></a>
+
+      <a onclick="zoomIn()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+      <a onclick="reset()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+      <a onclick="zoomOut()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a> 
+  </div>     
+  <!-- Mobile -->  
+  <div id="access_fonts_">
+    <a onclick="zoomIn()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+    <a onclick="reset()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+    <a onclick="zoomOut()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
+  </div>  
+
+
 
   <div class="container pt-5">
     <div class="row">
@@ -810,6 +827,9 @@ function form_login() {
 }
 </script>
    
+
+      
+      <script src="js/accesibilidad.js" type="text/javascript" charset="utf-8"></script> 
 
 </body>
 </html>
