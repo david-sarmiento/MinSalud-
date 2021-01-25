@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/responsive.css"> 
     <link rel="stylesheet" href="css/megamenu.css"> 
     <link rel="stylesheet" href="css/comunicaciones.css"> 
-
+<link rel="stylesheet" type="text/css" href="css/dark-mode.css">
     <link rel="stylesheet" href="css/accesibilidad.css">
 <link rel="stylesheet" type="text/css" href="css/app.css">	
 
@@ -953,7 +953,21 @@ body #scene #right-zone {
 
     </nav>
   </header> 
+<!--Side bar-->
+  <div class="sidenav">  
+      <a id="boton"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_contrast.png" alt=""></a>  
+          <a onclick="btn_access()" class="btn_mobile_a"><img src="img/mas-menos.png" alt=""></a>
 
+      <a onclick="zoomIn()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+      <a onclick="reset()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+      <a onclick="zoomOut()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a> 
+  </div>     
+  <!-- Mobile -->  
+  <div id="access_fonts_">
+    <a onclick="zoomIn()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+    <a onclick="reset()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+    <a onclick="zoomOut()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
+  </div>  
   <!--contenido-->
   	  <div class="container">
 	  
@@ -1240,7 +1254,8 @@ body #scene #right-zone {
       </div>
 
     </div>  
-
+<!-- Trae las  --> 
+      <script src="js/accesibilidad.js" type="text/javascript" charset="utf-8"></script> 
     <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script> 
 
     <script>  
