@@ -9,8 +9,8 @@ body.dark-theme {
     --color-bg: rgb(47, 47, 47);
     --color-texto: white; 
 
-      --bg-row: gray;
-       --bg-row: silver;
+    --bg-row: gray;
+    --bg-row: silver;
 
     --color-footer: #ffb847;
 
@@ -18,7 +18,7 @@ body.dark-theme {
 }
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 
     body {
         --color-bg: rgb(47, 47, 47);
@@ -43,7 +43,7 @@ body.dark-theme {
     }   
     
 }
- 
+  */
 
 body {
     background-color: var(--color-bg);
