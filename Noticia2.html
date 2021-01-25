@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3563d3" />
 
     <!-- Fonts Work Sans 300 400 500 CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,6 +37,11 @@
     
 
     <title>UPC aumentó 5.18 % para 2021</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="css/dark-mode.css">
+
+    <title>Centro de Comunicaciones</title>
  
         
   </head>
@@ -610,6 +616,22 @@
     </nav>
   </header>  
 
+   <!--Side bar-->
+  <div class="sidenav">  
+      <a id="boton"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_contrast.png" alt=""></a>  
+          <a onclick="btn_access()" class="btn_mobile_a"><img src="img/mas-menos.png" alt=""></a>
+
+      <a onclick="zoomIn()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+      <a onclick="reset()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+      <a onclick="zoomOut()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a> 
+  </div>     
+  <!-- Mobile -->  
+  <div id="access_fonts_">
+    <a onclick="zoomIn()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+    <a onclick="reset()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+    <a onclick="zoomOut()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
+  </div> 
+
       
 
      <!-- Boletin --> 
@@ -891,5 +913,6 @@
  
  
  
+      <script src="js/accesibilidad.js" type="text/javascript" charset="utf-8"></script> 
   </body>
 </html>

@@ -4,6 +4,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3563d3" />
 
   <!-- Fonts Work Sans 300 400 500 CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,6 +18,7 @@
 
   <script type="" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+   
 
   <link rel="stylesheet" href="css/tabs-vertical.css">  
   
@@ -33,14 +35,7 @@
 
 
   <style type="text/css">  
-      div.oculto1{display: block;}
-      div.oculto2{display: none;} 
-      @media (max-width:600px){ 
-        div.oculto1{display: none;}
-        div.oculto2{display: block;
-          margin-left: -5px;
-        }
-      }  
+      div.oculto1{display: block;}div.oculto2{display: none;} @media (max-width:600px){ div.oculto1{display: none;}div.oculto2{display: block; margin-left: -5px; } }  
   </style>
    
 
@@ -67,38 +62,27 @@
     <nav class="navbar navbar-expand-lg navbar-light nav-gov">
 
       <img align="left" class="icon-gov" src="https://cdn.www.gov.co/assets/images/logo.svg" alt=""> 
-
-      <!-- <div class="sidenav">  
-        <a id="boton"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_contrast.png" alt=""></a>
-        <a href="#services"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
-        <a href="#clients"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
-        <a href="#contact"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
-      </div>     -->
-
-    
+  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-
+        <ul class="navbar-nav mr-auto"> 
           <li class="nav-item ">
             <p></p>
-          </li>
-            
+          </li>  
         </ul>
 
         <div>
           <a href="funcionarios.html" class="funcionarios">Funcionarios</a>
         </div>
-
-        
+ 
      
-        <form class="form-inline my-2 my-lg-0">
-          
+        <form class="form-inline my-2 my-lg-0"> 
           <input class="form-control mr-sm-2" type="search" placeholder="MIN / RID" aria-label="MIN / RID">
           <button class="btn btn-outline-succes " type="submit">
             
             <i class="fas fa-search buscar"></i>
           </button>
         </form>
+
       </div>
     </nav>
 
@@ -638,28 +622,22 @@
 
     </nav>
   </header>  
+ 
+  <!--Side bar-->
+  <div class="sidenav">  
+      <a id="boton"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_contrast.png" alt=""></a>  
+          <a onclick="btn_access()" class="btn_mobile_a"><img src="img/mas-menos.png" alt=""></a>
 
-  <main> 
-
-    <!--Side bar-->
-    <div class="sidenav">  
-        <a id="boton"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_contrast.png" alt=""></a>  
-         <a onclick="btn_access()" class="btn_mobile_a"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
-
-        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
-        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
-        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
-    </div>    
-
-    
-     
-      <div id="access_fonts_">
-        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
-        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
-        <a href="#"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
-      </div>
-
-  
+      <a onclick="zoomIn()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+      <a onclick="reset()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+      <a onclick="zoomOut()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a> 
+  </div>     
+  <!-- Mobile -->  
+  <div id="access_fonts_">
+    <a onclick="zoomIn()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
+    <a onclick="reset()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
+    <a onclick="zoomOut()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
+  </div> 
 
     <!-- Banner principal -->
     <div id="carouselExampleIndicators" class="carousel slide carousel-menu" data-ride="carousel">
@@ -782,8 +760,7 @@
       </div>
         
     </section>  
-
-
+ 
     <!-- Enlaces relacionados --->     
     <section class="container pt-5">
 
@@ -828,14 +805,13 @@
       </div> 
 
       <!-- Content Redes -->
-      <div class="mt-2" id="eventos"> 
-
+      <div class="mt-2" id="eventos">  
         <div class="row">
+
           <div class="col-sm-4 multimedia-facebooklive" >
 
             <div class="pt-2">
-             <h4><span class="envivo_streaming"> En Vivo </span></h4>
-              <!--<span class="mini-underline-multimedia"></span> -->
+             <h4><span class="envivo_streaming"> En Vivo </span></h4>  
             </div> 
             
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/EM8BzpWn9Qg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -848,9 +824,9 @@
              <div class="pt-3" id="calendar"></div>
           </div> 
 
-        </div>
-        
+        </div> 
       </div>
+
     </section>  
 
     <!-- Redes Sociales --> 
@@ -859,46 +835,46 @@
         <h3>Redes Sociales</h3>
         <span class="mini-underline"></span>  
       </div> 
-
-      <!-- Content Redes -->
+ 
       <div class="multimedia mt-2 pb-1"> 
+         
 
-        <div class="row ">
-          <div class="col-sm" >
-            <div class="p-1 title-redes">
-                 <a href="#"><img width="30" src="https://css.mintic.gov.co/mt/mintic/img/insta_tab.png" alt=""><span>Minsaludcol</span></a>
-            </div> 
-
-          <iframe style="height: 320px; width: 90%;" class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/CKT3QMssfx8/embed/captioned/?cr=1&amp;v=13&amp;wp=882&amp;rd=http%3A%2F%2F127.0.0.1%3A5500&amp;rp=%2Findex.html#%7B%22ci%22%3A0%2C%22os%22%3A1581.1099999991711%2C%22ls%22%3A952.9049999837298%2C%22le%22%3A954.4699999969453%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="805" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white;   width: 300px; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
-          </div>
-
+     <div class="row ">
 
           <div class="col-sm" >
-            <div class="p-1 title-redes">
+             <div class="p-1 title-redes">
+                  <a href="#"><img width="30" src="https://css.mintic.gov.co/mt/mintic/img/insta_tab.png" alt=""><span>Minsaludcol</span></a>
+              </div> 
+
+               <iframe style="height: 320px; width: 90%;" class="instagram-media instagram-media-rendered" id="instagram-embed-0"
+               src="https://www.instagram.com/p/CKT3QMssfx8/embed/captioned/?cr=1&amp;v=13&amp;wp=882&amp;rd=http%3A%2F%2F127.0.0.1%3A5500&amp;rp=%2Findex.html#%7B%22ci%22%3A0%2C%22os%22%3A1581.1099999991711%2C%22ls%22%3A952.9049999837298%2C%22le%22%3A954.4699999969453%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="805" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" 
+               style="background: white;   width: 300px; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe> 
+           
+              
+          </div> 
+
+          <div class="col-sm" >
+             <div class="p-1 title-redes">
                 <a href="#"><img width="30" src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/youtube-512.png" alt="">
                   <span>MinSaludCol</span></a> 
-            </div> 
-            <iframe width="90%" height="320" src="https://www.youtube.com/embed/5GWMMC2dwl4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               
-          </div>
-
+              </div> 
+               <iframe width="90%" height="320" src="https://www.youtube.com/embed/5GWMMC2dwl4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+          </div>  
 
           <div class="col-sm" >
-            <div class="p-1 title-redes">
+          <div class="p-1 title-redes">
                  <a href="#"><img width="30" src="https://css.mintic.gov.co/mt/mintic/img/twitter_tab.png" alt="">
                  <span>MinSaludCol</span></a> 
             </div> 
-              <a class="twitter-timeline" style="    border-radius: 0px !important;" data-lang="es" data-width="90%" data-height="320px" data-theme="light" href="https://twitter.com/MinSaludCol?ref_src=twsrc%5Etfw">Tweets by MinSaludCol</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
- 
-          </div>
+            <a class="twitter-timeline" style="border-radius: 0px !important;" data-lang="es" data-width="90%" data-height="320px" data-theme="light" href="https://twitter.com/MinSaludCol?ref_src=twsrc%5Etfw">Tweets by MinSaludCol</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            
+          </div> 
 
-
-        </div>
+        </div>  
         
       </div>
-    </div>   
-     
-          
+    </div>  
+
     <!-- Footer Enlaces Min --> 
     <div class="container ministerio-zone mt-4">
         <div class="pb-4">
@@ -1236,95 +1212,11 @@
 
     </footer>  
 
-
-
-    <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script> 
-
-    <script>  
-
-      function myFunction(x) {
-        if (x.matches) { // If media query matches 
-
-            $(document).on('ready', function() { 
-        
-              $(".center").slick({
-                dots: false,
-                infinite: true,
-                centerMode: true,
-                slidesToShow: 2,
-                slidesToScroll: 6,
-                autoplay: false,
-                autoplaySpeed: 1500,
-              }); 
-            });
-
-
-        } else { 
-
-          $(document).on('ready', function() { 
-
-            
-
-              $(".center").slick({
-                dots: true,
-                infinite: true,
-                centerMode: true,
-                slidesToShow: 5,
-                slidesToScroll: 3,
-                autoplay: true,
-                autoplaySpeed: 1500,
-              }); 
-            });
-
-        }
-      }
-
-      var x = window.matchMedia("(max-width: 600px)")
-      myFunction(x) // Call listener function at run time
-      x.addListener(myFunction) // Attach listener function on state changes
-    </script>
  
-
-    <script>
-      /* Modo Oscuro */
-        const boton = document.querySelector('#boton');
-        const configUser = window.matchMedia('(prefers-color-scheme: dark)');
-        const localConfig = localStorage.getItem('tema');
-
-        if (localConfig === 'dark') {
-            document.body.classList.toggle('dark-theme')
-        } else if (localConfig === 'light') {
-            document.body.classList.toggle('light-theme')
-        }
-        
-        boton.addEventListener('click', () => {
-            let colorTema;
-            if (configUser.matches) {
-                // Entramos con modo oscuro
-                document.body.classList.toggle('light-theme')
-                colorTema = document.body.classList.contains('light-theme') ? 'light' : 'dark'
-
-            } else {
-                document.body.classList.toggle('dark-theme')
-                colorTema = document.body.classList.contains('dark-theme') ? 'dark' : 'light'
-            }
-            localStorage.setItem('tema', colorTema)
-        })
-      </script>
-
-     <!--  Dark Mode Mobile Button A -->
-      <script>
-        function btn_access() {
-          var x = document.getElementById("access_fonts_");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
-        }
-      </script>
-
-</main>
+    <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="js/slider_mobile.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="js/accesibilidad.js" type="text/javascript" charset="utf-8"></script> 
+ 
 </body>
 </html>
 
