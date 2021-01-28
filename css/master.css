@@ -101,11 +101,7 @@
   .nav-gov{
     background: var(--color_blue_5);
   }
-  /* logo .gov top */
-    .icon-gov{ 
-      width: 10%;
-      padding: 5px;
-    }
+ 
 
   /* logo MIN top Mobile */ 
   .logo-min{
@@ -116,9 +112,19 @@
   /* Menu */
   .navbar-light .navbar-nav .nav-link {
     color: var(--white);
-  }
-  
 
+ /*    border: 1px solid red; */
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+  }
+  .navbar-nav{
+   /*  border: 2px solid pink; */
+  }
+  .container-menu{
+  /*   border: 1px solid gray; */
+  }
+ 
 
   .navbar-light .navbar-nav .nav-link .active {
     color: var(--white);
@@ -135,10 +141,15 @@
     background: var(--color_4_blue) !important;
     color: white !important;
   } 
+
   .covid-menu{
     color: white;
-  }
+  } 
 
+
+  .menu-hambur{
+    display: none;
+  }
 
   .dropdown-menu {
     display: none;
@@ -309,6 +320,37 @@
     font-weight: 500;
   }
 
+  /* Footer GOV */
+
+  .footer-gov{
+    text-align: left; 
+  }
+  .nav-gov-footer{
+    background: var(--color_blue_5);
+  }
+ 
+  
+  .gov-footer-img{
+    width: 120px;
+  }
+  .co-footer-img{
+    width: 70px;
+    padding-right: 15px;
+    border-right: 1px solid white;
+  }
+
+  /* logo .gov top */
+  .icon-gov{ 
+    width: 10%;
+    padding: 5px; 
+  }
+
+  .no-desktop{
+      display: none;
+    }
+
+
+
   /* Share Styles */
 
   .share {
@@ -440,7 +482,10 @@
 
     .footer-fixed {
       display: inline;
-      z-index: 3000;
+      z-index: 3000; 
+    }
+    .footer-fixed-scroll{
+      margin-bottom: 60px; 
     }
 
     .no-mobile{
@@ -452,6 +497,13 @@
       width: 30%;
       padding: 5px;
     } 
+
+
+     /* Footer GOV */
+
+    .footer-gov{
+      text-align: center;
+    }
     /* logo MIN top Mobile */ 
     .logo-min{
       
@@ -469,27 +521,55 @@
       background: none;
       margin-left: 0px;
       font-weight: bolder;
+      
+    
     }
-    .covid-li a{  
+    .covid-li {  
+      margin-left: 0px;
+    }
+
+    .covid-li a{   
       color: var(--color_4_blue) !important;
     }
-     .navbar-nav .covid {
-      
-      margin-left: 0px;
-      border: 0;
-      background: var(--color_blue_5) !important;
-      color: white !important;
+  
+
+    .navbar-nav .covid {
+    
+    margin-left: 0px;
+    border: 0;
+    background: var(--color_blue_5) !important;
+    color: white !important;
     } 
 
-    /* Banner Rotativo */
-      .carousel-inner{
-        height: 160px;
-      }
+     .menu-hambur{
+    display: inline;
+    color: white;
+  }
 
-     /* Noticias */ 
-     .card-text {
-      font-size: 16px;
-      padding-top: 10px;
+  .no-desktop{
+      display: inline;
+    }
+
+  /* .nav-item .titulo-menu-mobile{
+    color: red !important;
+  }
+ */
+
+
+    
+
+
+
+
+  /* Banner Rotativo */
+    .carousel-inner{
+      height: 160px;
+    }
+
+    /* Noticias */ 
+    .card-text {
+    font-size: 16px;
+    padding-top: 10px;
     }
     /* Link funcionarios */
 
