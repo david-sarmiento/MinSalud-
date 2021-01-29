@@ -21,7 +21,7 @@
 
   .span-menu-title:hover {
     color: var(--color_blue_5); 
-    border-bottom: 3px solid var(--color_secondary_equidad);
+    border-bottom: 1px solid var(--color_secondary_equidad);
   }
   .span-menu-title {
     color: var(--color_blue_5) !important; 
