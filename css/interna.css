@@ -1,0 +1,47 @@
+
+  .container li ul li{
+
+    list-style-type:none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+
+   .container li ul{
+    padding-bottom: 3px;
+    padding-top: 3px;
+  }
+
+  .container a {
+    color: var(--color_blue_5);
+  }
+
+  .salud-list li a:before {
+
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url("https://css.mintic.gov.co/mt/mintic/img/arrow_purple_news.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+  }
+
+  .container .mini-underline {
+    position: absolute;
+    width: 40px;
+    height: 3px;  
+    background: var(--color_blue_5);
+    display: block;
+    margin-top: -10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .salud-list { 
+    margin-left: -20px; 
+  }
+
+}

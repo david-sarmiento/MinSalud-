@@ -255,7 +255,7 @@ body .footer-fixed {
 
   .card-body ul li a{
     color: var(--color_primary_equidad);
-    font-weight: bold;
+  /*   font-weight: bold; */
     
     
   }
