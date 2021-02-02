@@ -1,502 +1,61 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3563d3" />
 
-    <!-- Fonts Work Sans 300 400 500 CSS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Fonts Work Sans 300 400 500 CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/4345271b67.js" crossorigin="anonymous"></script>
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/4345271b67.js" crossorigin="anonymous"></script>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script type="" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="css/tabs-vertical.css">  
-    
-    <link rel="stylesheet" href="css/master.css"> 
-    <link rel="stylesheet" href="css/responsive.css"> 
-    <link rel="stylesheet" href="css/megamenu.css"> 
-    <link rel="stylesheet" href="css/comunicaciones.css"> 
-
-    <link rel="stylesheet" href="css/accesibilidad.css"> 
-
-<link rel="stylesheet" type="text/css" href="css/app.css">
-    <script src="js/megamenu.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/menu-css.css">
-
-
-    <style type="text/css">  
-        div.oculto1{display: block;}
-        div.oculto2{display: none;} 
-        @media (max-width:550px){ 
-          div.oculto1{display: none;}
-          div.oculto2{display: block;
-            margin-left: -5px;
-          }
-        } 
-/*css que contiene el tama&ntildeo del div, espaciadores, tama&ntildeo de la fuante, fuente a utilizar
-color de fondo en el div y grosor del borde
-*/
-        .menu{
-            padding:0;
-            list-style:none;
-            width:500px;
-            font-size:18px;
-            font-family: Helvetica, Arial, sans-serif;
-            background:#FFF;
-            
-        }
-
-
-    
-
-
-
-          @media (max-width:680px)
-          { 
-
-           h1{
-             font-size: 22px;
-           } 
-
-         
-
-          .menu{ 
-            width:350px; 
-            
-          }
-          
-           }
-
- /*contiene codigos css para:
-mostrar el contenido, grosor de bordes entre divs, color de fondo, decoraciones al texto, color de texto, 
-sombra del texto y ubicacion del mismo.
- */
-          .menu li a{
-              display: block;
-              border-bottom: 1px solid rgba(0,0,0, 0.2);
-              border-top: 1px solid rgba(255,255,255, 0.2);
-              background:#C3C8CC;
-              text-decoration:none;
-              font-family: Helvetica, Arial, sans-serif;
-              color:#000;
-              text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
-              filter: dropshadow(color=#000, offx=1, offy=0);
-              padding:10px;
-              padding-left:20px;
-            text-align: justify;
-          }
-            /*contiene codigos css para:
-              color de letra en las columnas que se expanden,  
-            sombra del texto y ubicacion del mismo.
-            */
-            .menu li ul li a{
-                font-size:14px;
-                font-family: Helvetica, Arial, sans-serif;
-                color:#47689d;
-                text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
-                
-            }
-            /*contiene codigos css para:
-              color de fondo en las columnas que se expanden (azul)y tiempo de transicion en la funcion.
-            */
-            .menu li a:hover{
-                background:#007BFF;
-                -moz-transition: background 0.3s ease-in;
-                -webkit-transition: background 0.3s ease-in;
-                -o-transition: background 0.3s ease-in;
-            }
-            /*contiene codigos css para:
-              tiempo de transicion en la funcion para expandir y contraer las columnas.
-            */
-            .menu ul{
-                margin:0;
-                padding:0;
-                list-style:none;
-                height:0;
-                overflow: hidden;
-                transition:1s;
-                -moz-transition:1s;
-                -webkit-transition:1s;
-            }
-            /*contiene codigos css para:
-              permite mostrar las columnas cuando la funcion de expansion se ejecuta.
-            */
-            .menu li:hover ul{
-                height:auto;
-                overflow-y:auto;
-                overflow-x:hidden;
-            }
-
-
-            /*contiene codigos css para:
-              color de fondo en las columnas que se expanden(blanco).
-            */ 
-            .menu ul li a{
-                background:#fafafa;
-            }
-            
-            .menu ul li a:hover {
-                background: none repeat scroll 0 0 #007BFF;
-                color: #fff;
-                -moz-transition: color 0.4s ease;
-                -webkit-transition: color 0.4s ease;
-                -o-transition: color 0.4s ease;
-            }
-			
-			/*contiene codigos css para:
-              definir  items de slider vertical version desktop transparencia
-            */ 
-			@-webkit-keyframes slidein {
-  0% {
-    top: -400px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    top: 0px;
-  }
-}
-@keyframes slidein {
-  0% {
-    top: -400px;
-    opacity: 0;
-  }
-  /*Aca se define la posicion del texto d ela derecha para ajustar su posicion ya que va aumentando a medida que le añaden items*/
-  100% {
-    opacity: 1;
-    top: 200px;
-  }
-}
-@-webkit-keyframes slideout {
-  0% {
-    top: 0;
-    opacity: 1;
-  }
-  100% {
-    top: -400px;
-    opacity: 0;
-  }
-}
-@keyframes slideout {
-  0% {
-    top: 0;
-    opacity: 1;
-  }
-  100% {
-    top: -400px;
-    opacity: 0;
-  }
-}
-body {
-  background: #eee;
-  font-family: "Tahoma";
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-body #scene {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align:  justify;
-          align-items:  justify;
-  -webkit-box-pack: left;
-          justify-content: left;
-  width: 1200px;
-  height: 800px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  overflow: hidden;
-}
-/*Estilos que sirven para gestionar el tamaño del contenido de la izquierda en el carrusel vertical*/
-body #scene #left-zone {
-  background: #fff;
-  height: 75%;
-  -webkit-box-flex: 0;
-          flex-grow: 0;
-  display: -webkit-box;
-  display: flex;
-  width: 560px;
-  -webkit-box-align:  justify;
-          align-items:  justify;
-  -webkit-box-pack: left;
-          justify-content: left;
-}
-body #scene #left-zone .list {
-  display: -webkit-box;
-  display: flex;
-  list-style: none;
-  align-content: stretch;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-          flex-grow: 1;
-  margin: 0;
-  padding: 0;
-}
-body #scene #left-zone .list li.item input[type="radio"] {
-  display: none;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ label {
-  display: block;
-  opacity: 0.5;
-  height: 50px;
-  text-align: justify;
-  line-height: 50px;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ label:first-letter {
-  text-transform: uppercase;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ label:hover {
-  opacity: 0.75;
-  cursor: pointer;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ label.label_strawberry:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-  background-position:  justify;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ label.label_banana:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-  background-position:  justify;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ label.label_apple:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-  background-position:  justify;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ label.label_orange:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-  background-position:  justify;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
-/*Estilos que sirven para acomodar el contenido de la derecha del carrusel*/
-body #scene #left-zone .list li.item input[type="radio"] ~ .content {
-  position: absolute;
-  left: 550px;
-  top: -400px;
-  width: 650px;
-  height: 400px;
-  -webkit-animation-duration: 0.75s;
-          animation-duration: 0.75s;
-  -webkit-animation-name: slideout;
-          animation-name: slideout;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align:  justify;
-          align-items:  justify;
-  -webkit-box-pack:  justify;
-          justify-content:  justify;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_strawberry .picto {
-  height: 100px;
-  width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-  background-position:  justify;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_strawberry h1 {
-  color: #007BFF;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana .picto {
-  height: 100px;
-  width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-  background-position:  justify;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana h1 {
-  color: #007BFF;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_apple .picto {
-  height: 100px;
-  width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-  background-position:  justify;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_apple h1 {
-  color: #007BFF;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_orange .picto {
-  height: 100px;
-  width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-  background-position:  justify;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_orange h1 {
-  color: #007BFF;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ .content h1:first-letter {
-  text-transform: uppercase;
-}
-body #scene #left-zone .list li.item input[type="radio"] ~ .content p {
-  max-width: 50%;
-  text-align: justify;
-}
-body #scene #left-zone .list li.item input[type="radio"]:checked ~ label {
-  opacity: 1;
-  -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_strawberry {
-  color: #007BFF;
-  border-right: solid 4px #007BFF;
-}
-body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_banana {
-  color: #007BFF;
-  border-right: solid 4px #007BFF;
-}
-body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_apple {
-  color: #007BFF;
-  border-right: solid 4px #007BFF;
-}
-body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_orange {
-  color: #007BFF;
-  border-right: solid 4px #007BFF;
-}
-body #scene #left-zone .list li.item input[type="radio"]:checked ~ .content {
-  -webkit-animation-duration: 0.75s;
-          animation-duration: 0.75s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-body #scene #middle-border {
-  background-color: #eee;
-  height: 75%;
-  -webkit-box-flex: 1;
-          flex-grow: 1;
-  max-width: 2px;
-  z-index: 0;
-}
-body #scene #right-zone {
-  background: #fff;
-  height: 100%;
-  -webkit-box-flex: 3;
-          flex-grow: 3;
-}
-
-/*estilos web oscuro*/
-.dark-mode{
-  background-color: #0e0e0e;
-  transition:background-color .5s;
-}
-.dark-mode .card{
-  background-color: #1A1C1E;
-}
-.dark-mode h1, .dark-mode h2, .dark-mode .btn-contact{
-  color:white;
-}
-.dark-mode .btn-mode{
-  background-color:#1A1C1E;
-  border:1px solid white;
-  color:white;
-}
-/*fin estilos web oscuro*/	
-/*pestaña social*/
-.social {
-	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
-	left: 0; /* Establecemos la barra en la izquierda */
-	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
-	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
-}
- 
-	.social ul {
-		list-style: none;
-	}
- 
-	.social ul li a {
-		display: inline-block;
-		color:#fff;
-		background: #000;
-		padding: 10px 15px;
-		text-decoration: none;
-		-webkit-transition:all 500ms ease;
-		-o-transition:all 500ms ease;
-		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
-	}
- 
-	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
-	.social ul li .icon-twitter {background: #00abf0;}
-	.social ul li .icon-googleplus {background: #d95232;}
-	.social ul li .icon-pinterest {background: #ae181f;}
-	.social ul li .icon-mail {background: #666666;}
- 
-	.social ul li a:hover {
-		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
-		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
-	}
-	/*pestaña accesibilidad*/		
-    </style>
+  <script type="" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script> 
    
 
-  <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="css/slide.css">
- 
-</head>
-<body id="page"> 
+  <link rel="stylesheet" href="css/tabs-vertical.css">  
+  
+  <link rel="stylesheet" href="css/master.css"> 
+  <link rel="stylesheet" href="css/responsive.css"> 
+  <link rel="stylesheet" href="css/megamenu.css"> 
+  <link rel="stylesheet" href="css/comunicaciones.css"> 
 
- <header> 
+  <link rel="stylesheet" href="css/accesibilidad.css"> 
+ 
+  <script src="js/megamenu.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/menu-css.css">
+
+  <link rel="stylesheet" type="text/css" href="css/slide.css">
+
+
+  <!-- <link rel="stylesheet" href="css/easy-responsive-tabs.css">  -->
+  <link rel="stylesheet" href="css/transparencia.css"> 
+ 
+   
+ 
+  <script src="js/vertical-tabs/jquery-1.9.1.min.js"></script>
+  <script src="js/vertical-tabs/easyResponsiveTabs.js"></script> 
+
+
+  
+  <link rel="stylesheet" type="text/css" href="css/dark-mode.css">
+
+  
+    
+
+</head>
+  
+<body id="body">
+   
+  <header> 
     <!-- Min RIP -->
     <nav class="navbar navbar-expand-lg navbar-light nav-gov">
 
@@ -555,7 +114,7 @@ body #scene #right-zone {
 
     </nav>
         
-    <!-- Main Menú -->
+   <!-- Main Menú -->
     <nav class="navbar navbar-expand-lg navbar-light  nav-bar-menu " >
 
         <a href="index.html"> <img align="left" class="logo-min" 
@@ -1280,9 +839,8 @@ body #scene #right-zone {
         </div>
 
     </nav>
-  </header>    
-  
-  
+  </header>  
+ 
   <!--Side bar-->
   <div class="sidenav">  
       <a id="boton"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_contrast.png" alt=""></a>  
@@ -1297,602 +855,294 @@ body #scene #right-zone {
     <a onclick="zoomIn()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_more.png" alt=""></a>
     <a onclick="reset()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_normal.png" alt=""></a>
     <a onclick="zoomOut()"><img src="https://www.mintic.gov.co/portal/604/channels-507_icon_a_less.png" alt=""></a>
-  </div>  
-  <!--contenido-->
+  </div> 
+
+     
   
-	<p class="route-page pt-3" style="margin-left:80px;">
-              <a href="index.html">Ministerio de Salud y Protección Social</a> / Transparencia
-            </p>  
-          
-          <div class="row" style="margin-left:30px;">
-		  	   
-              <div class="col-8">
+  <div class="container my-3 ">
+
+    <p class="route-page">
+            <a href="index.html">Ministerio de Salud y Protección Social</a> / Transparencia y acceso información pública  
+    </p>
+    <br>
+    <h3>Transparencia y acceso a la información pública</h3>
+    <span class="mini-underline"></span>
+
+    <p>​​​​​​​​​​El 06 de marzo de 2014 entró en vigencia la Ley 1712 de 2014 de transparencia y acceso a la información pública nacional, con la cual se ampara el derecho de los ciudadanos para acceder a la información pública, haciendo uso de herramientas y mecanismos dispuestos para facilitar su consulta.</p>
+
+    <p>Para el Ministerio de Salud y Protección Social, es de gran importancia visibilizar su gestión e informar a la ciudadanía de sus actuaciones a través de este portal.</p>
+    <br>
+
+      <!--Vertical Tab-->
+    <div class="container">
+      
+        <div id="parentVerticalTab">
+            <ul class="resp-tabs-list hor_1">
+                <li>1. Mecanismo de contacto directo con el sujeto obligado</li>
+                <li>2. Información de interés</li>
+                <li>3. Estructura orgánica y talento humano</li>
+                <li>4. Normatividad</li>
+                <li>5. Presupuesto</li>
+                <li>6. Planeación</li>
+                <li>7. Control</li> 
+                <li>8. Contratación</li>
+                <li>9. Trámites y Servicios</li> 
+                <li>10. Instrumentos de gestión de información pública</li>
+                <li>11. Transparencia Pasiva</li>
+                <li>12. Criterio Diferencial de Accesibilidad</li>
+                <li>13. Protección de Datos Personales</li>
+            </ul>
+            <div class="resp-tabs-container hor_1">
+                <div> 
+                  <p>
+                    <ul>
+                      <li><a href="#">1.1. Mecanismos para la atención al ciudadano</a></li>
+                      <li><a href="#">1.2. Localización física, sucursales o regionales, horarios y días de atención al público.</a></li>
+                      <li><a href="#">​1.3. Correo electrónico para notificaciones judiciales.</a></li>
+                      <li><a href="#">1.4. Políticas de seguridad de la información del sitio web y protección de datos personales.</a></li>
+                    </ul>
+                  </p>
+                </div>
 
 
-                      <div>
-                        <h1 >Transparencia</h1>
+                <div> 
+                    <p>
+                      <ul> 
+                        <li><a href="#">2.1. Datos abiertos </a></li>
+                        <li><a href="#">2.2. Estudios, investigaciones y otras publicaciones. </a></li>
+                        <li><a href="#">2.3. Convocatorias. </a></li>
+                        <li><a href="#">2.4. Preguntas y respuestas frecuentes</a></li>
+                        <li><a href="#">2.5. Glosario</a></li>
+                        <li><a href="#">2.6. Noticias</a></li>
+                        <li><a href="#">2.7. Calendario de actividades</a></li>
+                        <li><a href="#">2.8. Información para niñas, niños y adolescentes</a></li>
+                        <li><a href="#">2.9. Información adicional</a></li>
+                        <li><a href="#">2.10. Campaña Estado Simple Colombia Ágil </a></li>
+                        <li><a href="#">2.11. Informe Cuantitativo de Salud</a></li>
+                        <li><a href="#">2.12. Cumbre Nacional de Derechos Humanos en Risaralda </a></li>
+                        <li><a href="#">2.13. Oferta Institucional Minsalud</a></li> 
+                      </ul> 
+                    </p>
+                </div>
+                <div> 
+                    <p>
+                      <ul>
+                        <li><a href="#">2.1. Datos abiertos </a></li>
+                        <li><a href="#">3.1. Misión y visión </a></li>
+                        <li><a href="#">3.2. Funciones y deberes </a></li>
+                        <li><a href="#">3.3. Procesos y procedimientos Minsalud, Fondo Nacional de Estupefacientes </a></li>
+                        <li><a href="#">3.4. Organigrama </a></li> 
+                        <li><a href="#">3.5. Directorio de información de servidores públicos, empleados y contratistas </a></li> 
+                        <li><a href="#">3.6. Directorio de entidades </a></li>
+                        <li><a href="#">3.7. Directorio de Agremiaciones, Asociaciones y otros grupos de interés - Listado de afiliaciones colectivas </a></li>
+                        <li><a href="#">3.8. Ofertas de empleo </a></li>
+                      </ul>
+                    </p>
+                </div>
+                 <div> 
+                    <ul>
+                      <li><a href="#">4.1. Sujetos obligados del orden nacional 
+                          <ul> 
+                              <li><a href="#">Decreto 0780 de 2016 - Único reglamentario del sector</a></li>
+                              <li><a href="#">Decreto 1432 de 2016</a></li>
+                              <li><a href="#">Decreto 2562 de 2012 modifica la estructura del Ministerio</a></li>
+                              <li><a href="#">Decreto 4107 de 2011 (Descripción de la estructura orgánica)</a></li>
+                              <li><a href="#">Resolución 2439 de 2019.</a></li>
+                              <li><a href="#">Escalas Salariales por Categorías de todos los Servidores</a></li>
+                              <li><a href="#">Versión integrada con modificaciones</a></li>
+                              <li><a href="#">Agenda regulatoria - Minsalud</a></li>
+                              <li><a href="#">Informe global</a></li>
+                              <li><a href="#">Actualización de Agenda Regulatoria AR-2019 y cumplimiento de la Directiva Presidencial 07 de 2018</a></li>
+                              <li><a href="#">Sistema Único de Información Normativa - SUIN</a></li>
+                              <li><a href="#">Normativa </a></li>
+                          </ul>
+                         </a></li>
+                     <li><a href="#">4.2. Otros sujetos obligados </a></li>
+                    </ul>
+                </div>
+                 <div> 
+                    <p>
+                      <ul>
+                        <li><a href="#">5.1. Presupuesto general asignado </a></li>
+                        <li><a href="#">5.2. Ejecución presupuestal histórica anual Minsalud </a></li>
+                        <li><a href="#">5.3. Estados financieros </a></li>
+                      </ul>
+                    </p>
+                </div>
+                 <div> 
+                    <p>
+                      <ul>
+                         <li><a href="#">6.1. Políticas, lineamientos y manuales
+                          <ul>
+                            <li><a href="#">Lineamientos</a></li>
+                            <li><a href="#">Manuales</a></li>
+                            <li><a href="#">Políticas</a></li>
+                            <li><a href="#">Plan Nacional de Desarrollo</a></li>
+                            <li><a href="#">Plan estratégico sectorial</a></li>
+                            <li><a href="#">Plan estratégico institucional</a></li>
+                            <li><a href="#">Estrategia Rendición de Cuentas 2020</a></li>
+                            <li><a href="#">Plan anticorrupción y de atención al ciudadano - Anti trámites</a></li>
+                            <li><a href="#">Boletines Jurídicos</a></li>
+                            <li><a href="#">Oferta Institucional Minsalud 2020</a></li>
 
-                        
-                      </div>
-					  <!--inicio texto mobile-->
-					  <div class="oculto2">
-					  <p style="text-align:justify; width:340px;">​​​​​​​​​​El 06 de marzo de 2014 entró en vigencia la Ley 1712 de 2014 de transparencia y acceso a la información pública nacional, con la cual se ampara el derecho de los ciudadanos para acceder a la información pública, haciendo uso de herramientas y mecanismos dispuestos para facilitar su consulta. 
-					  <br><br>
-					   Para el Ministerio de Salud y Protección Social, es de gran importancia visibilizar su gestión e informar a la ciudadanía de sus actuaciones a través de este portal.
-					  </p>
-									
-									<br><br>
-									<ul class='menu'>
-    <li><a href='#'>Mecanismo de contacto directo con el sujeto obligado</a>
-      <ul> 
-        <li>
-        
-		 <div>
-<ul>
-  <li><a title="Atención al ciudadano" href="/atencion/Paginas/Atencion_al_Ciudadano.aspx" target="_blank">1.1. Mecanismos para la atención al ciudadano</a></li>
-  <li><a title="Notificaciones judiciales" href="/atencion/Paginas/Atencion_al_Ciudadano.aspx" target="_blank">1.2. Localización física, sucursales o regionales, horarios y días de atención al público.</a></li>
-  <li><a title="Notificaciones judiciales" href="mailto:%20notificacionesjudiciales@minsalud.gov.co" target="_blank">​1.3. Correo electrónico para notificaciones judiciales.</a></li>
-  <li><a href="http://url.minsalud.gov.co/bkytw" target="_blank">1.4. Políticas de seguridad de la información del sitio web y protección de datos personales.</a></li>
-</ul>
+                          </ul>
+                          </a></li>
+                           <li><a href="#">6.2. Plan de acción</a></li>
+                           <li><a href="#">6.3. Programas y proyectos en ejecución</a></li>
+                           <li><a href="#">6.4. Metas, objetivos e indicadores de gestión y/o desempeño</a></li>
+                           <li><a href="#">6.5. Participación en la formulación de políticas.</a></li>
+                           <li><a href="#">6.6. Informes de empalme</a></li>
+                           <li><a href="#">6.7. Integración planes según Decreto 612 de 2018</a></li>
+                      </ul>
+                    </p>
+                </div>
+                 <div> 
+                    <p>
+                      <ul>
+                        <li><a href="#">7.1. Informes de gestión, evaluación y auditoría </a></li>
+                        <li><a href="#">7.2. Reportes de control interno </a></li>
+                        <li><a href="#">7.3. Planes de mejoramiento. 
+                            <ul>
+                                <a href="#">Informes del organismo de control</a></li>
+                            </ul>
+                           </a></li> 
+                        <li><a href="#">7.4. Entes de control que vigilan a la entidad y mecanismos de supervisión</a></li>
+                        <li><a href="#">7.5. Información para población vulnerable</a></li>
+                        <li><a href="#">7.6. Defensa judicial</a></li>
+                      </ul>
+                    </p>
+                </div>
+                 <div> 
+                    <p>
+                      <ul>
+                        <li><a href="#">8.1. Publicación de la información contractual
 
-</div>
-        
-        </li>
-      </ul>
-    </li>
-	    <li><a href='#'>Información de interés</a>
-      <ul> 
-        <li>
-        
-		 <div>
-<ul>
-  <li><a title="Catálogo de datos abiertos" href="/Paginas/datos-abiertos.aspx" target="_blank">2.1. Datos abiertos</a></li>
-<li><a href="http://url.minsalud.gov.co/publicaciones-transparencia">2.2.  Estudios, investigaciones y otras publicaciones. </a></li>
-<li><a title="Convocatorias MinSalud" href="/Ministerio/RCuentas/Paginas/Avisos-de-convocatoria-publica-y-privada.aspx" target="_blank">2.3. Convocatorias.</a></li>
-<li><a title="Preguntas y respuestas frecuentes" href="/Lists/FAQ/Tematica.aspx" target="_blank">2.4. Preguntas y respuestas frecuentes</a></li>
-<li><a title="Glosario" href="/Lists/Glosario/AllItems.aspx" target="_blank">2.5. Glosario</a></li>
-<li><a title="Noticias" href="/CC/Noticias/Paginas/redirect.aspx" target="_blank">2.6. Noticias</a></li>
-<li><a title="Calendario de actividades" href="/lists/Calendario1/calendar.aspx" target="_blank">2.7. Calendario de actividades</a></li>
-<li><a title="informacion para niñas, niños y adolescentes" href="/pais-protegido/home.html" target="_blank">2.8. Información para niñas, niños y adolescentes</a></li>
-<li><a title="Información adicional" href="/atencion/Paginas/guia-del-usuario.aspx" target="_blank">2.9. Información adicional</a></li>
-<li><a href="#">2.10. Campaña Estado Simple Colombia Ágil</a></li>
-<li><a title="informe cuantitativo" href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/PES/informe-cuantitativo-salud-2019.zip">2.11. Informe Cuantitativo de Salud</a></li>
-<li><a title="Cumbre nacional de derechos humanos en risaralda" href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/PES/cumbre-nacional-derechos-risaralda.pdf" target="_blank">2.12. Cumbre Nacional de Derechos Humanos en Risaralda</a></li>
-<li><a title="Oferta institucional minsalud" href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/PES/oferta-institucional-msps.pdf" target="_blank">2.13. Oferta Institucional Minsalud</a></li>
-
-</ul>
-
-</div>
-        
-        </li>
-      </ul>
-    </li>
-	    <li><a href='#'>Estructura orgánica y talento humano</a>
-      <ul> 
-        <li>
-        
-		 <div>
-<ul>
-			<li><a title="Mision y vision" href="/Ministerio/Institucional/Paginas/mision-vision-principios.aspx" target="_blank">3.1. Misión y visión</a></li>
-			<li><a title="Funciones y deberes" href="/Ministerio/Paginas/objetivosFunciones.aspx" target="_blank">3.2. Funciones y deberes</a></li>
-			<li><a title="Procesos y procedimientos" href="/Ministerio/Institucional/Paginas/procesos-procedimientos-sigi.aspx" target="_blank">3.3. Procesos y procedimientos Minsalud, Fondo Nacional de Estupefacientes</a></li>
-			<li><a title="Organigrama" href="/sites/rid/Lists/BibliotecaDigital/RIDE/SG/GT/organigrama-minsalud.pdf" target="_blank">3.4. Organigrama</a></li>
-			<li><a title="Directorio " href="https://www.funcionpublica.gov.co/web/sigep/hojas-de-vida" target="_blank">3.5. Directorio de información de servidores públicos, empleados y contratistas</a></li>
-			<li><a title="Directorio de entidades" href="/Ministerio/Lists/Entidades%20Adscritas%20y%20Vinculadas/AllItems.aspx" target="_blank">3.6. Directorio de entidades</a></li>
-			<li><a title="Afiliaciones Colectivas" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/OAS/Listado-autorizadas-para-afiliacion-colectiva.zip" target="_blank">3.7. Directorio de Agremiaciones, Asociaciones y otros grupos de interés - Listado de afiliaciones colectivas</a></li>
-			<li><a title="Ofertas de empleo" href="/Ministerio/Institucional/Paginas/gestionhumana.aspx" target="_blank">3.8. Ofertas de empleo</a></li>
-			
-			</ul>
-
-</div>
-        
-        </li>
-      </ul>
-    </li>
-	    <li><a href='#'>Normatividad</a>
-      <ul> 
-        <li>
-        
-		 <div>
-<ul>
-			<li><a title="Normativa" href="/Normativa/Paginas/normativa.aspx" target="_blank">4.1. Sujetos obligados del orden nacional</a></li>
-			<li><a title="Normativa" href="/Normativa/Paginas/normativa.aspx" target="_blank">4.2. Otros sujetos obligados</a></li>
-			</ul>
-</div>
-        
-        </li>
-      </ul>
-    </li>
-	    <li><a href='#'>Presupuesto</a>
-      <ul> 
-        <li>
-        
-		 <div>
-<ul>
-			<li><a href="#">5.1. Presupuesto general asignado</a></li>
-			<li><a title="Ejecucion presupuestal historica anual" href="/Ministerio/RCuentas/Paginas/presupuesto.aspx" target="_blank">5.2. Ejecución presupuestal histórica anual Minsalud</a></li>
-			<li><a title="Información contable" href="/Ministerio/RCuentas/Paginas/informacion-contable-minsalud.aspx" target="_blank">5.3. Estados financieros</a></li>
-			</ul>
-</div>
-        
-        </li>
-      </ul>
-    </li>
-	    <li><a href='#'>Planeación</a>
-      <ul> 
-        <li>
-        
-		 <div>
-<ul>
-			<li><a href="#">6.1. Políticas, lineamientos y manuales</a></li>
-			<li><a title="Plan de accion" href="/Ministerio/RCuentas/Paginas/planes-accion.aspx" target="_blank">6.2. Plan de acción</a></li>
-			<li><a title="Programas y proyectos en ejecución" href="/Ministerio/DSector/Paginas/proyectos-inversion.aspx" target="_blank">6.3. Programas y proyectos en ejecución</a></li>
-			<li><a title="Metas, objetivos e indicadores" href="/Ministerio/RCuentas/Paginas/metas-indicadores-gestion.aspx" target="_blank">6.4. Metas, objetivos e indicadores de gestión y/o desempeño</a></li>
-			<li><a title="Participación en politicas publicas " href="/encuestas/Paginas/Consulta-ciudadana-derecho-a-la-informacion-publica.aspx" target="_blank">6.5. Participación en la formulación de políticas.</a></li>
-			<li><a title="Informes de empalme" href="/Ministerio/RCuentas/Paginas/informes-de-empalme.aspx" target="_blank">6.6. Informes de empalme</a></li>
-			<li><a title="Decreto 612 de 2018" href="/sites/rid/Lists/BibliotecaDigital/RIDE/INEC/IGUB/dnfp-decreto-612-de-2018.pdf" target="_blank">6.7. Integración planes según Decreto 612 de 2018​</a></li>
-			
-			</ul>
-</div>
-        
-        </li>
-      </ul>
-    </li>
-    <li><a href='#'>Control</a>
-      <ul> 
-        <li>
-        
-		 <div>
-<ul>
-			<li><a href="#">7.1. Informes de gestión, evaluación y auditoría</a></li>
-			<li><a title="Ejecucion presupuestal historica anual" href="#" target="_blank">7.2. Reportes de control interno</a></li>
-			<li><a title="Planes de mejoramiento " href="/Ministerio/RCuentas/Paginas/plan-mejoramiento.aspx" target="_blank">7.3. Planes de mejoramiento.</a></li>
-			<li><a title="Entes de control" href="/Ministerio/Institucional/Paginas/Entidadesquenosregulan.aspx" target="_blank">7.4. Entes de control que vigilan a la entidad y mecanismos de supervisión</a></li>
-			<li><a title="Informacion para poblacion vulnerable" href="/salud/publica/poblaciones-vulnerables/Paginas/poblaciones-vulnerables.aspx" target="_blank">7.5. Información para población vulnerable</a></li>
-			<li><a title="Defensa judicial" href="/Ministerio/Institucional/Paginas/asuntos-juridicos.aspx" target="_blank">7.6. Defensa judicial</a></li>
-			</ul>
-</div>
-        
-        </li>
-      </ul>
-    </li>	
-	
- 
-    <li><a href='#'>Contratación</a>
-      <ul> 
-        <li>
-        
-		 <div style="width:340px; ">
-<ul>
-			<li><a href="#">8.1. Publicación de la información contractual</a></li>
-			<li><a title="Informe de supervisión" href="/Ministerio/RCuentas/Paginas/informes-de-supervision.aspx" target="_blank">8.2. Publicación de la ejecución de contratos</a></li>
-			<li><a title="Manual de contratacion" href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/DIJ/resolucion-5714-de-2018.pdf" target="_blank">8.3. Publicación de procedimientos, lineamientos y políticas en materia de adquisición y compras</a></li>
-			<li><a title="Plan de Adquisiciones" href="/Ministerio/RCuentas/Paginas/contratacion.aspx" target="_blank">8.4. Plan Anual de Adquisiciones</a></li>
-			</ul>
-
-</div>
-       
-        
-      </ul>
-    </li> 
-	
- 
-     <li><a href='#'>Trámites y Servicios</a>
-      <ul> 
-        <li>
-        
-		 <div style="width:340px; ">
-<ul>
-			<li><a title="Tramites y servicios" href="https://tramites.minsalud.gov.co/tramitesservicios/" target="_blank">9.1. Trámites y servicios Minsalud</a></li>
-			<li><a title="Trámites y servicios" href="http://tramites.minsalud.gov.co/tramitesservicios/FNE/site/fne/Default.aspx" target="_blank">9.2. Trámites y servicios -Fondo Nacional de Estupefacientes- FNE​</a></li>
-			
-			</ul>
-</div>
-      </ul>
-   </li> 
-   
-   
-   
-   
-  <li><a href='#'>Instrumentos de gestión de información pública</a>
-      <ul> 
-        <li>
-        
-		 <div style="width:340px; ">
-<ul>
-			<li><a title="Resolucion que adopta los instrumentos de gestion de la informacion" href="/Normatividad_Nuevo/Resoluci%c3%b3n%20No.%2019%20de%202018.pdf" target="_blank"><span style="font-size:13.1pt;">10.1.&nbsp;Información mínima - Resolución 019 de 2018- Por la cual se adopta los instrumentos de gestión de información pública</span></a></li>
-			<li><a href="https://www.datos.gov.co/Salud-y-Protecci-n-Social/Registro-de-activos-de-informaci-n-MinSalud/5gac-vyg3">10.2.  Registro de Activos de Información</a></li>
-			<li><a href="https://www.datos.gov.co/Salud-y-Protecci-n-Social/Indice-de-Informaci-n-Clasificada-y-Reservada-MinS/tjit-2ju8">10.3  Índice de Información Clasificada y Reservada. </a></li>
-			<li><a title="Esquema de publicacion de informacion" href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/PES/ep-esquema-publicacion-minsalud-2019.zip" target="_blank">10.4. Esquema de publicación de información</a></li>
-			<li><a title="Programa de gestion documental" href="/Ministerio/Institucional/Paginas/gestion-documental.aspx" target="_blank">10.5. Gestión Documental</a></li>
-			<li><a title="Programa de gestion documental" href="/Ministerio/Institucional/Paginas/gestion-documental.aspx" target="_blank" style="font-size:1em;">10.6. Tablas de Retención Documental</a></li>
-			<li><a title="Registro de Publicaciones" href="/sites/rid/paginas/freesearchresults.aspx?k=%2a&amp;ss=Todos" target="_blank">10.7. Registro de publicaciones - Repositorio Institucional Digital</a></li>
-			<li><a title="Costos de reproduccion" href="/Normatividad_Nuevo/Resoluci%c3%b3n%202547%20de%202015.pdf" target="_blank">10.8. Costos de reproducción</a></li>
-			<li><a title="Mecanismos para omisiones" href="/Ministerio/Institucional/Paginas/Entidadesquenosregulan.aspx" target="_blank">10.9. Mecanismos para presentar quejas y reclamos en relación con omisiones o acciones del sujeto obligado</a></li>
-			<li><a title="Informe PQRS" href="/atencion/Paginas/Informes.aspx" target="_blank">10.10. Informe de peticiones, quejas, reclamos, denuncias y solicitudes de acceso a la información.</a></li>
-			<li><a title="Informe PQRS" href="http://url.minsalud.gov.co/9mm5h" target="_blank">10.11. Informe de seguimiento peticiones, quejas, reclamos del Fondo Nacional de Estupefacientes -FNE</a></li>
-			</ul>
-
-</div>
-         
-      </ul>
-   </li> 
-   
-   
-   
-   <li><a href='#'>Transparencia Pasiva</a>
-      <ul> 
-        <li>
-        
-		 <div style="width:340px; ">
-<ul>
-			<li><a title="Medios de seguimiento para la consulta del estado de las solicitudes de información pública" href="https://orfeo.minsalud.gov.co/orfeo/consultaWebMinSalud/" target="_blank">11.1 Medios de seguimiento para la consulta del estado de las solicitudes de información pública</a></li>
-			<li><a title="Formulario para la recepción de solicitudes de información pública" href="https://orfeo.minsalud.gov.co/orfeo/formularioWebMinSalud/" target="_blank">11.2 Formulario para la recepción de solicitudes de información pública.</a></li>
-			<li><a title="Información sobre posibles costos asociados a la respuesta" href="/Normatividad_Nuevo/Resoluci%c3%b3n%202547%20de%202015.pdf" target="_blank">Información sobre posibles costos asociados a la respuesta</a></li>
-			</ul>
-
-</div>
-         
-      </ul>
-   </li> 
-       <li><a href='#'>Criterio Diferencial de Accesibilidad</a>
-      <ul> 
-        <li>
-        
-		 <div>
-<ul>
-			<li><a title="Grupos étnicos y culturales" href="/proteccionsocial/promocion-social/Paginas/grupos-etnicos.aspx">12.1. Formato alternativo para grupos étnicos y culturales.</a></li>
-			<li><a title="Enlace a accesibilidad web" href="/atencion/Paginas/accesibilidad-web.aspx" target="_blank">12.2. Accesibilidad en medios electrónicos para la población en situación de discapacidad</a></li>
-			
-			</ul>
-</div>
-        
-        </li>
-      </ul>
-    </li>
-   
-   
-   
-   <li><a href='#'>Protección de Datos Personales</a>
-      <ul> 
-        <li>
-        
-		 <div style="width:340px; ">
-<ul>
-			<li><a href="#">13.1. Cumplimiento de principios y obligaciones del régimen general de protección de datos personales.</a></li>
-			<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/OT/constancia-rnbd-minsalud.pdf" target="_blank">Registro Nacional de Base de Datos. RNDB</a></li>
-			<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/OT/asis04-politica-privacidad-confidencialidad-msps.pdf">Política de tratamiento de la información publicada.</a></li>
-			<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/OT/certificado-protocolo-https-portal-web-minsalud.pdf">Protocolo de seguridad https</a></li>
-			<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/OT/autorizacion-tratamiento-datos-personales-2019-2020.pdf">Autorización Recolección de Datos</a></li>
-			
-			</ul>
-
-</div>
-         
-      </ul>
-   </li> 
-   
-   
-   
-   
- </ul>
-					  </div>
-					  
-					 <!--fin texto mobile-->
-                       
+                        Informes de ejecución Plan Anual de Adquisiciones
+                        Directorio de Contratistas Minsalud
+                        Contrataciones en curso Minsalud
+                        Contratos Minsalud y FNE​
+                        </a></li>
+                        <li><a href="#">8.2. Publicación de la ejecución de contratos</a></li>
+                        <li><a href="#">8.3. Publicación de procedimientos, lineamientos y políticas en materia de adquisición y compras - Resolución 5714 de 2018​​ y manual de contratación</a></li>
+                        <li><a href="#">8.4. Plan Anual de Adquisiciones 
+                          <ul>
+                            <li><a href="#">Plan anual de adquisiciones publicado en el SECOP (Ingrese el nombre de la entidad) </a></li>
+                            <li><a href="#">Plan anual de adquisiciones -Fondo Nacional de Estupefacientes -FNE</a></li> 
+                          </ul>
                       
-                      
- 
-
-                      <div class="row">
-
-                        <table align="center" width="100%" cellspacing="0"cellpadding="0" >
-                          <tr>
-                              <td valign="top">
-                                  <table width="100%" cellspacing="0" cellpadding="0"  bgcolor="#FFFFFF" style="background-color:#FFFFFF;">
-                                      <tr>
-                                          
-                                                                                  
-                   <!--inicio carrusel vertical desktop---->                           
-                                              
-          <div class="oculto1" class="mitexto">
-             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>                                 
-              <div id="scene" class="mitexto">
-    <div id="left-zone">
-      <ul class="list">
-        <li class="item">
-          <input type="radio" id="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" name="basic_carousel" value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" checked="checked"/>
-          <label class="label_strawberry" for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"><p style="margin-left:60px;">1. Mecanismo de contacto directo con el sujeto obligado</p></label>
-          <div class="content content_strawberry"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Mecanismo de contacto directo con el sujeto obligado</h5>
-			<ul>
-  <li><a title="Atención al ciudadano" href="/atencion/Paginas/Atencion_al_Ciudadano.aspx" target="_blank">1.1. Mecanismos para la atención al ciudadano</a></li>
-  <li><a title="Notificaciones judiciales" href="/atencion/Paginas/Atencion_al_Ciudadano.aspx" target="_blank">1.2. Localización física, sucursales o regionales, horarios y días de atención al público.</a></li>
-  <li><a title="Notificaciones judiciales" href="mailto:%20notificacionesjudiciales@minsalud.gov.co" target="_blank">​1.3. Correo electrónico para notificaciones judiciales.</a></li>
-  <li><a href="http://url.minsalud.gov.co/bkytw" target="_blank">1.4. Políticas de seguridad de la información del sitio web y protección de datos personales.</a></li>
-</ul>
-            
-          </div>
-        </li>
-        <li class="item">
-          <input type="radio" id="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
-          <label class="label_banana" for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."><p style="margin-left:60px;">2. Información de interés</p></label>
-          <div class="content content_banana"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Información de interés</h5>
-  <ul>
-  <li><a title="Catálogo de datos abiertos" href="/Paginas/datos-abiertos.aspx" target="_blank">2.1. Datos abiertos</a></li>
-<li><a href="http://url.minsalud.gov.co/publicaciones-transparencia">2.2.  Estudios, investigaciones y otras publicaciones. </a></li>
-<li><a title="Convocatorias MinSalud" href="/Ministerio/RCuentas/Paginas/Avisos-de-convocatoria-publica-y-privada.aspx" target="_blank">2.3. Convocatorias.</a></li>
-<li><a title="Preguntas y respuestas frecuentes" href="/Lists/FAQ/Tematica.aspx" target="_blank">2.4. Preguntas y respuestas frecuentes</a></li>
-<li><a title="Glosario" href="/Lists/Glosario/AllItems.aspx" target="_blank">2.5. Glosario</a></li>
-<li><a title="Noticias" href="/CC/Noticias/Paginas/redirect.aspx" target="_blank">2.6. Noticias</a></li>
-<li><a title="Calendario de actividades" href="/lists/Calendario1/calendar.aspx" target="_blank">2.7. Calendario de actividades</a></li>
-<li><a title="informacion para niñas, niños y adolescentes" href="/pais-protegido/home.html" target="_blank">2.8. Información para niñas, niños y adolescentes</a></li>
-<li><a title="Información adicional" href="/atencion/Paginas/guia-del-usuario.aspx" target="_blank">2.9. Información adicional</a></li>
-<li><a href="#">2.10. Campaña Estado Simple Colombia Ágil</a></li>
-<li><a title="informe cuantitativo" href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/PES/informe-cuantitativo-salud-2019.zip">2.11. Informe Cuantitativo de Salud</a></li>
-<li><a title="Cumbre nacional de derechos humanos en risaralda" href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/PES/cumbre-nacional-derechos-risaralda.pdf" target="_blank">2.12. Cumbre Nacional de Derechos Humanos en Risaralda</a></li>
-<li><a title="Oferta institucional minsalud" href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/PES/oferta-institucional-msps.pdf" target="_blank">2.13. Oferta Institucional Minsalud</a></li>
-
-</ul>
-
-          </div>
-        </li>
-        <li class="item">
-          <input type="radio" id="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." name="basic_carousel" value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."/>
-          <label class="label_apple" for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."><p style="margin-left:60px;">3. Estructura orgánica y talento humano</p></label>
-          <div class="content content_apple"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Estructura orgánica y talento humano</h5>
-            <ul>
-			<li><a title="Mision y vision" href="/Ministerio/Institucional/Paginas/mision-vision-principios.aspx" target="_blank">3.1. Misión y visión</a></li>
-			<li><a title="Funciones y deberes" href="/Ministerio/Paginas/objetivosFunciones.aspx" target="_blank">3.2. Funciones y deberes</a></li>
-			<li><a title="Procesos y procedimientos" href="/Ministerio/Institucional/Paginas/procesos-procedimientos-sigi.aspx" target="_blank">3.3. Procesos y procedimientos Minsalud, Fondo Nacional de Estupefacientes</a></li>
-			<li><a title="Organigrama" href="/sites/rid/Lists/BibliotecaDigital/RIDE/SG/GT/organigrama-minsalud.pdf" target="_blank">3.4. Organigrama</a></li>
-			<li><a title="Directorio " href="https://www.funcionpublica.gov.co/web/sigep/hojas-de-vida" target="_blank">3.5. Directorio de información de servidores públicos, empleados y contratistas</a></li>
-			<li><a title="Directorio de entidades" href="/Ministerio/Lists/Entidades%20Adscritas%20y%20Vinculadas/AllItems.aspx" target="_blank">3.6. Directorio de entidades</a></li>
-			<li><a title="Afiliaciones Colectivas" href="/sites/rid/Lists/BibliotecaDigital/RIDE/VP/DOA/OAS/Listado-autorizadas-para-afiliacion-colectiva.zip" target="_blank">3.7. Directorio de Agremiaciones, Asociaciones y otros grupos de interés - Listado de afiliaciones colectivas</a></li>
-			<li><a title="Ofertas de empleo" href="/Ministerio/Institucional/Paginas/gestionhumana.aspx" target="_blank">3.8. Ofertas de empleo</a></li>
-			
-			</ul>
-          </div>
-        </li>
-        <li class="item">
-          <input type="radio"  id="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-          <label class="label_orange" for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">4. Normatividad</p></label>
-          <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Normatividad</h5>
-            <ul>
-			<li><a title="Normativa" href="/Normativa/Paginas/normativa.aspx" target="_blank">4.1. Sujetos obligados del orden nacional</a></li>
-			<li><a title="Normativa" href="/Normativa/Paginas/normativa.aspx" target="_blank">4.2. Otros sujetos obligados</a></li>
-			</ul>
-          </div>
-        </li>
-		<li class="item">
-          <input type="radio" id="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
-          <label class="label_orange" for="radio_The orange1 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">5. Presupuesto</p></label>
-          <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Presupuesto</h5>
-            <ul>
-			<li><a href="#">5.1. Presupuesto general asignado</a></li>
-			<li><a title="Ejecucion presupuestal historica anual" href="/Ministerio/RCuentas/Paginas/presupuesto.aspx" target="_blank">5.2. Ejecución presupuestal histórica anual Minsalud</a></li>
-			<li><a title="Información contable" href="/Ministerio/RCuentas/Paginas/informacion-contable-minsalud.aspx" target="_blank">5.3. Estados financieros</a></li>
-			</ul>
-          </div>
-        </li>
-			<li class="item">
-          <input type="radio" id="radio_The orange2 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
-          <label class="label_orange" for="radio_The orange2 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">6. Planeación</p></label>
-          <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Planeación</h5>
-            <ul>
-			<li><a href="#">6.1. Políticas, lineamientos y manuales</a></li>
-			<li><a title="Plan de accion" href="/Ministerio/RCuentas/Paginas/planes-accion.aspx" target="_blank">6.2. Plan de acción</a></li>
-			<li><a title="Programas y proyectos en ejecución" href="/Ministerio/DSector/Paginas/proyectos-inversion.aspx" target="_blank">6.3. Programas y proyectos en ejecución</a></li>
-			<li><a title="Metas, objetivos e indicadores" href="/Ministerio/RCuentas/Paginas/metas-indicadores-gestion.aspx" target="_blank">6.4. Metas, objetivos e indicadores de gestión y/o desempeño</a></li>
-			<li><a title="Participación en politicas publicas " href="/encuestas/Paginas/Consulta-ciudadana-derecho-a-la-informacion-publica.aspx" target="_blank">6.5. Participación en la formulación de políticas.</a></li>
-			<li><a title="Informes de empalme" href="/Ministerio/RCuentas/Paginas/informes-de-empalme.aspx" target="_blank">6.6. Informes de empalme</a></li>
-			<li><a title="Decreto 612 de 2018" href="/sites/rid/Lists/BibliotecaDigital/RIDE/INEC/IGUB/dnfp-decreto-612-de-2018.pdf" target="_blank">6.7. Integración planes según Decreto 612 de 2018​</a></li>
-			
-			</ul>
-          </div>
-        </li>
-			<li class="item">
-          <input type="radio" id="radio_The orange3 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
-          <label class="label_orange" for="radio_The orange3 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">7. Control</p></label>
-          <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Control</h5>
-            <ul>
-			<li><a href="#">7.1. Informes de gestión, evaluación y auditoría</a></li>
-			<li><a title="Ejecucion presupuestal historica anual" href="#" target="_blank">7.2. Reportes de control interno</a></li>
-			<li><a title="Planes de mejoramiento " href="/Ministerio/RCuentas/Paginas/plan-mejoramiento.aspx" target="_blank">7.3. Planes de mejoramiento.</a></li>
-			<li><a title="Entes de control" href="/Ministerio/Institucional/Paginas/Entidadesquenosregulan.aspx" target="_blank">7.4. Entes de control que vigilan a la entidad y mecanismos de supervisión</a></li>
-			<li><a title="Informacion para poblacion vulnerable" href="/salud/publica/poblaciones-vulnerables/Paginas/poblaciones-vulnerables.aspx" target="_blank">7.5. Información para población vulnerable</a></li>
-			<li><a title="Defensa judicial" href="/Ministerio/Institucional/Paginas/asuntos-juridicos.aspx" target="_blank">7.6. Defensa judicial</a></li>
-			</ul>
-          </div>
-        </li>
-			<li class="item">
-          <input type="radio" id="radio_The orange4 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
-          <label class="label_orange" for="radio_The orange4 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">8. Contratación</p></label>
-          <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Contratación</h5>
-            <ul>
-			<li><a href="#">8.1. Publicación de la información contractual</a></li>
-			<li><a title="Informe de supervisión" href="/Ministerio/RCuentas/Paginas/informes-de-supervision.aspx" target="_blank">8.2. Publicación de la ejecución de contratos</a></li>
-			<li><a title="Manual de contratacion" href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/DIJ/resolucion-5714-de-2018.pdf" target="_blank">8.3. Publicación de procedimientos, lineamientos y políticas en materia de adquisición y compras</a></li>
-			<li><a title="Plan de Adquisiciones" href="/Ministerio/RCuentas/Paginas/contratacion.aspx" target="_blank">8.4. Plan Anual de Adquisiciones</a></li>
-			</ul>
-          </div>
-        </li>
-			<li class="item">
-          <input type="radio" id="radio_The orange5 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
-          <label class="label_orange" for="radio_The orange5 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">9. Trámites y Servicios</p></label>
-          <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Trámites y Servicios</h5>
-            <ul>
-			<li><a title="Tramites y servicios" href="https://tramites.minsalud.gov.co/tramitesservicios/" target="_blank">9.1. Trámites y servicios Minsalud</a></li>
-			<li><a title="Trámites y servicios" href="http://tramites.minsalud.gov.co/tramitesservicios/FNE/site/fne/Default.aspx" target="_blank">9.2. Trámites y servicios -Fondo Nacional de Estupefacientes- FNE​</a></li>
-			
-			</ul>
-          </div>
-        </li>
-			<li class="item">
-          <input type="radio" id="radio_The orange6 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
-          <label class="label_orange" for="radio_The orange6 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">10. Instrumentos de gestión de información pública</p></label>
-          <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Instrumentos de gestión de información pública</h5>
-            <ul>
-			<li><a title="Resolucion que adopta los instrumentos de gestion de la informacion" href="/Normatividad_Nuevo/Resoluci%c3%b3n%20No.%2019%20de%202018.pdf" target="_blank"><span style="font-size:13.1pt;">10.1.&nbsp;Información mínima - Resolución 019 de 2018- Por la cual se adopta los instrumentos de gestión de información pública</span></a></li>
-			<li><a href="https://www.datos.gov.co/Salud-y-Protecci-n-Social/Registro-de-activos-de-informaci-n-MinSalud/5gac-vyg3">10.2.  Registro de Activos de Información</a></li>
-			<li><a href="https://www.datos.gov.co/Salud-y-Protecci-n-Social/Indice-de-Informaci-n-Clasificada-y-Reservada-MinS/tjit-2ju8">10.3  Índice de Información Clasificada y Reservada. </a></li>
-			<li><a title="Esquema de publicacion de informacion" href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/PES/ep-esquema-publicacion-minsalud-2019.zip" target="_blank">10.4. Esquema de publicación de información</a></li>
-			<li><a title="Programa de gestion documental" href="/Ministerio/Institucional/Paginas/gestion-documental.aspx" target="_blank">10.5. Gestión Documental</a></li>
-			<li><a title="Programa de gestion documental" href="/Ministerio/Institucional/Paginas/gestion-documental.aspx" target="_blank" style="font-size:1em;">10.6. Tablas de Retención Documental</a></li>
-			<li><a title="Registro de Publicaciones" href="/sites/rid/paginas/freesearchresults.aspx?k=%2a&amp;ss=Todos" target="_blank">10.7. Registro de publicaciones - Repositorio Institucional Digital</a></li>
-			<li><a title="Costos de reproduccion" href="/Normatividad_Nuevo/Resoluci%c3%b3n%202547%20de%202015.pdf" target="_blank">10.8. Costos de reproducción</a></li>
-			<li><a title="Mecanismos para omisiones" href="/Ministerio/Institucional/Paginas/Entidadesquenosregulan.aspx" target="_blank">10.9. Mecanismos para presentar quejas y reclamos en relación con omisiones o acciones del sujeto obligado</a></li>
-			<li><a title="Informe PQRS" href="/atencion/Paginas/Informes.aspx" target="_blank">10.10. Informe de peticiones, quejas, reclamos, denuncias y solicitudes de acceso a la información.</a></li>
-			<li><a title="Informe PQRS" href="http://url.minsalud.gov.co/9mm5h" target="_blank">10.11. Informe de seguimiento peticiones, quejas, reclamos del Fondo Nacional de Estupefacientes -FNE</a></li>
-			</ul>
-          </div>
-        </li>
-			<li class="item">
-          <input type="radio" id="radio_The orange7 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
-          <label class="label_orange" for="radio_The orange7 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">11.  Transparencia Pasiva</p></label>
-          <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Transparencia Pasiva</h5>
-            <ul>
-			<li><a title="Medios de seguimiento para la consulta del estado de las solicitudes de información pública" href="https://orfeo.minsalud.gov.co/orfeo/consultaWebMinSalud/" target="_blank">11.1 Medios de seguimiento para la consulta del estado de las solicitudes de información pública</a></li>
-			<li><a title="Formulario para la recepción de solicitudes de información pública" href="https://orfeo.minsalud.gov.co/orfeo/formularioWebMinSalud/" target="_blank">11.2 Formulario para la recepción de solicitudes de información pública.</a></li>
-			<li><a title="Información sobre posibles costos asociados a la respuesta" href="/Normatividad_Nuevo/Resoluci%c3%b3n%202547%20de%202015.pdf" target="_blank">Información sobre posibles costos asociados a la respuesta</a></li>
-			</ul>
-          </div>
-        </li>
-			<li class="item">
-          <input type="radio" id="radio_The orange8 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
-          <label class="label_orange" for="radio_The orange8 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">12. Criterio Diferencial de Accesibilidad</p></label>
-          <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Criterio Diferencial de Accesibilidad</h5>
-            <ul>
-			<li><a title="Grupos étnicos y culturales" href="/proteccionsocial/promocion-social/Paginas/grupos-etnicos.aspx">12.1. Formato alternativo para grupos étnicos y culturales.</a></li>
-			<li><a title="Enlace a accesibilidad web" href="/atencion/Paginas/accesibilidad-web.aspx" target="_blank">12.2. Accesibilidad en medios electrónicos para la población en situación de discapacidad</a></li>
-			
-			</ul>
-          </div>
-        </li>
-			<li class="item">
-          <input type="radio" id="radio_The orange9 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the "/>
-          <label class="label_orange" for="radio_The orange9 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><p style="margin-left:60px;">13. Protección de Datos Personales</p></label>
-          <div class="content content_orange"><!--<span class="picto"></span>-->
-            <h5 style="margin-left:20px;">Protección de Datos Personales</h5>
-            <ul>
-			<li><a href="#">13.1. Cumplimiento de principios y obligaciones del régimen general de protección de datos personales.</a></li>
-			<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/OT/constancia-rnbd-minsalud.pdf" target="_blank">Registro Nacional de Base de Datos. RNDB</a></li>
-			<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/OT/asis04-politica-privacidad-confidencialidad-msps.pdf">Política de tratamiento de la información publicada.</a></li>
-			<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/OT/certificado-protocolo-https-portal-web-minsalud.pdf">Protocolo de seguridad https</a></li>
-			<li><a href="/sites/rid/Lists/BibliotecaDigital/RIDE/DE/OT/autorizacion-tratamiento-datos-personales-2019-2020.pdf">Autorización Recolección de Datos</a></li>
-			
-			</ul>
-          </div>
-        </li>
-		
-      </ul>
-    </div>
-    <div id="middle-border"></div>
-    <div id="right-zone" class="mitexto"></div>
-  </div>
-  <br><br>
-  </div>
-									 
-                                              <!--fin carrusel vertical desktop--> 
-                                     
-          
-                                          
-                                          <td width="5" style="font-size: 1px; line-height: 1px;"> </td>
-                                      </tr>
-                                  </table>
-                              </td>
-                          </tr>
-                      </table>
-
+                      </a></li>
+                      </ul>
+                    </p>
+                </div>
+                 <div> 
+                    <p>
+                      <ul>
+                        <li><a href="#">9.1. Trámites y servicios Minsalud</a></li> 
+                        <li><a href="#">9.2. Trámites y servicios -Fondo Nacional de Estupefacientes- FNE​</a></li> 
+                      </ul>
+                    </p>
+                </div>
+                 <div> 
+                    <p>
+                      <ul>
 
                       
-                        
- 
-                 
- 
+                       <li><a href="#">10.1. Información mínima - Resolución 019 de 2018- Por la cual se adopta los instrumentos de gestión de información pública.​</a></li> 
+
+                       <li><a href="#">10.2. Registro de Activos de Información
+                        <ul>
+                         <li><a href="#">Registro de Activos de Información Formato Excel. </a></li> 
+                        </ul>
+
+                      </a></li> 
+
+                       <li><a href="#">10.2. Registro de Activos de Información</a></li> 
+
+                      
+                       <li><a href="#">10.3 Índice de Información Clasificada y Reservada.
+
+                      Índice de Información Clasificada y Reservada Formato Excel.
+
+                       <li><a href="#">10.2. Registro de Activos de Información</a></li> 
+
+                      
+                       <li><a href="#">10.4. Esquema de publicación de información</a></li> 
+
+                        <ul>
+                          <li><a href="#">Política de Comunicaciones - Aprobada mediante acta de fecha 22 de enero de 2020, Comité Institucional de Gestión y Desempeño.</a></li> 
+                          <li><a href="#">Esquema de publicación</a></li> 
+                          <li><a href="#">Procedimiento participativo para la adopción y actualización del Esquema de Publicación.</a></li> 
+
+                        </ul>
+
+                       <li><a href="#">10.2. Registro de Activos de Información</a></li> 
 
 
-              
+                       <li><a href="#">10.5. Gestión Documental</a></li> 
 
-              </div>
+                       <li><a href="#">10.6. Tablas de Retención Documental</a></li> 
 
-          </div>  
+                       <li><a href="#">10.7. Registro de publicaciones - Repositorio Institucional Digital</a></li> 
+
+                       <li><a href="#">10.8. Costos de reproducción.</a></li> 
+
+                       <li><a href="#">10.9. Mecanismos para presentar quejas y reclamos en relación con omisiones o acciones del sujeto obligado.</a></li> 
+
+                       <li><a href="#">10.10. Informe de peticiones, quejas, reclamos, denuncias y solicitudes de acceso a la información.</a></li> 
+
+                       <li><a href="#">10.11. Informe de seguimiento peticiones, quejas, reclamos del Fondo Nacional de Estupefacientes -FNE</a></li> 
+
+                      </ul>    
+                    </p>
+                </div>
+                 <div> 
+                    <p>
+                      <ul>
+                        <li><a href="#">11.1 Medios de seguimiento para la consulta del estado de las solicitudes de información pública</a></li> 
+​
+                          <li><a href="#">11.2 Formulario para la recepción de solicitudes de información pública.
+                         <ul>
+                            <li><a href="#">Información sobre posibles costos asociados a la respuesta</a></li> 
+                         </ul>                        
+                         </a></li> 
 
 
- 
-        </div> 
-  
-  <!--contenido-->
-   <!-- Footer Enlaces Min --> 
-    <div class="container ministerio-zone mt-4">
-        <div class="pb-4">
-          <img class="img-enlaces-mobile" src="https://www.mintransporte.gov.co/info/mintransporte/media/galeria8781.png" alt="">   
+                      </ul>
+                    </p>
+                </div>
+                 <div> 
+                    <p>
+                      <ul> 
+                        <li><a href="#">12.1. Formato alternativo para grupos étnicos y culturales.</a></li> 
+                        <li><a href="#">12.2. Accesibilidad en medios electrónicos para la población en situación de discapacidad</a></li> 
+                      </ul>
+                    </p>
+                </div>
+                 <div> 
+                    <p>
+                      <ul>
+                        <li><a href="#">13.1. Cumplimiento de principios y obligaciones del régimen general de protección de datos personales.
+                          <ul>
+                            <li><a href="#">Registro Nacional de Base de Datos. RNDB</a></li> 
+                            <li><a href="#">Política de tratamiento de la información publicada.</a></li> 
+                            <li><a href="#">Protocolo de seguridad https</a></li> 
+                            <li><a href="#">Autorización Recolección de Datos</a></li>  
+                          </ul>
+
+                            </a></li> 
+                      </ul>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="grid1 enlacesGel">
-
-          <div  class="enlaces-div img-enlaces-div"> 
-            <img class="img-enlaces" src="https://www.mintransporte.gov.co/info/mintransporte/media/galeria8781.png" alt="">   
-          </div> 
-
-          <div class="enlaces-div"> 
-            <ul>
-              <li><a class="flex-item vinnetaPresidencia" href="https://id.presidencia.gov.co/Paginas/presidencia.aspx" target="_blank">Presidencia</a></li>
-              <li><a class="flex-item vinnetaVicepresidencia" href="http://www.vicepresidencia.gov.co" target="_blank">Vicepresidencia</a></li>
-              <li><a class="flex-item vinnetaMinjusticia" href="http://www.minjusticia.gov.co" target="_blank">MinJusticia</a></li>
-            </ul>   
-          </div>  
-          <div class="enlaces-div">
-            <ul>
-              <li><a class="flex-item vinnetaMindefensa" href="http://www.mindefensa.gov.co" target="_blank">MinDefensa</a></li>
-              <li><a class="flex-item vinnetaMinrelaciones" href="http://www.cancilleria.gov.co" target="_blank">Cancillería</a></li>
-              <li><a class="flex-item vinnetaMininterior" href="http://www.mininterior.gov.co/" target="_blank">MinInterior</a></li>
-            </ul>     
-          </div>
-          <div class="enlaces-div">
-            <ul> 
-              <li><a class="flex-item vinnetaMinminas" href="https://www.minenergia.gov.co/" target="_blank">MinEnergía</a></li>
-              <li><a class="flex-item vinnetaMinhacienda" href="http://www.minhacienda.gov.co" target="_blank">MinHacienda</a></li>
-              <li><a class="flex-item vinnetaMincomercio" href="http://www.mincit.gov.co/" target="_blank">MinComercio</a></li>
-            </ul>      
-          </div>
-          <div class="enlaces-div">
-            <ul>
-              <li><a class="flex-item vinnetaMintransporte" href="https://www.mintransporte.gov.co" target="_blank">MinTransporte</a></li>
-              <li><a class="flex-item vinnetaMintrabajo" href="http://www.mintrabajo.gov.co" target="_blank">MinTrabajo</a></li>
-              <li><a class="flex-item vinnetaMinagricultura" href="http://www.minagricultura.gov.co" target="_blank">MinAgricultura</a></li>
-            </ul>        
-          </div>
-          <div class="enlaces-div">
-            <ul>
-              <li><a class="flex-item vinnetaMinambiente" href="http://www.minambiente.gov.co" target="_blank">MinAmbiente</a></li>     
-              <li><a class="flex-item vinnetaMintic" href="http://www.mintic.gov.co" target="_blank">MinTIC</a></li>
-              <li><a class="flex-item vinnetaMincultura" href="http://www.mincultura.gov.co/Paginas/default.aspx" target="_blank">MinCultura</a></li>
-            </ul>
-          </div>
-          <div class="enlaces-div">
-            <ul> 
-              <li><a class="flex-item vinnetaMineducacion" href="http://www.mineducacion.gov.co" target="_blank">MinEducación</a></li>
-              <li><a class="flex-item vinnetaMinvivienda" href="http://www.minvivienda.gov.co" target="_blank">MinVivienda</a></li>
-              <li><a class="flex-item vinnetaMinsalud" href="http://www.minsalud.gov.co" target="_blank">MinSalud</a></li> 
-            </ul>
-        </div>  
-      </div>
-    </div>  
   
-
- 
-    <!-- Main Footer  --> 
+    </div> 
+  
+  
+  
+  </div> 
+  
+  <!-- Main Footer  --> 
     <footer class="mt-4">
       <div class="grid3x-footer container">
 
@@ -1910,13 +1160,13 @@ body #scene #right-zone {
             <p> Conmutador:<br>
             <b> +57(1) 330 5000 <br> Central de fax: +57(1) 330 5050</b></br><br><br></p> <br>
           </div>
+
+            
         </div>
 
         <div class="box-footer">
           <div>
-            <p>
-            
-
+            <p> 
             Punto de atención presencial: <br>
             <b>Carrera 13 No. 32-76 piso 1, Bogotá, <br>Código postal 110311<br>
             Lunes - viernes de 8:00 a.m. a 4:00 p.m.</b><br> jornada continua<br><br>
@@ -1927,9 +1177,9 @@ body #scene #right-zone {
             Atención telefónica a través del Centro de Contacto:<br>
             <b>En Bogotá: +57(1) 330 5043 <br>Resto del país: 018000960020</b></p>
 
-            <p>Última actualización: <br> miércoles, 13 de enero de 2021</p>
-            
+            <p>Última actualización: <br> miércoles, 13 de enero de 2021</p> 
           </div>
+          
         </div>
 
         <div class="box-footer">
@@ -1962,6 +1212,7 @@ body #scene #right-zone {
       </div> 
     </footer>  
       
+    
     <!-- Footer Fixed Mobile -->
     <footer class="footer-fixed bg-primary" id="footer-fixed"> 
         
@@ -1988,6 +1239,8 @@ body #scene #right-zone {
         </div> 
     </footer>
 
+    
+    <script src="js/accesibilidad.js" type="text/javascript" charset="utf-8"></script>
     <script>
       $(window).on('scroll', function() { 
             if ($(window).scrollTop() >= $('body').offset().top + $('body').outerHeight() - window.innerHeight) { 
@@ -1996,69 +1249,29 @@ body #scene #right-zone {
               document.getElementById("footer-fixed").classList.remove("footer-fixed-scroll");
             } 
         }); 
-    </script>
-
-    <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script> 
-
-    <script>  
-      function myFunction(x) {
-        if (x.matches) { // If media query matches 
-
-            $(document).on('ready', function() { 
-        
-              $(".center").slick({
-                dots: false,
-                infinite: true,
-                centerMode: true,
-                slidesToShow: 2,
-                slidesToScroll: 6,
-                autoplay: false,
-                autoplaySpeed: 1500,
-              }); 
+    </script>    
+    
+    <script>
+        $(document).ready(function() {
+            //Horizontal Tab 
+            //Vertical Tab
+            $('#parentVerticalTab').easyResponsiveTabs({
+                type: 'vertical', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                closed: 'accordion', // Start closed if in accordion view
+                tabidentify: 'hor_1', // The tab groups identifier
+                activate: function(event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#nested-tabInfo2');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
             });
-
-
-        } else { 
-
-          $(document).on('ready', function() { 
-
-            
-
-              $(".center").slick({
-                dots: true,
-                infinite: true,
-                centerMode: true,
-                slidesToShow: 5,
-                slidesToScroll: 3,
-                autoplay: true,
-                autoplaySpeed: 1500,
-              }); 
-            });
-
-        }
-      }
-
-      var x = window.matchMedia("(max-width: 600px)")
-      myFunction(x) // Call listener function at run time
-      x.addListener(myFunction) // Attach listener function on state changes
+        });
     </script>
-	 <script type="text/javascript" src="js/app.js"></script>
- 
- <script>
- /*Si clicamos en el botón del sol, borrarémos la clase css dark-mode del div 
-con id page y se aplicará el estilo active al sol*/
-document.getElementById('id-sun').onclick = function(){
-  document.getElementById('page').classList.remove('dark-mode')
-  document.getElementById('id-moon').classList.remove('active')
-  this.classList.add('active')
-}
-/*Si clicamos en el botón de la luna, añadiremos la clase css dark-mode del div 
-con id page y se aplicará el estilo active a la luna*/
-document.getElementById('id-moon').onclick = function(){
-  document.getElementById('page').classList.add('dark-mode')
-  document.getElementById('id-sun').classList.remove('active')
-  this.classList.add('active')
-}
- </script>
-	</body>
+</body>
 </html>
+
+ 
