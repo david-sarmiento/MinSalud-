@@ -6,20 +6,29 @@
   .wrapper  h2{
     text-align: center;
   }
-  .lista-contenido{
+  .lista-contenido{ 
     list-style-type: none;
 
   }
 
   .lista-contenido li{
     min-height: 45px;
-    background:  var(--color_blue_5);
-    color: white;
+    background: rgb(245, 245, 245);
+    color: var(--color_blue_5);
     text-align: center;
     padding: 10px;
-
     margin-bottom: 5px;
   }  
+  
+  .lista-contenido li:hover{ 
+    background: var(--color_blue_5);
+    color: white !important;  
+  }
+
+  .lista-contenido li a:hover{  
+    color: purple !important;
+  }  
+  
 
 
 
@@ -35,15 +44,6 @@
            padding-inline-start: 0px;
 
     }  
-    .lista-contenido li{
-      width: 100%;
-      min-height: 45px;
-      background:  var(--color_blue_5);
-      color: white;
-      text-align: center;
-      padding-left: 10px;
-
-      margin-bottom: 5px;
-    }
+     
 
   }
